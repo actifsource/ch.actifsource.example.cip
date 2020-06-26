@@ -1,15 +1,14 @@
 # Codesnippet Model
-In this project we will show how to set up the codesnippet model.  
-Show actifsource user manual [Code Snippet](https://www.actifsource.com/_downloads/ActifsourceManual_ActifsourceUserManual.pdf).
+This project contains different cip examples.  
 
-![Codesnippet Model](images/codesnippetmodel.png)
-
-![Codesnippet Code](images/codesnippetcode.png)
+## Cip Projects
+[Cip LampSystem](https://www.actifsource.com/tutorials/actifsource_cip_tool/cip_statemachine_lamp.html)
+[Cip Unit Test](https://www.actifsource.com/tutorials/actifsource_cip_tool/cip_statemachine_testsuite.html)
 
 ## Model Snippet Built-In
-Define the model snippet built-in
+Define the model CIP built-in
 
-![Model Snippet Built-In](images/codesnippetbuiltin.png)
+![Model CIP Built-In](images/cipbuiltin.png)
 
 ## Requirements
 Actifsource Workbench Enterprise Edition
