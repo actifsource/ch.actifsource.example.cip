@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b5297e61-b785-11ea-9e22-1112d6355503">
+  <owns predicate="9a5c4403-023c-11e6-b47b-f140d082a724">
+    <resource statement-guid="b8cce33f-b785-11ea-9e22-1112d6355503" type="resource" guid="b8cce339-b785-11ea-9e22-1112d6355503" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b5297e63-b785-11ea-9e22-1112d6355503" type="resource" guid="087cbc2d-3ada-11e2-88f8-27409ad332db" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b5297e64-b785-11ea-9e22-1112d6355503" type="literal">LampSystemTestSuite</object>
+  </predicate>
+  <predicate guid="e4c826f6-3ada-11e2-88f8-27409ad332db">
+    <object statement-guid="b67697d5-b785-11ea-9e22-1112d6355503" type="resource" guid="7848c6d5-b785-11ea-9e22-1112d6355503" />
+  </predicate>
+  <predicate guid="e4c826f7-3ada-11e2-88f8-27409ad332db">
+    <object statement-guid="b7b24b4b-b785-11ea-9e22-1112d6355503" type="resource" guid="7848c712-b785-11ea-9e22-1112d6355503" />
+  </predicate>
+  <predicate guid="9a5c4403-023c-11e6-b47b-f140d082a724">
+    <object statement-guid="b8cce33f-b785-11ea-9e22-1112d6355503">
+      <resource guid="b8cce339-b785-11ea-9e22-1112d6355503">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b8cce33b-b785-11ea-9e22-1112d6355503" type="resource" guid="a55baa5b-023c-11e6-b47b-f140d082a724" />
+        </predicate>
+        <predicate guid="c0f31c58-023c-11e6-b47b-f140d082a724">
+          <object statement-guid="b8cce33c-b785-11ea-9e22-1112d6355503" type="literal">false</object>
+        </predicate>
+        <predicate guid="fa4eec3d-1a0e-11e7-bfc3-2f7e89a2b40b">
+          <object statement-guid="b8cce33d-b785-11ea-9e22-1112d6355503" type="literal">50</object>
+        </predicate>
+        <predicate guid="14f0b3d5-1a0f-11e7-bfc3-2f7e89a2b40b">
+          <object statement-guid="b8cce33e-b785-11ea-9e22-1112d6355503" type="literal">50</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+
