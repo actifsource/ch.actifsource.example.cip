@@ -13,7 +13,7 @@
   <templatepaths />
   <ignoreWhitespaceAtLineEnd>true</ignoreWhitespaceAtLineEnd>
   <executeSaveActions>true</executeSaveActions>
-  <generateJavaModel>true</generateJavaModel>
+  <generateJavaModel>false</generateJavaModel>
   <targetpaths>
     <targetpath>
       <path>cip-c-gen</path>

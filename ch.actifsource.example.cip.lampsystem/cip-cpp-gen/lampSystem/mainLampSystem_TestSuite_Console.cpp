@@ -72,7 +72,13 @@ namespace dec
 	  eActionMessageCount
 	} T_EActionMessage; 
 	
+	/** Enum for all test case. */
+	typedef enum ETestCase
+	{
+  	  eTestCase_TestLamp
+	} T_ETestCase;
 
+	/* Checked output message */
 
 	/** Typedef of all Event data. */
 	typedef union UEventData
@@ -105,12 +111,22 @@ namespace dec
 	int s_nSystemTick = 0;
 	
 
+	/* Active Test Case */
+	T_ETestCase activeTestCase;
 	
 	/**
 	 * Checked output message
 	 */
 	char isCheckedOutputMessage(T_EActionMessage i_eActionMessage)
 	{
+	  switch (activeTestCase)
+	  {
+	     case eTestCase_TestLamp:
+	       return checkedOutputMessage_TestLamp[i_eActionMessage];
+	     default:
+	       return 0;
+	     break;
+	  }
 	  return 1;
 	}
 
@@ -391,6 +407,32 @@ namespace dec
 	}
 
 
+	/** Forward TestCase TestLamp */
+	int testCase_TestLamp(int mainTestCase);
+	
+	/** 
+	 *  TestCase TestLamp
+	 *  mainTestCase 1 if main test case, 0 if sub test case.
+	 *  @return 1 if test case ok. 0 if test case failed.
+	 */
+	int testCase_TestLamp(int mainTestCase)
+	{
+	  T_UEventData data;
+	  T_RecordedActionMessage sRecorded;
+	  
+	  if (mainTestCase) 
+	  {
+	    printf(">>> TestCase TestLamp [a38033ee-b786-11ea-9e22-1112d6355503]\n");
+	    s_nSystemTick = 0;
+	    g_nRecordedActionMessageCount = 0;
+	    g_nExpectedActionMessageCount = 0;
+	    if (!fINIT_Machine()) 
+	    {
+	      printf("\nInitialization failed\n"); 
+	      return 0;
+	    }
+	  }
+	  
 	/** 
 	 *  Regressive animation, controlled by test cases. 
 	 *  @return The number of failed test cases.
@@ -401,6 +443,8 @@ namespace dec
 	  g_eAnimationMode = eAnimationMode_Regressive;
 	  int nSuceededTestCases = 0;
 	  int nFailedTestCases = 0;
+	  g_eTraceMode = eTrace_Disable;
+	  if (testCase_TestLamp(1)) {++nSuceededTestCases;} else {++nFailedTestCases;}
 	  printf("\n> SUMMARY: %i Test Case(s) Executed.\n",nSuceededTestCases+nFailedTestCases); 
 	  if (nFailedTestCases) {printf("> WARNING: %i Test Case(s) Failed.\n",nFailedTestCases);} 
 	  return nFailedTestCases;
@@ -416,17 +460,28 @@ namespace dec
 	  int nFailedTestCases = 0;
 	  g_eAnimationMode = eAnimationMode_Runner;
 	  
-	  cout << "[==========] Running 0 test from 1 test case." << endl;
+	  cout << "[==========] Running 1 test from 1 test case." << endl;
 	  cout << "[----------] Global test environment set-up." << endl;
-	  cout << "[----------] 0 test from LampSystemTestSuite" << endl;
+	  cout << "[----------] 1 test from LampSystemTestSuite" << endl;
        	  
-	  cout << "[----------] 0 test from LampSystemTestSuite (0 ms total)" << endl;
+	  /* TestLamp */
+	  g_eTraceMode = eTrace_Disable;
+	  cout << "[ RUN      ] LampSystemTestSuite.TestLamp" << endl;
+	  if (testCase_TestLamp(1)) {
+	  	printf("[       OK ] LampSystemTestSuite.TestLamp (%i ms)\n",s_nSystemTick);
+	  	++nSuceededTestCases;
+	  } else {
+	  	++nFailedTestCases;
+		printf("[  FAILED  ] LampSystemTestSuite.TestLamp (%i ms)\n",s_nSystemTick);
+	  }
+	
+	  cout << "[----------] 1 test from LampSystemTestSuite (0 ms total)" << endl;
 	  printf("\n> SUMMARY: %i Test Case(s) Executed.\n",nSuceededTestCases+nFailedTestCases); 
 	  if (nFailedTestCases) {
 	  	printf("> WARNING: %i Test Case(s) Failed.\n",nFailedTestCases);
 	  }
 	  cout << "[----------] Global test environment tear-down" << endl;
-	  cout << "[==========] 0 test from 1 test case ran. (0 ms total)" << endl;
+	  cout << "[==========] 1 test from 1 test case ran. (0 ms total)" << endl;
 	  return nFailedTestCases;
 	}
 	
@@ -523,4 +578,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,b5297e61-b785-11ea-9e22-1112d6355503,GQ7AE/onQHXvGMI1RlxRe/Pxn8M=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,b5297e61-b785-11ea-9e22-1112d6355503,0NSBtLRLOJ2MaNAKyqp0tzeHrBc=] */
