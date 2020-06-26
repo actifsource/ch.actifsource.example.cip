@@ -1,0 +1,128 @@
+[
+    {
+        "label": "KesselUnit",
+        "children": [
+            {
+                "label": "Kesselsteuerung_Loesung",
+                "st": -2,
+                "children": [
+                    {
+                        "label": "KesselSteuerung",
+                        "children": [
+                            {
+                                "label": "Kessel",
+                                "st": -2,
+                                "children": [
+                                    {
+                                        "label": "Kessel",
+                                        "children": [
+                                            {
+                                                "label": "normal",
+                                                "children": [
+                                                    {
+                                                        "label": "normal",
+                                                        "extendedLabel": " KesselSteuerung->Kessel->normal",
+                                                        "id": "guid_5b9ab35d2fd911e2a23a331776341c66",
+                                                        "skId": [4,1],
+                                                        "diagramType": "multidiagram",
+                                                        "links": [
+                                                         ]
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                            
+                                        ]
+                                    }
+                                    
+                                ]
+                            }
+                            ,
+                            {
+                                "label": "Schalter",
+                                "st": -2,
+                                "children": [
+                                    {
+                                        "label": "Schalter",
+                                        "children": [
+                                            {
+                                                "label": "normal",
+                                                "children": [
+                                                    {
+                                                        "label": "normal",
+                                                        "extendedLabel": " KesselSteuerung->Schalter->normal",
+                                                        "id": "guid_5bca4f5b2fd911e2a23a331776341c66",
+                                                        "skId": [3,1],
+                                                        "diagramType": "multidiagram",
+                                                        "links": [
+                                                         ]
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                            
+                                        ]
+                                    }
+                                    
+                                ]
+                            }
+                            ,
+                            {
+                                "label": "TempRegler",
+                                "st": -2,
+                                "children": [
+                                    {
+                                        "label": "TempRegler",
+                                        "children": [
+                                            {
+                                                "label": "normal",
+                                                "children": [
+                                                    {
+                                                        "label": "normal",
+                                                        "extendedLabel": " KesselSteuerung->TempRegler->normal",
+                                                        "id": "guid_5bd17bab2fd911e2a23a331776341c66",
+                                                        "skId": [5,1],
+                                                        "diagramType": "multidiagram",
+                                                        "links": [
+                                                         ]
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                            
+                                        ]
+                                    }
+                                    
+                                ]
+                            }
+                            
+                        ]
+                    }
+                    
+                    ,
+                    {
+                        "label": "EA_Net",
+                        "extendedLabel": "Kesselsteuerung_Loesung->EA_Net",
+                        "id": "guid_5bf0753e2fd911e2a23a331776341c66",
+                        "diagramType": "simplediagram"
+                    }
+                    
+                ]
+            }
+            
+        ]
+    }
+    
+    ,
+    {
+       "label": "Cip Testsuite",
+       "diagramType": "testsuitediagram"
+    }
+    ,
+    {
+       "label": "Log",
+       "diagramType": "logdiagram"
+    }
+    
+]
+

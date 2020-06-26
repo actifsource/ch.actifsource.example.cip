@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Statemachine Statemachine.name</title>
+    <style type="text/css">
+      h1 {
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 24pt;
+        color: RoyalBlue;
+        padding-top: 12px;
+        padding-bottom: 3px;
+      }
+      h2 {
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 20pt;
+        color: RoyalBlue;
+        padding-top: 12px;
+        padding-bottom: 3px;
+      }
+      h3 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 16pt;
+        color: RoyalBlue;
+        padding-top: 12px;
+        padding-bottom: 3px;
+      }
+      a:link {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+      }
+      a:visited {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+      }
+      a:hoover {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        color: orange;
+      }
+      #box-table-a
+      {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        margin: 30px;
+        width: 600px;
+        text-align: left;
+        border-collapse: collapse;
+      }
+      #box-table-a th
+      {
+        font-size: 13px;
+        font-weight: normal;
+        text-align: left;
+        padding: 8px;
+        background: #b9c9fe;
+        border-top: 4px solid #aabcfe;
+        border-bottom: 1px solid #fff;
+        color: #039;
+      }
+      #box-table-a td
+      {
+        padding: 4px;
+        background: #e8edff; 
+        border-bottom: 1px solid #fff;
+        color: #669;
+        border-top: 1px solid transparent;
+      }
+      #box-table-a tr:hover td
+      {
+        background: #d0dafd;
+        color: #339;
+      }
+      #box-table-a a:link {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: #669;
+      }
+      #box-table-a a:visited {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: #669;
+      }
+      #box-table-a a:hoover {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: orange;
+        color: #669;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>U4_LiftWithAlarmMode_Loesung</h1>
+    <table id="box-table-a">
+      <tr>
+        <th><b>U4_LiftWithAlarmMode_Loesung</b></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>LiftCluster</td>
+        <td></td>
+      </tr>
+    </table>
+    <h2>Event Channels</h2>
+    <table id="box-table-a">
+      <tr>
+        <th><b>Evt_Alarm</b></th>
+        <th></th>
+      </tr>
+      <tr id="Evt_Alarm.On">
+        <td>Evt_Alarm.On(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Evt_Alarm.Off">
+        <td>Evt_Alarm.Off(void)</td>
+        <td></td>
+      </tr>
+    </table>
+    <table id="box-table-a">
+      <tr>
+        <th><b>Evt_Button</b></th>
+        <th></th>
+      </tr>
+      <tr id="Evt_Button.push">
+        <td>Evt_Button.push(void)</td>
+        <td></td>
+      </tr>
+    </table>
+    <table id="box-table-a">
+      <tr>
+        <th><b>Evt_Lift</b></th>
+        <th></th>
+      </tr>
+      <tr id="Evt_Lift.LeaveGrnd">
+        <td>Evt_Lift.LeaveGrnd(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Evt_Lift.LeaveTop">
+        <td>Evt_Lift.LeaveTop(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Evt_Lift.ReachGrnd">
+        <td>Evt_Lift.ReachGrnd(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Evt_Lift.ReachTop">
+        <td>Evt_Lift.ReachTop(void)</td>
+        <td></td>
+      </tr>
+    </table>
+    <h2>Action Channels</h2>
+    <table id="box-table-a">
+      <tr>
+        <th><b>Act_Motor</b></th>
+        <th></th>
+      </tr>
+      <tr id="Act_Motor.MotOff">
+        <td>Act_Motor.MotOff(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Act_Motor.MotScend">
+        <td>Act_Motor.MotScend(void)</td>
+        <td></td>
+      </tr>
+      <tr id="Act_Motor.MotRaise">
+        <td>Act_Motor.MotRaise(void)</td>
+        <td></td>
+      </tr>
+    </table>
+    <h2>Sub Test Cases</h2>
+    <h2>Test Cases</h2>
+    <table id="box-table-a">
+      <tr id="TestLift">
+        <th colspan="2"><b>TestLift</b></th>
+        <th ></th>
+      </tr>
+      <tr>
+        <td><b>&gt;</b></td>
+        <td><nobr><b><a href="#Evt_Button.push">Evt_Button.push(void)</a></b></nobr></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Actifsource ID=[da5acfd2-407d-11e2-9941-ff65f3a86106,2a93b97e-2ffa-11e2-8ce2-c76b5b13ae26,/S5UNL3440X+OC4a8L6tvPf5rMw=] -->

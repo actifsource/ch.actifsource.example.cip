@@ -1,0 +1,92 @@
+{
+	"eventChannel":[
+		{
+			"name":"TRIGGER",
+		 	"message": [
+				{"name": "TICK", "id":[0], "guid":"guid_6df567273aef11e2a11d5fa022f9bb7d", "datatype":"guid_54a64273651711e0859e0b5a1f989279"},
+				{"name": "STEP", "id":[1], "guid":"guid_70dccfb73aef11e2a11d5fa022f9bb7d"},
+				{"name": "TIMEUP", "id":[2], "guid":"guid_7f3e72d73aef11e2a11d5fa022f9bb7d"},
+				{"name": "CHAIN", "id":[3], "guid":"guid_7b25b7373aef11e2a11d5fa022f9bb7d"}, 
+				{"name": "READ", "id":[4], "guid":"guid_83ec6a973aef11e2a11d5fa022f9bb7d"},
+				{"name": "AUTO", "id":[5], "guid":"guid_8bd590273aef11e2a11d5fa022f9bb7d"}
+			]
+		}
+		,
+		{
+			"name":"Evt_HauptSchalter",
+			"guid":"guid_5b6b18402fd911e2a23a331776341c66",
+		 	"message": [	
+				{"name": "KesselAus", "id":[6], "guid":"guid_5b6b18462fd911e2a23a331776341c66"},
+				{"name": "KesselEin", "id":[7], "guid":"guid_5b6b184b2fd911e2a23a331776341c66"}
+			]
+		}
+		,
+		{
+			"name":"Evt_Kessel",
+			"guid":"guid_5b6b18502fd911e2a23a331776341c66",
+		 	"message": [	
+				{"name": "UeberN1", "id":[8], "guid":"guid_5b6b18562fd911e2a23a331776341c66"},
+				{"name": "UeberN2", "id":[9], "guid":"guid_5b6d895b2fd911e2a23a331776341c66"},
+				{"name": "UnterN1", "id":[10], "guid":"guid_5b6d89602fd911e2a23a331776341c66"},
+				{"name": "UnterN2", "id":[11], "guid":"guid_5b6d89652fd911e2a23a331776341c66"}
+			]
+		}
+		,
+		{
+			"name":"Evt_TempRegler",
+			"guid":"guid_5b6d896a2fd911e2a23a331776341c66",
+		 	"message": [	
+				{"name": "UeberT", "id":[12], "guid":"guid_5b6d89702fd911e2a23a331776341c66"},
+				{"name": "UnterT", "id":[13], "guid":"guid_5b6d89752fd911e2a23a331776341c66"}
+			]
+		}
+	],
+	
+	"actionChannel":[
+		{
+			"name":"Error",
+		 	"message": [
+				{"name": "ContextError", "id":[0]}, 
+				{"name": "FullBufferWarning", "id":[1]} ,
+				{"name": "BufferError", "id":[2]},
+				{"name": "PulseSelectionError", "id":[3]},
+				{"name": "MessageSelectionError", "id":[4]},
+				{"name": "InputError", "id":[5]}
+			]
+		}
+		,
+		{
+			"name":"Act_Kessel", 
+			"guid":"guid_5b68ce302fd911e2a23a331776341c66",
+		 	"message": [
+				{"name": "Fuellen", "id":[6], "guid":"guid_5b68ce362fd911e2a23a331776341c66"}, 
+				{"name": "Leeren", "id":[7], "guid":"guid_5b68ce3b2fd911e2a23a331776341c66"} 
+			]
+		}
+		,
+		{
+			"name":"Act_TempRegler", 
+			"guid":"guid_5b68ce402fd911e2a23a331776341c66",
+		 	"message": [
+				{"name": "HeizAus", "id":[8], "guid":"guid_5b6b18362fd911e2a23a331776341c66"}, 
+				{"name": "HeizEin", "id":[9], "guid":"guid_5b6b183b2fd911e2a23a331776341c66"} 
+			]
+		}
+		
+	],
+	
+	"requiredInput":[
+		{
+			"name":"Event requiredInput", 
+			"message": [
+				{"name": "getMessage1", "id":[1]},
+				{"name": "getMessage2", "id":[2], "datatype":"guid_54a64273651711e0859e0b5a1f989279"}
+			]
+		}
+	],
+	
+	"datatype":[
+		{"name": "tick", "guid":"guid_54a64273651711e0859e0b5a1f989279", "typeOf":"guid_7437f57264fe11e0859e0b5a1f989279", "value": "int"}
+	]
+}
+
