@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8417406b-b789-11ea-9e22-1112d6355503">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="84174899-b789-11ea-9e22-1112d6355503" type="resource" guid="ee49c0a9-2ba3-11e1-bce6-81c471e0654b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8417489a-b789-11ea-9e22-1112d6355503" type="literal">InspectionDiagram</object>
+  </predicate>
+  <predicate guid="faaa920e-2bab-11e1-bce6-81c471e0654b">
+    <object statement-guid="8417489b-b789-11ea-9e22-1112d6355503" type="resource" guid="7e29a43b-21f1-11e4-b5d5-6587ee9ca9aa" />
+  </predicate>
+  <predicate guid="8d6f7e00-2bb3-11e1-bce6-81c471e0654b">
+    <object statement-guid="8417489c-b789-11ea-9e22-1112d6355503" type="resource" guid="8417407f-b789-11ea-9e22-1112d6355503" />
+  </predicate>
+</resource>
+

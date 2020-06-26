@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="841741e9-b789-11ea-9e22-1112d6355503">
+  <owns predicate="aee68ae4-64fe-11e0-859e-0b5a1f989279">
+    <resource statement-guid="84175109-b789-11ea-9e22-1112d6355503" type="resource" guid="841741eb-b789-11ea-9e22-1112d6355503">
+      <owns predicate="e292e333-748e-11e0-a531-4537b2bc6a0b">
+        <resource statement-guid="84175108-b789-11ea-9e22-1112d6355503" type="resource" guid="841741ea-b789-11ea-9e22-1112d6355503" />
+      </owns>
+    </resource>
+  </owns>
+  <owns predicate="84b24aea-748e-11e0-a531-4537b2bc6a0b">
+    <resource statement-guid="8417510d-b789-11ea-9e22-1112d6355503" type="resource" guid="841741ec-b789-11ea-9e22-1112d6355503" />
+  </owns>
+  <owns predicate="2b0f8a4c-c5b0-11e1-abaf-9b359e337ec8">
+    <resource statement-guid="84175111-b789-11ea-9e22-1112d6355503" type="resource" guid="841741ed-b789-11ea-9e22-1112d6355503" />
+  </owns>
+  <owns predicate="3b13419e-f046-11e1-b5e1-f11478cb950b">
+    <resource statement-guid="84175116-b789-11ea-9e22-1112d6355503" type="resource" guid="841741ee-b789-11ea-9e22-1112d6355503" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="84175101-b789-11ea-9e22-1112d6355503" type="resource" guid="1f05b8eb-c5b0-11e1-abaf-9b359e337ec8" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="84175102-b789-11ea-9e22-1112d6355503" type="literal">Supper_DatatypeLibrary</object>
+  </predicate>
+  <predicate guid="aee68ae4-64fe-11e0-859e-0b5a1f989279">
+    <object statement-guid="84175109-b789-11ea-9e22-1112d6355503">
+      <resource guid="841741eb-b789-11ea-9e22-1112d6355503">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="84175103-b789-11ea-9e22-1112d6355503" type="resource" guid="9f8291f9-64fe-11e0-859e-0b5a1f989279" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="84175104-b789-11ea-9e22-1112d6355503" type="literal">RecordType_SupperLib</object>
+        </predicate>
+        <predicate guid="e292e333-748e-11e0-a531-4537b2bc6a0b">
+          <object statement-guid="84175108-b789-11ea-9e22-1112d6355503">
+            <resource guid="841741ea-b789-11ea-9e22-1112d6355503">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="84175105-b789-11ea-9e22-1112d6355503" type="resource" guid="d449d02e-748e-11e0-a531-4537b2bc6a0b" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="84175106-b789-11ea-9e22-1112d6355503" type="literal">f1</object>
+              </predicate>
+              <predicate guid="ed8be0d9-748e-11e0-a531-4537b2bc6a0b">
+                <object statement-guid="84175107-b789-11ea-9e22-1112d6355503" type="resource" guid="3f6595cb-6517-11e0-859e-0b5a1f989279" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="84b24aea-748e-11e0-a531-4537b2bc6a0b">
+    <object statement-guid="8417510d-b789-11ea-9e22-1112d6355503">
+      <resource guid="841741ec-b789-11ea-9e22-1112d6355503">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8417510a-b789-11ea-9e22-1112d6355503" type="resource" guid="7d98aa55-748e-11e0-a531-4537b2bc6a0b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8417510b-b789-11ea-9e22-1112d6355503" type="literal">UserType_SupperLib</object>
+        </predicate>
+        <predicate guid="631e7377-748f-11e0-a531-4537b2bc6a0b">
+          <object statement-guid="8417510c-b789-11ea-9e22-1112d6355503" type="literal">typedef int UserType_SupperLib;</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="2b0f8a4c-c5b0-11e1-abaf-9b359e337ec8">
+    <object statement-guid="84175111-b789-11ea-9e22-1112d6355503">
+      <resource guid="841741ed-b789-11ea-9e22-1112d6355503">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8417510e-b789-11ea-9e22-1112d6355503" type="resource" guid="7d98aa55-748e-11e0-a531-4537b2bc6a0b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8417510f-b789-11ea-9e22-1112d6355503" type="literal">Type_SupperLib</object>
+        </predicate>
+        <predicate guid="631e7377-748f-11e0-a531-4537b2bc6a0b">
+          <object statement-guid="84175110-b789-11ea-9e22-1112d6355503" type="literal">typedef int Type_SupperLib;</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="3b13419e-f046-11e1-b5e1-f11478cb950b">
+    <object statement-guid="84175116-b789-11ea-9e22-1112d6355503">
+      <resource guid="841741ee-b789-11ea-9e22-1112d6355503">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="84175112-b789-11ea-9e22-1112d6355503" type="resource" guid="c67f94bf-748f-11e0-a531-4537b2bc6a0b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="84175113-b789-11ea-9e22-1112d6355503" type="literal">Constant_SupperLib</object>
+        </predicate>
+        <predicate guid="db3ae4ca-748f-11e0-a531-4537b2bc6a0b">
+          <object statement-guid="84175114-b789-11ea-9e22-1112d6355503" type="resource" guid="54a64273-6517-11e0-859e-0b5a1f989279" />
+        </predicate>
+        <predicate guid="df8315d8-748f-11e0-a531-4537b2bc6a0b">
+          <object statement-guid="84175115-b789-11ea-9e22-1112d6355503" type="literal">56</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="b494dce7-ff1b-11e1-a815-6d0c1dfc61c8">
+    <object statement-guid="84175117-b789-11ea-9e22-1112d6355503" type="literal">true</object>
+  </predicate>
+  <predicate guid="f8e23f0c-ff32-11e1-a121-112d715c4a33">
+    <object statement-guid="84175118-b789-11ea-9e22-1112d6355503" type="literal">#include &lt;Supper_DatatypeLibrary&gt;</object>
+  </predicate>
+</resource>
+
