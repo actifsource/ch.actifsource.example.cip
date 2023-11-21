@@ -69,6 +69,7 @@ int fPULSE_Lamp_HANS (enum eOUTPLS_LampUnit_HANS name_)
 		{
 		case on_:
 			{
+				printf("       TRANSITION '2 off' Lamp.normal: STATE on_ -> delayed  [7848c6ef-b785-11ea-9e22-1112d6355503]\n");
 				delay_ =  3;	/* DELAY DELAY_OPERATION */
 				status_Lamp_HANS.write_access_.STATE = delayed;
 				fSETTIM_mLampUnit_HANS(&delay_, 
@@ -86,6 +87,7 @@ int fPULSE_Lamp_HANS (enum eOUTPLS_LampUnit_HANS name_)
 		{
 		case delayed:
 			{
+				printf("       TRANSITION '3 on' Lamp.normal: STATE delayed -> on_  [7848c6f2-b785-11ea-9e22-1112d6355503]\n");
 				delay_ =  3;	/* DELAY DELAY_OPERATION */
 				status_Lamp_HANS.write_access_.STATE = on_;
 				fSETTIM_mLampUnit_HANS(&delay_, 
@@ -94,6 +96,7 @@ int fPULSE_Lamp_HANS (enum eOUTPLS_LampUnit_HANS name_)
 			}
 			break;
 		case off_:
+			printf("       TRANSITION '1 on' Lamp.normal: STATE off_ -> on_  [7848c6ec-b785-11ea-9e22-1112d6355503]\n");
 			status_Lamp_HANS.write_access_.STATE = on_;
 			CHNOUT_mLampUnit_HANS.message_.CHAN_LampActions.name_ = C2_Bright;
 			OUT_LampUnit_HANS.LampActions(CHNOUT_mLampUnit_HANS.message_.CHAN_LampActions.name_);
@@ -151,6 +154,7 @@ static void fTUHNDL_Lamp(void)
 	switch(status_Lamp_HANS.read_access_.STATE)
 	{
 	case delayed:
+		printf("       TRANSITION '4 TIMEUP_' Lamp.normal: STATE delayed -> off_  [7848c6f3-b785-11ea-9e22-1112d6355503]\n");
 		status_Lamp_HANS.write_access_.STATE = off_;
 		CHNOUT_mLampUnit_HANS.message_.CHAN_LampActions.name_ = C2_Dark;
 		OUT_LampUnit_HANS.LampActions(CHNOUT_mLampUnit_HANS.message_.CHAN_LampActions.name_);
@@ -177,4 +181,4 @@ void fINIT_Lamp_HANS (void)
 /*********************************************************************
 	End of Module for PROCESS Lamp
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,7848c712-b785-11ea-9e22-1112d6355503,7848c6d5-b785-11ea-9e22-1112d6355503,7848c72b-b785-11ea-9e22-1112d6355503,7848c710-b785-11ea-9e22-1112d6355503,7848c70f-b785-11ea-9e22-1112d6355503,7848c705-b785-11ea-9e22-1112d6355503,v6f/zfYsRw43/TrQykb1Bp1oBxI=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,7848c712-b785-11ea-9e22-1112d6355503,7848c6d5-b785-11ea-9e22-1112d6355503,7848c72b-b785-11ea-9e22-1112d6355503,7848c710-b785-11ea-9e22-1112d6355503,7848c70f-b785-11ea-9e22-1112d6355503,7848c705-b785-11ea-9e22-1112d6355503,5PJOZQ1GfQFYEVOlfUeMom7I7zg=] */

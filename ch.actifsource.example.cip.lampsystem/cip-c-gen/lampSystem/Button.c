@@ -61,6 +61,7 @@ void fICHAN_ButtonEvents_HANS(enum eMSG_ButtonEvents_HANS name_)
 		switch(status_Button_HANS.read_access_.STATE)
 		{
 		case released:
+		 	
 		 	status_Button_HANS.write_access_.STATE = pushed;
 		 	fPULSE_Lamp_HANS (O2_on);
 			break;
@@ -73,6 +74,7 @@ void fICHAN_ButtonEvents_HANS(enum eMSG_ButtonEvents_HANS name_)
 		switch(status_Button_HANS.read_access_.STATE)
 		{
 		case pushed:
+		 	
 		 	status_Button_HANS.write_access_.STATE = released;
 		 	fPULSE_Lamp_HANS (O2_off);
 			break;
