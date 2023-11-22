@@ -1,0 +1,413 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="986" height="706"
+    viewBox="0 0 986 706" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <symbol id="guid_b8b26f7664fd11e0859e0b5a1f989279_icon">
+        <image width="16" height="16" xlink:href="data:image/png;base64,
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAAAlwSFlzAAAOw
+        wAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAABkUlEQVQ4T6WSy0
+        sCURTG/SdsXRYTSJAraRNBILXoMVKhZKbRIBIF2rpRqkXCWC16YNEmK7CwqYkaJsPRHkRRtgq0drVLKFy
+        0/3IupFhZahfO5jv3/L5zzr0qAKr/RNHipfg7uEgG3oM0XKHnrMfPRkUB3HEG1/cZnCXeYF9LlQ9g918Q
+        v3mFdJ6GcfaufMDY5hNsK0nQ/gRaPRflA0pd7K8vIIoiBEEo6q6Y5ACyLKuj0SgikQiUQp7nEQwGEQgEw
+        HEcWJaF2+2Gw+EAwzBVnx3mAJIkqbMRU/1xrFZrLBvfAaXO/PUe6cB1OoyxmB0j0UE4TyxkZttRL8xCJ+
+        idNrRvtBBNN98Ara8e1HQtqEkN0QhgVLZBeAxj72Ebw5KJJEz7HVi+nYP/ahota01E085Q6N/rgZk3os5
+        bkwc4TwbAp0IIJ7egOCuXu0IG+C69mIiPQ7+oIxo1pYFpl0ZfuBu1bHUewEhmDIl9GDzsgeWAJgnDejOa
+        V/XQL+jQ6NcSTXGt81ST4gJApQss+AeVQj4Ak7+9MBbsOzUAAAAASUVORK5CYII=
+        "/>
+    </symbol>
+    <symbol id="guid_4c2d37f264fd11e0859e0b5a1f989279_icon">
+        <image width="16" height="16" xlink:href="data:image/png;base64,
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAAAlwSFlzAAAOw
+        wAADsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAACFklEQVQ4T62SaV
+        NSURjH+Rb322RsLmgIiCyXy+LlxlIisjRETY6NhROLGVrY5GCU5tYC0phERqjJTJMtb/o6/+65R4yrvbC
+        Z7sy5L848v9+zHUW8FQA5sUM/op99iOxfhvgpTh/fNgfhrQP8lh2eNza4XlmkOAWBM99uY/Z7SoLDewIz
+        9skrkxzDjLDlQLIeQaIWBrdhpgKSOX00idVfRWS/TiG2F8ToR14mEKos+Iod1+vjmG/lcON9DOyaiQqiB
+        z5ED/yY/jKBhaMZLP0s4OoHj0wwIsJzrSzuNm4hWYvCvmqCdcVABeOk7KbAhBpeCX76YwHBmlsmcL+2In
+        +YRW5/Gq4NK4GZ4Wd6KiC/UIPH6O4IrtQ9CNRc8L9zygTOzWE41odo5mUD2vCJ4G9TP+/dmXWdF2zH/R+
+        BV1wTmTQZlvOl2O/xjttZjMV+GBZ10D/uxUChB7qH2pMZKSS4bGOEMod08w4yzZQ0rM5WBp/oMLGdRLIa
+        l+DeOQ3T80BNtyDCUubETgQ3d+JI7U5Kk+4UXBIzJ6oxBNa9cJVY9OU10N5XUoFbfNMEvteYwlglcGZNJ
+        Kj/UTf0BR34ZTeulSNwFK3Q5C5SAbdpRrgaRKjih23FCHNJz5iWBmQV9M2LZefVTPesCp4SB3bRAlW2iw
+        rYtSHYXhhheT5IYJyG260QWDujhFrMrMp0QZm+8Ocl/uvuO+N/AzJKrSn3OLXlAAAAAElFTkSuQmCC
+        "/>
+    </symbol>
+</defs>
+
+    <!-- Node: guid_7848c718b78511ea9e221112d6355503 -->
+    <g id="guid_7848c718b78511ea9e221112d6355503">
+      <g transform="translate(671,372) rotate(0)">
+        <!-- DrawOval -->
+        <ellipse cx="0" cy="0"
+            rx="14" ry="14"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:border -->
+        <g transform=" rotate(0) translate(-15,-15)">
+            <!-- Port: guid_7848c718b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+            <g id="guid_7848c718b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+              <g transform="translate(71,18) rotate(0)">
+                <!-- DrawSingleSelector -->
+                <text x="-36" y="-12"
+                    font-family="Times New Roman" font-size="13"
+                    fill="rgb(0, 0, 0)">
+                    <tspan dx="0" dy="16"> <![CDATA[LampActions]]> </tspan>
+                </text>
+              </g>
+            </g>
+            
+        </g>
+      </g>
+    </g>
+    
+    <!-- Node: guid_7848c71bb78511ea9e221112d6355503 -->
+    <g id="guid_7848c71bb78511ea9e221112d6355503">
+      <g transform="translate(242,280) rotate(0)">
+        <!-- DrawOval -->
+        <ellipse cx="0" cy="0"
+            rx="14" ry="14"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:border -->
+        <g transform=" rotate(0) translate(-15,-15)">
+            <!-- Port: guid_7848c71bb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+            <g id="guid_7848c71bb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+              <g transform="translate(-42,8) rotate(0)">
+                <!-- DrawSingleSelector -->
+                <text x="-37" y="-12"
+                    font-family="Times New Roman" font-size="13"
+                    fill="rgb(0, 0, 0)">
+                    <tspan dx="0" dy="16"> <![CDATA[ButtonEvents]]> </tspan>
+                </text>
+              </g>
+            </g>
+            
+        </g>
+      </g>
+    </g>
+    
+    <!-- Node: guid_7848c70fb78511ea9e221112d6355503 -->
+    <g id="guid_7848c70fb78511ea9e221112d6355503">
+      <g transform="translate(469,297) rotate(0)">
+        <!-- DrawRectangle -->
+        <rect x="-108" y="-108"
+            width="216" height="216"
+            fill="rgb(255,222,173)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:empty -->
+        <g transform=" rotate(0) translate(-46,-106)">
+            <!-- DrawIcon -->
+            <g transform="translate(0, 0) rotate(0)">
+                <use xlink:href="#guid_4c2d37f264fd11e0859e0b5a1f989279_icon"/>
+            </g>
+            <!-- DrawSingleSelector -->
+            <text x="19" y="-4"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(0,0,0)">
+                <tspan dx="0" dy="16"> <![CDATA[LampCluster]]> </tspan>
+            </text>
+        </g>
+        <!-- DrawLine -->
+        <line x1="-108" y1="-88"
+            x2="107" y2="-88"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:port -->
+        <g transform=" rotate(0) translate(-108,-108)">
+            <!-- Port: guid_7848c708b78511ea9e221112d6355503 -->
+            <g id="guid_7848c708b78511ea9e221112d6355503">
+              <g transform="translate(0,88) rotate(0)">
+                <!-- DrawPolygon -->
+                <g stroke="rgb(234,88,0)" stroke-width="1"
+                    fill="rgb(252,237,209)">
+                    <polygon points="-7,0 -4,-6 3,-6 5,0 3,5 -4,5 -7,0 "/>
+                </g>
+                <!-- DrawCompartment comp:border -->
+                <g transform=" rotate(0) translate(-7,-7)">
+                    <!-- Port: guid_7848c708b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+                    <g id="guid_7848c708b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+                      <g transform="translate(3,27) rotate(0)">
+                        <!-- DrawSingleSelector -->
+                        <text x="-5" y="-12"
+                            font-family="Times New Roman" font-size="13"
+                            fill="rgb(0, 0, 0)">
+                            <tspan dx="0" dy="16"> <![CDATA[]]> </tspan>
+                        </text>
+                      </g>
+                    </g>
+                    
+                </g>
+              </g>
+            </g>
+            
+            <!-- Port: guid_7848c70bb78511ea9e221112d6355503 -->
+            <g id="guid_7848c70bb78511ea9e221112d6355503">
+              <g transform="translate(217,177) rotate(0)">
+                <!-- DrawPolygon -->
+                <g stroke="rgb(234,88,0)" stroke-width="1"
+                    fill="rgb(252,237,209)">
+                    <polygon points="-7,0 -4,-6 3,-6 5,0 3,5 -4,5 -7,0 "/>
+                </g>
+                <!-- DrawCompartment comp:border -->
+                <g transform=" rotate(0) translate(-7,-7)">
+                    <!-- Port: guid_7848c70bb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+                    <g id="guid_7848c70bb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+                      <g transform="translate(3,27) rotate(0)">
+                        <!-- DrawSingleSelector -->
+                        <text x="-5" y="-12"
+                            font-family="Times New Roman" font-size="13"
+                            fill="rgb(0, 0, 0)">
+                            <tspan dx="0" dy="16"> <![CDATA[]]> </tspan>
+                        </text>
+                      </g>
+                    </g>
+                    
+                </g>
+              </g>
+            </g>
+            
+        </g>
+        <!-- DrawCompartment comp:child -->
+        <g transform=" rotate(0) translate(-108,-88)">
+            <!-- Node: guid_7848c6e8b78511ea9e221112d6355503 -->
+            <g id="guid_7848c6e8b78511ea9e221112d6355503">
+              <g transform="translate(96,70) rotate(0)">
+                <!-- DrawRoundRectangle -->
+                <rect x="-45" y="-15"
+                    height="29" width="89"
+                    rx="15" ry="15"
+                    fill="rgb(252,237,209)"
+                    stroke="rgb(234,88,0)"
+                    stroke-width="1"/>
+                <!-- DrawCompartment comp:empty -->
+                <g transform=" rotate(0) translate(-30,-8)">
+                    <!-- DrawIcon -->
+                    <g transform="translate(0, 0) rotate(0)">
+                        <use xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+                    </g>
+                    <!-- DrawSingleSelector -->
+                    <text x="19" y="-4"
+                        font-family="Times New Roman" font-size="13"
+                        fill="rgb(0,0,0)">
+                        <tspan dx="0" dy="16"> <![CDATA[Button]]> </tspan>
+                    </text>
+                </g>
+                <!-- DrawCompartment comp:port -->
+                <g transform=" rotate(0) translate(-45,-15)">
+                    <!-- Port: guid_7848c6d8b78511ea9e221112d6355503 -->
+                    <g id="guid_7848c6d8b78511ea9e221112d6355503">
+                      <g transform="translate(0,13) rotate(180)">
+                        <!-- DrawRectangle -->
+                        <rect x="-7" y="-7"
+                            width="13" height="13"
+                            fill="rgb(252,237,209)"
+                            stroke="rgb(234,88,0)"
+                            stroke-width="1"/>
+                        <!-- DrawPolygon -->
+                        <g stroke="rgb(234,88,0)" stroke-width="1"
+                            fill="rgb(255, 255, 255)">
+                            <polygon points="-6,-1 5,-6 5,5 -6,-1 "/>
+                        </g>
+                        <!-- DrawCompartment comp:border -->
+                        <g transform=" rotate(-180) translate(-7,-7)">
+                            <!-- Port: guid_7848c6d8b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+                            <g id="guid_7848c6d8b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+                              <g transform="translate(39,-13) rotate(0)">
+                                <!-- DrawSingleSelector -->
+                                <text x="-39" y="-12"
+                                    font-family="Times New Roman" font-size="13"
+                                    fill="rgb(0,0,0)">
+                                    <tspan dx="0" dy="16"> <![CDATA[EVENT_PORT]]> </tspan>
+                                </text>
+                              </g>
+                            </g>
+                            
+                        </g>
+                      </g>
+                    </g>
+                    
+                </g>
+                <!-- DrawCompartment comp:port -->
+                <g transform=" rotate(0) translate(-45,-15)">
+                </g>
+              </g>
+            </g>
+            
+            <!-- Node: guid_7848c705b78511ea9e221112d6355503 -->
+            <g id="guid_7848c705b78511ea9e221112d6355503">
+              <g transform="translate(97,156) rotate(0)">
+                <!-- DrawRoundRectangle -->
+                <rect x="-45" y="-15"
+                    height="29" width="89"
+                    rx="15" ry="15"
+                    fill="rgb(252,237,209)"
+                    stroke="rgb(234,88,0)"
+                    stroke-width="1"/>
+                <!-- DrawCompartment comp:empty -->
+                <g transform=" rotate(0) translate(-26,-8)">
+                    <!-- DrawIcon -->
+                    <g transform="translate(0, 0) rotate(0)">
+                        <use xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+                    </g>
+                    <!-- DrawSingleSelector -->
+                    <text x="19" y="-4"
+                        font-family="Times New Roman" font-size="13"
+                        fill="rgb(0,0,0)">
+                        <tspan dx="0" dy="16"> <![CDATA[Lamp]]> </tspan>
+                    </text>
+                </g>
+                <!-- DrawCompartment comp:port -->
+                <g transform=" rotate(0) translate(-45,-15)">
+                    <!-- Port: guid_7848c703b78511ea9e221112d6355503 -->
+                    <g id="guid_7848c703b78511ea9e221112d6355503">
+                      <g transform="translate(90,11) rotate(0)">
+                        <!-- DrawRectangle -->
+                        <rect x="-7" y="-7"
+                            width="13" height="13"
+                            fill="rgb(252,237,209)"
+                            stroke="rgb(234,88,0)"
+                            stroke-width="1"/>
+                        <!-- DrawPolygon -->
+                        <g stroke="rgb(234,88,0)" stroke-width="1"
+                            fill="rgb(255, 255, 255)">
+                            <polygon points="-6,-6 5,-1 -6,5 -6,-6 "/>
+                        </g>
+                        <!-- DrawCompartment comp:border -->
+                        <g transform=" rotate(0) translate(-7,-7)">
+                            <!-- Port: guid_7848c703b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+                            <g id="guid_7848c703b78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+                              <g transform="translate(63,8) rotate(0)">
+                                <!-- DrawSingleSelector -->
+                                <text x="-44" y="-12"
+                                    font-family="Times New Roman" font-size="13"
+                                    fill="rgb(0,0,0)">
+                                    <tspan dx="0" dy="16"> <![CDATA[ACTION_PORT]]> </tspan>
+                                </text>
+                              </g>
+                            </g>
+                            
+                        </g>
+                      </g>
+                    </g>
+                    
+                </g>
+                <!-- DrawCompartment comp:port -->
+                <g transform=" rotate(0) translate(-45,-15)">
+                </g>
+              </g>
+            </g>
+            
+            <!-- Node: guid_7848c70eb78511ea9e221112d6355503 -->
+            <g id="guid_7848c70eb78511ea9e221112d6355503">
+              <g transform="translate(95,113) rotate(0)">
+                <!-- DrawOval -->
+                <ellipse cx="0" cy="0"
+                    rx="7" ry="7"
+                    fill="rgb(252,237,209)"
+                    stroke="rgb(234,88,0)"
+                    stroke-width="1"/>
+              </g>
+            </g>
+            
+        </g>
+      </g>
+    </g>
+    
+    <!-- Edge: guid_7848c708b78511ea9e221112d6355503 -> guid_7848c71bb78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 354 277 L 256 279 "/>
+    </g>
+        <!-- Node: guid_7848c708b78511ea9e221112d6355503_a548c0d86a2811e192212b3ec243f838_7848c71bb78511ea9e221112d6355503_source -->
+        <g id="guid_7848c708b78511ea9e221112d6355503_a548c0d86a2811e192212b3ec243f838_7848c71bb78511ea9e221112d6355503_source">
+          <g transform="translate(354,277) rotate(358)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-2,4 0,0 -2,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c708b78511ea9e221112d6355503 -> guid_7848c6d8b78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 368 277 L 405 277 "/>
+    </g>
+        <!-- Node: guid_7848c708b78511ea9e221112d6355503_484f68386a8a11e192212b3ec243f838_7848c6d8b78511ea9e221112d6355503_target -->
+        <g id="guid_7848c708b78511ea9e221112d6355503_484f68386a8a11e192212b3ec243f838_7848c6d8b78511ea9e221112d6355503_target">
+          <g transform="translate(405,277) rotate(0)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-2,4 0,0 -2,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c70bb78511ea9e221112d6355503 -> guid_7848c718b78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 585 366 L 656 371 "/>
+    </g>
+        <!-- Node: guid_7848c70bb78511ea9e221112d6355503_ecd36abb6a2811e192212b3ec243f838_7848c718b78511ea9e221112d6355503_target -->
+        <g id="guid_7848c70bb78511ea9e221112d6355503_ecd36abb6a2811e192212b3ec243f838_7848c718b78511ea9e221112d6355503_target">
+          <g transform="translate(656,371) rotate(3)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-2,4 0,0 -2,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c70bb78511ea9e221112d6355503 -> guid_7848c703b78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 571 365 L 510 361 "/>
+    </g>
+        <!-- Node: guid_7848c70bb78511ea9e221112d6355503_4f5bc25e6a8a11e192212b3ec243f838_7848c703b78511ea9e221112d6355503_source -->
+        <g id="guid_7848c70bb78511ea9e221112d6355503_4f5bc25e6a8a11e192212b3ec243f838_7848c703b78511ea9e221112d6355503_source">
+          <g transform="translate(571,365) rotate(4)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-2,4 0,0 -2,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c70eb78511ea9e221112d6355503 -> guid_7848c705b78511ea9e221112d6355503 -->
+    <g stroke="rgb(0, 0, 0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 456 330 L 457 350 "/>
+    </g>
+        <!-- Node: guid_7848c70eb78511ea9e221112d6355503_7236adda749511e0a5314537b2bc6a0b_7848c705b78511ea9e221112d6355503_target -->
+        <g id="guid_7848c70eb78511ea9e221112d6355503_7236adda749511e0a5314537b2bc6a0b_7848c705b78511ea9e221112d6355503_target">
+          <g transform="translate(457,350) rotate(87)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(0, 0, 0)" stroke-width="1" fill="none">
+                <polyline points="-7,4 0,0 -7,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c70eb78511ea9e221112d6355503 -> guid_7848c6e8b78511ea9e221112d6355503 -->
+    <g stroke="rgb(0, 0, 0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 456 315 L 456 294 "/>
+    </g>
+        <!-- Node: guid_7848c70eb78511ea9e221112d6355503_97709d991b5711e193f3e1b60c43d5eb_7848c6e8b78511ea9e221112d6355503_target -->
+        <g id="guid_7848c70eb78511ea9e221112d6355503_97709d991b5711e193f3e1b60c43d5eb_7848c6e8b78511ea9e221112d6355503_target">
+          <g transform="translate(456,294) rotate(270)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(0, 0, 0)" stroke-width="1" fill="none">
+                <polyline points="-7,4 0,0 -7,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+</svg>
+
+
+
+<!-- Actifsource ID=[b69e9200-40f3-11ee-ba17-1db6d85a2602,7848c72a-b785-11ea-9e22-1112d6355503,Hash] -->

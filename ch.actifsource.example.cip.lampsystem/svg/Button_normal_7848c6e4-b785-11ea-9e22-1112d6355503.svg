@@ -1,0 +1,281 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="1036" height="779"
+    viewBox="0 0 1036 779" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+</defs>
+
+    <!-- Node: guid_7848c6dcb78511ea9e221112d6355503 -->
+    <g id="guid_7848c6dcb78511ea9e221112d6355503">
+      <g transform="translate(721,357) rotate(0)">
+        <!-- DrawOval -->
+        <ellipse cx="0" cy="0"
+            rx="14" ry="14"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawOval -->
+        <ellipse cx="0" cy="0"
+            rx="4" ry="4"
+            fill="rgb(255,222,173)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:border -->
+        <g transform=" rotate(0) translate(-15,-15)">
+            <!-- Port: guid_7848c6dcb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+            <g id="guid_7848c6dcb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+              <g transform="translate(57,18) rotate(0)">
+                <!-- DrawSingleSelector -->
+                <text x="-22" y="-12"
+                    font-family="Times New Roman" font-size="13"
+                    fill="rgb(0, 0, 0)">
+                    <tspan dx="0" dy="16"> <![CDATA[released]]> </tspan>
+                </text>
+              </g>
+            </g>
+            
+        </g>
+      </g>
+    </g>
+    
+    <!-- Node: guid_7848c6dbb78511ea9e221112d6355503 -->
+    <g id="guid_7848c6dbb78511ea9e221112d6355503">
+      <g transform="translate(478,436) rotate(0)">
+        <!-- DrawRectangle -->
+        <rect x="-40" y="-43"
+            width="79" height="85"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-37" y="-47"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(234,88,0)">
+            <tspan dx="0" dy="16"> <![CDATA[1]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-27" y1="-43"
+            x2="-27" y2="-27"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-20" y="-47"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(169,169,169)">
+            <tspan dx="0" dy="16"> <![CDATA[Ext]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-40" y1="-27"
+            x2="39" y2="-27"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-37" y="-31"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(0,0,0)">
+            <tspan dx="0" dy="16"> <![CDATA[Push]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-40" y1="-11"
+            x2="39" y2="-11"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:empty -->
+        <g transform=" rotate(0) translate(-36,-11)">
+            <!-- DrawSingleSelector -->
+            <text x="0" y="-4"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(0,0,0)">
+                <tspan dx="0" dy="16"> <![CDATA[on]]> </tspan>
+            </text>
+            <!-- DrawSingleSelector -->
+            <text x="0" y="14"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(169,169,169)">
+                <tspan dx="0" dy="16"> <![CDATA[Outpulse]]> </tspan>
+            </text>
+        </g>
+        <!-- DrawLine -->
+        <line x1="-40" y1="24"
+            x2="39" y2="24"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:empty -->
+        <g transform=" rotate(0) translate(-36,24)">
+            <!-- DrawSingleSelector -->
+            <text x="0" y="-4"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(169,169,169)">
+                <tspan dx="0" dy="16"> <![CDATA[Message]]> </tspan>
+            </text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Node: guid_7848c6deb78511ea9e221112d6355503 -->
+    <g id="guid_7848c6deb78511ea9e221112d6355503">
+      <g transform="translate(284,356) rotate(0)">
+        <!-- DrawOval -->
+        <ellipse cx="0" cy="0"
+            rx="14" ry="14"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:border -->
+        <g transform=" rotate(0) translate(-15,-15)">
+            <!-- Port: guid_7848c6deb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b -->
+            <g id="guid_7848c6deb78511ea9e221112d6355503_border_b45c0fb72bf911e3b91d31693b7e682b">
+              <g transform="translate(55,18) rotate(0)">
+                <!-- DrawSingleSelector -->
+                <text x="-20" y="-12"
+                    font-family="Times New Roman" font-size="13"
+                    fill="rgb(0, 0, 0)">
+                    <tspan dx="0" dy="16"> <![CDATA[pushed]]> </tspan>
+                </text>
+              </g>
+            </g>
+            
+        </g>
+      </g>
+    </g>
+    
+    <!-- Node: guid_7848c6ddb78511ea9e221112d6355503 -->
+    <g id="guid_7848c6ddb78511ea9e221112d6355503">
+      <g transform="translate(517,261) rotate(0)">
+        <!-- DrawRectangle -->
+        <rect x="-40" y="-43"
+            width="79" height="85"
+            fill="rgb(252,237,209)"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-37" y="-47"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(234,88,0)">
+            <tspan dx="0" dy="16"> <![CDATA[2]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-27" y1="-43"
+            x2="-27" y2="-27"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-20" y="-47"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(169,169,169)">
+            <tspan dx="0" dy="16"> <![CDATA[Ext]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-40" y1="-27"
+            x2="39" y2="-27"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawSingleSelector -->
+        <text x="-37" y="-31"
+            font-family="Times New Roman" font-size="13"
+            fill="rgb(0,0,0)">
+            <tspan dx="0" dy="16"> <![CDATA[Release]]> </tspan>
+        </text>
+        <!-- DrawLine -->
+        <line x1="-40" y1="-11"
+            x2="39" y2="-11"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:empty -->
+        <g transform=" rotate(0) translate(-36,-11)">
+            <!-- DrawSingleSelector -->
+            <text x="0" y="-4"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(0,0,0)">
+                <tspan dx="0" dy="16"> <![CDATA[off]]> </tspan>
+            </text>
+            <!-- DrawSingleSelector -->
+            <text x="0" y="14"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(169,169,169)">
+                <tspan dx="0" dy="16"> <![CDATA[Outpulse]]> </tspan>
+            </text>
+        </g>
+        <!-- DrawLine -->
+        <line x1="-40" y1="24"
+            x2="39" y2="24"
+            stroke="rgb(234,88,0)"
+            stroke-width="1"/>
+        <!-- DrawCompartment comp:empty -->
+        <g transform=" rotate(0) translate(-36,24)">
+            <!-- DrawSingleSelector -->
+            <text x="0" y="-4"
+                font-family="Times New Roman" font-size="13"
+                fill="rgb(169,169,169)">
+                <tspan dx="0" dy="16"> <![CDATA[Message]]> </tspan>
+            </text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Edge: guid_7848c6dcb78511ea9e221112d6355503 -> guid_7848c6dbb78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 706 361 L 518 423 "/>
+    </g>
+        <!-- Node: guid_7848c6dcb78511ea9e221112d6355503_ac063bef650b11e0859e0b5a1f989279_7848c6dbb78511ea9e221112d6355503_target -->
+        <g id="guid_7848c6dcb78511ea9e221112d6355503_ac063bef650b11e0859e0b5a1f989279_7848c6dbb78511ea9e221112d6355503_target">
+          <g transform="translate(518,423) rotate(161)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-4,4 0,0 -4,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c6dbb78511ea9e221112d6355503 -> guid_7848c6deb78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 438 419 L 297 361 "/>
+    </g>
+        <!-- Node: guid_7848c6dbb78511ea9e221112d6355503_01e5b227650411e0859e0b5a1f989279_7848c6deb78511ea9e221112d6355503_target -->
+        <g id="guid_7848c6dbb78511ea9e221112d6355503_01e5b227650411e0859e0b5a1f989279_7848c6deb78511ea9e221112d6355503_target">
+          <g transform="translate(297,361) rotate(202)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-4,4 0,0 -4,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c6deb78511ea9e221112d6355503 -> guid_7848c6ddb78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 297 350 L 477 277 "/>
+    </g>
+        <!-- Node: guid_7848c6deb78511ea9e221112d6355503_ac063bef650b11e0859e0b5a1f989279_7848c6ddb78511ea9e221112d6355503_target -->
+        <g id="guid_7848c6deb78511ea9e221112d6355503_ac063bef650b11e0859e0b5a1f989279_7848c6ddb78511ea9e221112d6355503_target">
+          <g transform="translate(477,277) rotate(337)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-4,4 0,0 -4,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+    <!-- Edge: guid_7848c6ddb78511ea9e221112d6355503 -> guid_7848c6dcb78511ea9e221112d6355503 -->
+    <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
+        <path d="M 557 279 L 707 350 "/>
+    </g>
+        <!-- Node: guid_7848c6ddb78511ea9e221112d6355503_01e5b227650411e0859e0b5a1f989279_7848c6dcb78511ea9e221112d6355503_target -->
+        <g id="guid_7848c6ddb78511ea9e221112d6355503_01e5b227650411e0859e0b5a1f989279_7848c6dcb78511ea9e221112d6355503_target">
+          <g transform="translate(707,350) rotate(25)">
+            <!-- DrawPolyline -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-4,4 0,0 -4,-4 "/>
+            </g>
+          </g>
+        </g>
+        
+    
+</svg>
+
+
+
+<!-- Actifsource ID=[b69e9200-40f3-11ee-ba17-1db6d85a2602,7848c6e4-b785-11ea-9e22-1112d6355503,Hash] -->
