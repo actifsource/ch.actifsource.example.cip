@@ -1,0 +1,65 @@
+{
+	"eventChannel":[
+		{
+			"name":"TRIGGER",
+		 	"message": [
+				{"name": "TICK", "id":[0], "guid":"guid_6df567273aef11e2a11d5fa022f9bb7d", "datatype":"guid_54a64273651711e0859e0b5a1f989279"},
+				{"name": "STEP", "id":[1], "guid":"guid_70dccfb73aef11e2a11d5fa022f9bb7d"},
+				{"name": "TIMEUP", "id":[2], "guid":"guid_7f3e72d73aef11e2a11d5fa022f9bb7d"},
+				{"name": "CHAIN", "id":[3], "guid":"guid_7b25b7373aef11e2a11d5fa022f9bb7d"}, 
+				{"name": "READ", "id":[4], "guid":"guid_83ec6a973aef11e2a11d5fa022f9bb7d"},
+				{"name": "AUTO", "id":[5], "guid":"guid_8bd590273aef11e2a11d5fa022f9bb7d"}
+			]
+		}
+		,
+		{
+			"name":"ButtonEvents",
+			"guid":"guid_6f9fef88f5a711ee8944afc67c286a4c",
+		 	"message": [	
+				{"name": "Push", "id":[6], "guid":"guid_6f9fef86f5a711ee8944afc67c286a4c"},
+				{"name": "Release", "id":[7], "guid":"guid_6f9fef87f5a711ee8944afc67c286a4c"}
+			]
+		}
+	],
+	
+	"actionChannel":[
+		{
+			"name":"Error",
+		 	"message": [
+				{"name": "ContextError", "id":[0]}, 
+				{"name": "FullBufferWarning", "id":[1]} ,
+				{"name": "BufferError", "id":[2]},
+				{"name": "PulseSelectionError", "id":[3]},
+				{"name": "MessageSelectionError", "id":[4]},
+				{"name": "InputError", "id":[5]}
+			]
+		}
+		,
+		{
+			"name":"LampActions", 
+			"guid":"guid_6f9fef85f5a711ee8944afc67c286a4c",
+		 	"message": [
+				{"name": "Bright", "id":[6], "guid":"guid_6f9fef83f5a711ee8944afc67c286a4c"}, 
+				{"name": "Dark", "id":[7], "guid":"guid_6f9fef84f5a711ee8944afc67c286a4c"} 
+			]
+		}
+		
+	],
+	
+	"requiredInput":[
+		{
+			"name":"Event requiredInput", 
+			"message": [
+				{"name": "getMessage1", "id":[1]},
+				{"name": "getMessage2", "id":[2], "datatype":"guid_54a64273651711e0859e0b5a1f989279"}
+			]
+		}
+	],
+	
+	"datatype":[
+		{"name": "usetType", "guid":"guid_6f9fef89f5a711ee8944afc67c286a4c", "typeOf":"guid_7d98aa55748e11e0a5314537b2bc6a0b", "value": "usetType"},
+		{"name": "recType", "guid":"guid_6f9fef82f5a711ee8944afc67c286a4c", "typeOf":"guid_9f8291f964fe11e0859e0b5a1f989279", "value": {"field1":"FLOAT" }},                
+		{"name": "tick", "guid":"guid_54a64273651711e0859e0b5a1f989279", "typeOf":"guid_7437f57264fe11e0859e0b5a1f989279", "value": "int"}
+	]
+}
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectSettings>
+  <version format="5.6.0" />
+  <resourcepaths>
+    <path>asrc</path>
+    <builtin>cip</builtin>
+    <builtin>codesnippet</builtin>
+    <builtin>core</builtin>
+    <builtin>datatype</builtin>
+    <builtin>diagram</builtin>
+    <builtin>modelsnippet</builtin>
+  </resourcepaths>
+  <templatepaths />
+  <ignoreWhitespaceAtLineEnd>true</ignoreWhitespaceAtLineEnd>
+  <executeSaveActions>true</executeSaveActions>
+  <generateJavaModel>false</generateJavaModel>
+  <targetpaths>
+    <targetpath>
+      <path>cip-gen</path>
+      <build>
+        <buildConfig>e2c506e2-74c4-11e0-a531-4537b2bc6a0b</buildConfig>
+      </build>
+      <build>
+        <buildConfig>dde09569-3b0e-11e2-8de0-a368f9740e37</buildConfig>
+      </build>
+    </targetpath>
+    <targetpath>
+      <path>www</path>
+      <build>
+        <buildConfig>b848f7d8-77f0-11ee-8dcd-fbbb4a94976d</buildConfig>
+      </build>
+    </targetpath>
+  </targetpaths>
+</projectSettings>
+

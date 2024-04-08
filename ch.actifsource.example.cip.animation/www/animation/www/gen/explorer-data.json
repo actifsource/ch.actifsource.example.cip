@@ -1,0 +1,99 @@
+[
+    {
+        "label": "LampUnit",
+        "children": [
+            {
+                "label": "LampSystem",
+                "st": -2,
+                "children": [
+                    {
+                        "label": "LampCluster",
+                        "children": [
+                            {
+                                "label": "Button",
+                                "st": -2,
+                                "children": [
+                                    {
+                                        "label": "Button",
+                                        "children": [
+                                            {
+                                                "label": "normal",
+                                                "children": [
+                                                    {
+                                                        "label": "Button_normal",
+                                                        "extendedLabel": " LampCluster->Button->normal",
+                                                        "id": "guid_6f9fc83df5a711ee8944afc67c286a4c",
+                                                        "skId": [2,1],
+                                                        "diagramType": "multidiagram",
+                                                        "links": [
+                                                         ]
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                            
+                                        ]
+                                    }
+                                    
+                                ]
+                            }
+                            ,
+                            {
+                                "label": "Lamp",
+                                "st": -2,
+                                "children": [
+                                    {
+                                        "label": "Lamp",
+                                        "children": [
+                                            {
+                                                "label": "normal",
+                                                "children": [
+                                                    {
+                                                        "label": "Lamp_normal",
+                                                        "extendedLabel": " LampCluster->Lamp->normal",
+                                                        "id": "guid_6f9fef66f5a711ee8944afc67c286a4c",
+                                                        "skId": [1,1],
+                                                        "diagramType": "multidiagram",
+                                                        "links": [
+                                                         ]
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                            
+                                        ]
+                                    }
+                                    
+                                ]
+                            }
+                            
+                        ]
+                    }
+                    
+                    ,
+                    {
+                        "label": "CommunicationDiagram_1",
+                        "extendedLabel": "LampSystem->CommunicationDiagram_1",
+                        "id": "guid_6f9fef97f5a711ee8944afc67c286a4c",
+                        "diagramType": "simplediagram"
+                    }
+                    
+                ]
+            }
+            
+        ]
+    }
+    
+    ,
+    {
+       "label": "Cip Testsuite",
+       "diagramType": "testsuitediagram"
+    }
+    ,
+    {
+       "label": "Log",
+       "diagramType": "logdiagram"
+    }
+    
+]
+

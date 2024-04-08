@@ -1,0 +1,8 @@
+{
+	"config_modulIdLength":0,
+	"config_recordFileSize":1000,
+	"config_recordFilePartSize":100,
+	"config_neverUnbindModul":true,
+	"config_modul":[
+	]   	
+}
