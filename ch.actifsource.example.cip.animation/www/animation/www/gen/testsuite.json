@@ -57,8 +57,6 @@
 	],
 	
 	"datatype":[
-		{"name": "usetType", "guid":"guid_6f9fef89f5a711ee8944afc67c286a4c", "typeOf":"guid_7d98aa55748e11e0a5314537b2bc6a0b", "value": "usetType"},
-		{"name": "recType", "guid":"guid_6f9fef82f5a711ee8944afc67c286a4c", "typeOf":"guid_9f8291f964fe11e0859e0b5a1f989279", "value": {"field1":"FLOAT" }},                
 		{"name": "tick", "guid":"guid_54a64273651711e0859e0b5a1f989279", "typeOf":"guid_7437f57264fe11e0859e0b5a1f989279", "value": "int"}
 	]
 }
