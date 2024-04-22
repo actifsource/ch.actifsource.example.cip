@@ -54,9 +54,6 @@
         <predicate guid="2a588947-cf07-11ee-91c0-c5a9ed07c9d7">
           <object statement-guid="d2203bb0-fb2a-11ee-88af-c1ff99c74ce0" type="literal">true</object>
         </predicate>
-        <predicate guid="2a58894b-cf07-11ee-91c0-c5a9ed07c9d7">
-          <object statement-guid="d2203bb1-fb2a-11ee-88af-c1ff99c74ce0" type="literal">false</object>
-        </predicate>
         <predicate guid="2a58894c-cf07-11ee-91c0-c5a9ed07c9d7">
           <object statement-guid="d22062c2-fb2a-11ee-88af-c1ff99c74ce0" type="literal">false</object>
         </predicate>
