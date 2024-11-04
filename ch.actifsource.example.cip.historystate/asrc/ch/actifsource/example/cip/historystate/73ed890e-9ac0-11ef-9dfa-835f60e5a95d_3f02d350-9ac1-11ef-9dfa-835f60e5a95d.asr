@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3f02d350-9ac1-11ef-9dfa-835f60e5a95d">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3f02d352-9ac1-11ef-9dfa-835f60e5a95d" type="resource" guid="28c9f310-2ba4-11e1-bce6-81c471e0654b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3f036f97-9ac1-11ef-9dfa-835f60e5a95d" type="literal">PulseCastDiagram</object>
+  </predicate>
+  <predicate guid="f6acd85e-2bab-11e1-bce6-81c471e0654b">
+    <object statement-guid="3f034885-9ac1-11ef-9dfa-835f60e5a95d" type="resource" guid="7e29a78b-21f1-11e4-b5d5-6587ee9ca9aa" />
+  </predicate>
+  <predicate guid="8d6f7e00-2bb3-11e1-bce6-81c471e0654b">
+    <object statement-guid="3f034886-9ac1-11ef-9dfa-835f60e5a95d" type="resource" guid="3eff29c8-9ac1-11ef-9dfa-835f60e5a95d" />
+  </predicate>
+  <predicate guid="b9ed044b-30d7-11e8-a335-555d417b9053">
+    <object statement-guid="3f02fa63-9ac1-11ef-9dfa-835f60e5a95d" type="literal">true</object>
+  </predicate>
+</resource>
+
