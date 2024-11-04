@@ -32,7 +32,7 @@ enum eSTATES_PumpControl
 	{multy = 1, single, standby};
 
 enum eINPULS_PumpControl
-	{IP_addListener = 1, IP_remListener = 2, TIMEUP_ = 3};
+	{IP_addListener = 1, IP_remListener, TIMEUP_};
 	
 
 /* External Declarations */
@@ -337,4 +337,4 @@ void fINIT_PumpControl (void)
 /*********************************************************************
 	End of Module for PROCESS PumpControl
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973ea-c77a-11ea-9e9f-c1d3048691bc,0TayJ+dxPry+u3f7Nbxtu+Lehd8=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973ea-c77a-11ea-9e9f-c1d3048691bc,CrpgvhTTRG+9+i0Hapgh33XHzDo=] */

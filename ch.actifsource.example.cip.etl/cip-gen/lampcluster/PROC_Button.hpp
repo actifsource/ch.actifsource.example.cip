@@ -79,20 +79,6 @@ namespace lampunit::lampclustercluster
 
     private:   
 
-      // Subclass for state  released
-      class released: public etl::fsm_state
-        <
-          PROC_Button,
-          released,
-          StateId::released,
-          lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message
-        >
-      {  
-        public:
-          etl::fsm_state_id_t on_event_unknown(const etl::imessage& msg);
-          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message& msg);
-      };
-
       // Subclass for state  pushed
       class pushed: public etl::fsm_state
         <
@@ -107,11 +93,25 @@ namespace lampunit::lampclustercluster
           etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Button_Release_Message& msg);
       };
 
+      // Subclass for state  released
+      class released: public etl::fsm_state
+        <
+          PROC_Button,
+          released,
+          StateId::released,
+          lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message
+        >
+      {  
+        public:
+          etl::fsm_state_id_t on_event_unknown(const etl::imessage& msg);
+          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message& msg);
+      };
+
       
 
       /** state classes */    
-      released released{};  
       pushed pushed{};  
+      released released{};  
       
       /** Output callback */
       OutputCb m_outputCb {};
@@ -129,4 +129,4 @@ namespace lampunit::lampclustercluster
    };  
 } // namespace lampunit::lampclustercluster
 
-/* Actifsource ID=[cfa78def-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50bb-fb29-11ee-88af-c1ff99c74ce0,507PijZe4BuGD22jrQ6gDyKznVc=] */
+/* Actifsource ID=[cfa78def-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50bb-fb29-11ee-88af-c1ff99c74ce0,dRPQHIO8iB9hvPlXMY2c+g41Ays=] */

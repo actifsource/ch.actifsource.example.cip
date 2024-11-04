@@ -33,7 +33,7 @@ enum eSTATES_Lamp_D
 	{delayed = 1, off_, on_};
 
 enum eINPULS_Lamp_D
-	{IP_on = 1, IP_off = 2, TIMEUP_ = 3};
+	{IP_off = 1, IP_on, TIMEUP_};
 	
 
 /* External Declarations */
@@ -177,4 +177,4 @@ void fINIT_Lamp_D_HANS (void)
 /*********************************************************************
 	End of Module for PROCESS Lamp_D
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,84174139-b789-11ea-9e22-1112d6355503,84174122-b789-11ea-9e22-1112d6355503,itLFJFYPO+mDqQf2RQ3RvUjK1OQ=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,84174139-b789-11ea-9e22-1112d6355503,84174122-b789-11ea-9e22-1112d6355503,v3C9lI/N5fNKcxmPrMbS46cA1rI=] */

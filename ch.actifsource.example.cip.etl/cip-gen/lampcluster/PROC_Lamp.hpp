@@ -79,6 +79,22 @@ namespace lampunit::lampclustercluster
 
     private:   
 
+      // Subclass for state  delayed
+      class delayed: public etl::fsm_state
+        <
+          PROC_Lamp,
+          delayed,
+          StateId::delayed,
+          lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse,
+          lampunit::cipmachine::mLampUnit_Inputs::Timeup_event
+        >
+      {  
+        public:
+          etl::fsm_state_id_t on_event_unknown(const etl::imessage& msg);
+          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse& msg);
+          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Timeup_event& msg);
+      };
+
       // Subclass for state  off_
       class off_: public etl::fsm_state
         <
@@ -107,31 +123,15 @@ namespace lampunit::lampclustercluster
           etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Lamp_off_Pulse& msg);
       };
 
-      // Subclass for state  delayed
-      class delayed: public etl::fsm_state
-        <
-          PROC_Lamp,
-          delayed,
-          StateId::delayed,
-          lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse,
-          lampunit::cipmachine::mLampUnit_Inputs::Timeup_event
-        >
-      {  
-        public:
-          etl::fsm_state_id_t on_event_unknown(const etl::imessage& msg);
-          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse& msg);
-          etl::fsm_state_id_t on_event(const lampunit::cipmachine::mLampUnit_Inputs::Timeup_event& msg);
-      };
-
       /** timer functions */
       void setTimer(unsigned long delay);
       void stopTimer();
       
 
       /** state classes */    
+      delayed delayed{};  
       off_ off_{};  
       on_ on_{};  
-      delayed delayed{};  
       
       /** Output callback */
       OutputCb m_outputCb {};
@@ -148,4 +148,4 @@ namespace lampunit::lampclustercluster
    };  
 } // namespace lampunit::lampclustercluster
 
-/* Actifsource ID=[cfa78def-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50d8-fb29-11ee-88af-c1ff99c74ce0,uHGk/4mW6z3xHWbsUj7c7XEmNDA=] */
+/* Actifsource ID=[cfa78def-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50d8-fb29-11ee-88af-c1ff99c74ce0,VHeag/UB5VU7d6hZiCfGLw3glxA=] */

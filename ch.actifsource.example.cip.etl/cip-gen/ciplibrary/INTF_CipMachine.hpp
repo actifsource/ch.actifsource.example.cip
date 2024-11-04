@@ -19,7 +19,7 @@ namespace ciplibrary
     {
       public: 
 		
-        /** consructors / destructors */
+        /** constructors / destructors */
 	virtual ~INTF_CipMachine(void){}
 
         /** extension interface */

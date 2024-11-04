@@ -76,13 +76,13 @@ namespace lampunit::cipmachine
         etl::send_message(*this,pulse);
       }  
     
-      void on_receive(const lampunit::cipmachine::mLampUnit_Outputs::Button_off_Pulse& msg)
+      void on_receive(const lampunit::cipmachine::mLampUnit_Outputs::Button_off_Pulse&)
       {
         m_Lamp.receive(lampunit::cipmachine::mLampUnit_Inputs::Lamp_off_Pulse());
         m_Lamp.publishOutpulses();
       }
 
-      void on_receive(const lampunit::cipmachine::mLampUnit_Outputs::Button_on_Pulse& msg)
+      void on_receive(const lampunit::cipmachine::mLampUnit_Outputs::Button_on_Pulse&)
       {
         m_Lamp.receive(lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse());
         m_Lamp.publishOutpulses();
@@ -90,7 +90,7 @@ namespace lampunit::cipmachine
 
       void on_receive_unknown(const etl::imessage& msg)
       {
-        // DEBUG_PRINT("---> Receive unknown");
+        // Receive unknown
       }
     
     private:
@@ -103,4 +103,4 @@ namespace lampunit::cipmachine
 
 } // namespace lampunit::cipmachine
 
-/* Actifsource ID=[cfa804c4-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,TA4Vt1fXX9zsGW/hsYgrysJtKM0=] */
+/* Actifsource ID=[cfa804c4-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,mIgkV39Ov54j6v4u+Z0HX9baQfw=] */

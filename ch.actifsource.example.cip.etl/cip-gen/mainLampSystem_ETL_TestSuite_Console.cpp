@@ -534,6 +534,7 @@ namespace dec
 	  if (mainTestCase) 
 	  {
 	  	delete m_cipmachine;
+	  	m_cipmachine = NULL;
 	  }
 	  return 1;
 	}
@@ -592,4 +593,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[0a829c8f-cf3d-11ee-92b2-c76cdf07cab4,d37d7711-fb29-11ee-88af-c1ff99c74ce0,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,2CU+NS49atelF6QhN+qaSsljeDk=] */
+/* Actifsource ID=[0a829c8f-cf3d-11ee-92b2-c76cdf07cab4,d37d7711-fb29-11ee-88af-c1ff99c74ce0,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,U1tOIW6a6gysaTvrno534mSGcAA=] */

@@ -32,7 +32,7 @@ enum eSTATES_PressureControl
 	{equals = 1, evacuate, filling};
 
 enum eINPULS_PressureControl
-	{IP_limitPressure = 3};
+	{IP_limitPressure = 1};
 	
 
 /* External Declarations */
@@ -220,4 +220,4 @@ void fINIT_PressureControl (void)
 /*********************************************************************
 	End of Module for PROCESS PressureControl
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e797350-c77a-11ea-9e9f-c1d3048691bc,J3TyRE+4eoz5G6Spwf/vW+E+3DE=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e797350-c77a-11ea-9e9f-c1d3048691bc,D6kPAUZeYvG0y+Z2cRPbCPYaCJs=] */

@@ -27,7 +27,7 @@ namespace lampunit::cipshell
     {
       public: 
             
-        /** consructors / destructors */
+        /** constructors / destructors */
         INTF_ActionMessagePort(){}
         virtual ~INTF_ActionMessagePort(){}
 			

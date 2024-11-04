@@ -34,17 +34,17 @@
 */
 
 .appearance2 ellipse:first-child, .appearance2 rect:first-child{ /* end */
-	fill: rgb(211,211,211);
+	fill: rgb(100,149,237);
 }
 
   
 
 .appearance2 polyline:first-child, .appearance2 path:first-child{
 	fill="none";
-	stroke: rgb(211,211,211);
+	stroke: rgb(100,149,237);
 } 
 
 .appearance2 polygon:first-child{
-	fill: rgb(211,211,211);
+	fill: rgb(100,149,237);
 } 
 /* Actifsource ID=[4066091f-605a-11e5-8054-39eee81289f5,532ad8c4-0307-11e6-b47b-f140d082a724,Hash] */

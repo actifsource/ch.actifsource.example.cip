@@ -21,7 +21,7 @@
 namespace lampunit::cipmachine
 {
        
-    /** consructors / destructors */
+    /** constructors / destructors */
     CIPM_mLampUnit::CIPM_mLampUnit(   
       etl::message_router_id_t ciprouter,
       etl::message_router_id_t pulserouter,

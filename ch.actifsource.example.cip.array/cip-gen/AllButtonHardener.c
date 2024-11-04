@@ -31,7 +31,7 @@ enum eSTATES_AllButtonHardener
 	{pushed = 1, released};
 
 enum eINPULS_AllButtonHardener
-	{TIMEUP_ = 1, CHAIN_ = 2};
+	{TIMEUP_ = 1, CHAIN_};
 	
 
 /* External Declarations */
@@ -202,4 +202,4 @@ void fINIT_AllButtonHardener (void)
 /*********************************************************************
 	End of Module for PROCESS AllButtonHardener
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e797257-c77a-11ea-9e9f-c1d3048691bc,YD56BghpSFuHu/0l3WanOROIFig=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e797257-c77a-11ea-9e9f-c1d3048691bc,PUt5FwSeu/tQnkAOj4ug3nAIbT0=] */

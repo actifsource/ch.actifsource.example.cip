@@ -47,12 +47,10 @@ typedef int tIndexArray[CUSHION_COUNT];
 	#define _eOUTPLS__
 
 	enum eOUTPLS_
-		{O11_push = 25, O11_released = 26, O12_push = 23, O12_released = 24, 
-		 O4_push = 2, O4_release = 1, O5_push = 4, O5_release = 3, O3_evac = 7, 
-		 O3_fill = 8, O3_stop = 9, O2_limitPressure = 10, O2_maxPressure = 5, 
-		 O2_minPressure = 6, O7_evac = 12, O7_fill = 13, O7_stop = 14, 
-		 O9_addListener = 21, O9_evac = 17, O9_fill = 18, O9_remListener = 22, 
-		 O9_stop = 19, O10_triggerEnable = 20};
+		{/* ChairCluster */ O11_push = 1, O11_released, O12_push, O12_released, O4_push, 
+		 O4_release, O5_push, O5_release, O3_evac, O3_fill, O3_stop, O2_limitPressure, 
+		 O2_maxPressure, O2_minPressure, O7_evac, O7_fill, O7_stop, O9_addListener, 
+		 O9_evac, O9_fill, O9_remListener, O9_stop, O10_triggerEnable};
 
 #endif // _eOUTPLS__
 
@@ -383,4 +381,4 @@ union tSTATUS_Valve
 /*********************************************************************
 	End of Header File for CIP MACHINE mChairUnit
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be38a-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,QIrsskNRzhZuaES4ls9FB2PBlG0=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be38a-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,9PMKTcIEvXfftoLNtXcaRgJfIsM=] */

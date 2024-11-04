@@ -16,16 +16,6 @@
 #include "PROC_Button.hpp"
 #include "../ciplibrary/CipCommon.hpp"
 
-/* Begin Protected Region [[Debug]] */
-#define CapnostatActionInitiator_DBG_ON   // uncomment for debug or put in preprocessor
-/* End Protected Region   [[Debug]] */
-#ifdef CapnostatActionInitiator_DBG_ON
-  //#include "Debug.h"
-  #define DEBUG_PRINT(...)        printf("      Process::Button: " __VA_ARGS__)
-#else
-  #define DEBUG_PRINT(...)
-#endif
-
 namespace lampunit::lampclustercluster
 {
     /** constructors / destructors */
@@ -82,33 +72,6 @@ namespace lampunit::lampclustercluster
     #define STATUS context
     
     /*****************************
-    * State: released  
-    ******************************/       
-    /** Event Push */
-    etl::fsm_state_id_t PROC_Button::released::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message& msg)
-    { 
-      auto& context = get_fsm_context();
-      context.m_actualState = PROC_Button::StateId::pushed;
-      DEBUG_PRINT("TRANSITION '1 Push' Button.normal: STATE released -> pushed  [d37d50ae-fb29-11ee-88af-c1ff99c74ce0]\n");
-      {
-        lampunit::cipmachine::mLampUnit_Outputs::Button_on_Pulse outpulse {};
-        context.m_outpulseQueue.emplace(outpulse);
-      }  
-      
-      return context.m_actualState;
-    }   
-
-    /** Unknown event*/
-    etl::fsm_state_id_t PROC_Button::released::on_event_unknown(const etl::imessage& msg) 
-    {
-      auto& context = get_fsm_context();
-      if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
-        DEBUG_PRINT("UnknownEvent ---> State: Button.released:%u ---> Event Id:%u", context.m_actualState, msg.get_message_id());
-      }
-      return context.m_actualState;
-    }
-    
-    /*****************************
     * State: pushed  
     ******************************/       
     /** Event Release */
@@ -116,7 +79,7 @@ namespace lampunit::lampclustercluster
     { 
       auto& context = get_fsm_context();
       context.m_actualState = PROC_Button::StateId::released;
-      DEBUG_PRINT("TRANSITION '2 Release' Button.normal: STATE pushed -> released  [d37d50b0-fb29-11ee-88af-c1ff99c74ce0]\n");
+      printf("      TRANSITION '2 Release' Button.normal: STATE pushed -> released  [d37d50b0-fb29-11ee-88af-c1ff99c74ce0]\n");
       {
         lampunit::cipmachine::mLampUnit_Outputs::Button_off_Pulse outpulse {};
         context.m_outpulseQueue.emplace(outpulse);
@@ -130,11 +93,40 @@ namespace lampunit::lampclustercluster
     {
       auto& context = get_fsm_context();
       if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
-        DEBUG_PRINT("UnknownEvent ---> State: Button.pushed:%u ---> Event Id:%u", context.m_actualState, msg.get_message_id());
       }
       return context.m_actualState;
     }
     
+    /*****************************
+    * State: released  
+    ******************************/       
+    /** Event Push */
+    etl::fsm_state_id_t PROC_Button::released::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Button_Push_Message& msg)
+    { 
+      auto& context = get_fsm_context();
+      context.m_actualState = PROC_Button::StateId::pushed;
+      printf("      TRANSITION '1 Push' Button.normal: STATE released -> pushed  [d37d50ae-fb29-11ee-88af-c1ff99c74ce0]\n");
+      {
+        lampunit::cipmachine::mLampUnit_Outputs::Button_on_Pulse outpulse {};
+        context.m_outpulseQueue.emplace(outpulse);
+      }  
+      
+      return context.m_actualState;
+    }   
+
+    /** Unknown event*/
+    etl::fsm_state_id_t PROC_Button::released::on_event_unknown(const etl::imessage& msg) 
+    {
+      auto& context = get_fsm_context();
+      if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
+      }
+      return context.m_actualState;
+    }
+    
+    // Undef macro for accessing the input data
+    #undef IN
+    #undef SELF
+    #undef STATUS
 } // namespace lampunit::lampclustercluster
 
-/* Actifsource ID=[cfa71961-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50bb-fb29-11ee-88af-c1ff99c74ce0,N31p9cI6M6NNCZDS2r/mP+YL76w=] */
+/* Actifsource ID=[cfa71961-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50bb-fb29-11ee-88af-c1ff99c74ce0,xwdwYXpViVue89co8lGm2PcZvMI=] */

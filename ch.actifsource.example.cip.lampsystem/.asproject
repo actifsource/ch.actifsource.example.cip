@@ -33,12 +33,6 @@
         <buildConfig>79ce5915-121b-11e3-aaf3-772f794ef5e4</buildConfig>
       </build>
     </targetpath>
-    <targetpath>
-      <path>svg</path>
-      <build>
-        <buildConfig>c789a055-40f3-11ee-ba17-1db6d85a2602</buildConfig>
-      </build>
-    </targetpath>
   </targetpaths>
 </projectSettings>
 

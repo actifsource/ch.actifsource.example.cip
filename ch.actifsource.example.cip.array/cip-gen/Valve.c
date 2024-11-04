@@ -31,7 +31,7 @@ enum eSTATES_Valve
 	{closing = 1, opening};
 
 enum eINPULS_Valve
-	{IP_close = 1, IP_open = 2};
+	{IP_close = 1, IP_open};
 	
 
 /* External Declarations */
@@ -113,4 +113,4 @@ void fINIT_Valve (void)
 /*********************************************************************
 	End of Module for PROCESS Valve
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973fe-c77a-11ea-9e9f-c1d3048691bc,yMUc698M0FRHlpKAMQTIUcu5+5o=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973fe-c77a-11ea-9e9f-c1d3048691bc,ZR2G/GWoOtLx4cfejHhY2Bvdm5Q=] */

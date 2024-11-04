@@ -35,7 +35,7 @@ enum eSTATES_GroupB_Lamp_A_B_C2
 	{delayed = 1, off_, on_};
 
 enum eINPULS_GroupB_Lamp_A_B_C2
-	{IP_on = 1, IP_off = 2, TIMEUP_ = 3};
+	{IP_off = 1, IP_on, TIMEUP_};
 	
 
 /* External Declarations */
@@ -266,4 +266,4 @@ void fINIT_GroupB_Lamp_A_B_C2_HANS (void)
 /*********************************************************************
 	End of Module for PROCESS GroupB_Lamp_A_B_C2
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,841741d6-b789-11ea-9e22-1112d6355503,84174062-b789-11ea-9e22-1112d6355503,QDxC6JRCChiYXpG7A8xpJCGGejY=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,841741d6-b789-11ea-9e22-1112d6355503,84174062-b789-11ea-9e22-1112d6355503,O8KIlm4RsEOoIoz9U4GaH7cYS0w=] */

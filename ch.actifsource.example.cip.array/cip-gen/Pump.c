@@ -32,7 +32,7 @@ enum eSTATES_Pump
 	{evacuate = 1, filling, stopped};
 
 enum eINPULS_Pump
-	{IP_fill = 1, IP_stop = 2, IP_evac = 3};
+	{IP_evac = 1, IP_fill, IP_stop};
 	
 
 /* External Declarations */
@@ -144,4 +144,4 @@ void fINIT_Pump (void)
 /*********************************************************************
 	End of Module for PROCESS Pump
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973ba-c77a-11ea-9e9f-c1d3048691bc,VTJwANyxBrWCkqihpBdvjGsShKA=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7973ba-c77a-11ea-9e9f-c1d3048691bc,7ZQVhaMUdbPcNyoaowAvtDFy2PY=] */

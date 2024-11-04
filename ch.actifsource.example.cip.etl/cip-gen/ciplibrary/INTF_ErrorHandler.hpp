@@ -20,7 +20,7 @@ namespace ciplibrary
   {
     public: 
 		
-      /** consructors / destructors */
+      /** constructors / destructors */
       INTF_ErrorHandler(void){}
       virtual ~INTF_ErrorHandler(void){}
 

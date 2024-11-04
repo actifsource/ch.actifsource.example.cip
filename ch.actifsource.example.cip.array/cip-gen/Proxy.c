@@ -32,7 +32,7 @@ enum eSTATES_Proxy
 	{evacuate = 1, filling, readyEvac, readyFill, readyStop, stopped};
 
 enum eINPULS_Proxy
-	{IP_evac = 1, IP_fill = 2, IP_stop = 3, IP_toggleEnable = 4};
+	{IP_evac = 1, IP_fill, IP_stop, IP_toggleEnable};
 	
 
 /* External Declarations */
@@ -263,4 +263,4 @@ void fINIT_Proxy (void)
 /*********************************************************************
 	End of Module for PROCESS Proxy
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e79738f-c77a-11ea-9e9f-c1d3048691bc,uhR09/tUsk7HL2oQvmt3yLzhyLw=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e79738f-c77a-11ea-9e9f-c1d3048691bc,yA64ksOFrrR/dK5QRrAp81yyYrU=] */

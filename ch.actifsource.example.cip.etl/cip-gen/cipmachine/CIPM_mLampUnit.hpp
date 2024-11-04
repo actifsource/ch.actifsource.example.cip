@@ -32,7 +32,7 @@ namespace lampunit::cipmachine
     {
       public: 
             
-        /** consructors / destructors */
+        /** constructors / destructors */
         explicit
           CIPM_mLampUnit(
             etl::message_router_id_t ciprouter, 

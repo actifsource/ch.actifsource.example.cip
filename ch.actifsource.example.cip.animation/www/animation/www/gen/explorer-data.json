@@ -20,7 +20,7 @@
                                                 "label": "normal",
                                                 "children": [
                                                     {
-                                                        "label": "Button_normal",
+                                                        "label": "Button_normal_Button_normal",
                                                         "extendedLabel": " LampCluster->Button->normal",
                                                         "id": "guid_6f9fc83df5a711ee8944afc67c286a4c",
                                                         "skId": [2,1],
@@ -49,7 +49,7 @@
                                                 "label": "normal",
                                                 "children": [
                                                     {
-                                                        "label": "Lamp_normal",
+                                                        "label": "Lamp_normal_Lamp_normal",
                                                         "extendedLabel": " LampCluster->Lamp->normal",
                                                         "id": "guid_6f9fef66f5a711ee8944afc67c286a4c",
                                                         "skId": [1,1],

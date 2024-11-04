@@ -16,16 +16,6 @@
 #include "PROC_Lamp.hpp"
 #include "../ciplibrary/CipCommon.hpp"
 
-/* Begin Protected Region [[Debug]] */
-#define CapnostatActionInitiator_DBG_ON   // uncomment for debug or put in preprocessor
-/* End Protected Region   [[Debug]] */
-#ifdef CapnostatActionInitiator_DBG_ON
-  //#include "Debug.h"
-  #define DEBUG_PRINT(...)        printf("      Process::Lamp: " __VA_ARGS__)
-#else
-  #define DEBUG_PRINT(...)
-#endif
-
 namespace lampunit::lampclustercluster
 {
     /** constructors / destructors */
@@ -93,6 +83,41 @@ namespace lampunit::lampclustercluster
     #define STATUS context
     
     /*****************************
+    * State: delayed  
+    ******************************/       
+    /** Event on */
+    etl::fsm_state_id_t PROC_Lamp::delayed::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse& msg)
+    { 
+      auto& context = get_fsm_context();
+      context.m_actualState = PROC_Lamp::StateId::on_;
+      printf("      TRANSITION '3 on' Lamp.normal: STATE delayed -> on_  [d37d50c5-fb29-11ee-88af-c1ff99c74ce0]\n");
+      context.setTimer(3);    //  DELAY DELAY_OPERATION
+      
+      return context.m_actualState;
+    }   
+
+    /** Event TIMEUP_ */
+    etl::fsm_state_id_t PROC_Lamp::delayed::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Timeup_event& msg)
+    { 
+      auto& context = get_fsm_context();
+      context.m_actualState = PROC_Lamp::StateId::off_;
+      printf("      TRANSITION '4 TIMEUP_' Lamp.normal: STATE delayed -> off_  [d37d50c6-fb29-11ee-88af-c1ff99c74ce0]\n");
+      {
+        context.m_amp.f_C2_Dark();
+      }
+      return context.m_actualState;
+    }   
+
+    /** Unknown event*/
+    etl::fsm_state_id_t PROC_Lamp::delayed::on_event_unknown(const etl::imessage& msg) 
+    {
+      auto& context = get_fsm_context();
+      if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
+      }
+      return context.m_actualState;
+    }
+    
+    /*****************************
     * State: off_  
     ******************************/       
     /** Event on */
@@ -100,7 +125,7 @@ namespace lampunit::lampclustercluster
     { 
       auto& context = get_fsm_context();
       context.m_actualState = PROC_Lamp::StateId::on_;
-      DEBUG_PRINT("TRANSITION '1 on' Lamp.normal: STATE off_ -> on_  [d37d50bf-fb29-11ee-88af-c1ff99c74ce0]\n");
+      printf("      TRANSITION '1 on' Lamp.normal: STATE off_ -> on_  [d37d50bf-fb29-11ee-88af-c1ff99c74ce0]\n");
       {
         context.m_amp.f_C2_Bright();
       }
@@ -113,7 +138,6 @@ namespace lampunit::lampclustercluster
     {
       auto& context = get_fsm_context();
       if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
-        DEBUG_PRINT("UnknownEvent ---> State: Lamp.off_:%u ---> Event Id:%u", context.m_actualState, msg.get_message_id());
       }
       return context.m_actualState;
     }
@@ -126,7 +150,7 @@ namespace lampunit::lampclustercluster
     { 
       auto& context = get_fsm_context();
       context.m_actualState = PROC_Lamp::StateId::delayed;
-      DEBUG_PRINT("TRANSITION '2 off' Lamp.normal: STATE on_ -> delayed  [d37d50c2-fb29-11ee-88af-c1ff99c74ce0]\n");
+      printf("      TRANSITION '2 off' Lamp.normal: STATE on_ -> delayed  [d37d50c2-fb29-11ee-88af-c1ff99c74ce0]\n");
       context.setTimer(3);    //  DELAY DELAY_OPERATION
       
       return context.m_actualState;
@@ -137,48 +161,14 @@ namespace lampunit::lampclustercluster
     {
       auto& context = get_fsm_context();
       if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
-        DEBUG_PRINT("UnknownEvent ---> State: Lamp.on_:%u ---> Event Id:%u", context.m_actualState, msg.get_message_id());
       }
       return context.m_actualState;
     }
     
-    /*****************************
-    * State: delayed  
-    ******************************/       
-    /** Event on */
-    etl::fsm_state_id_t PROC_Lamp::delayed::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Lamp_on_Pulse& msg)
-    { 
-      auto& context = get_fsm_context();
-      context.m_actualState = PROC_Lamp::StateId::on_;
-      DEBUG_PRINT("TRANSITION '3 on' Lamp.normal: STATE delayed -> on_  [d37d50c5-fb29-11ee-88af-c1ff99c74ce0]\n");
-      context.setTimer(3);    //  DELAY DELAY_OPERATION
-      
-      return context.m_actualState;
-    }   
-
-    /** Event TIMEUP_ */
-    etl::fsm_state_id_t PROC_Lamp::delayed::on_event(const lampunit::cipmachine::mLampUnit_Inputs::Timeup_event& msg)
-    { 
-      auto& context = get_fsm_context();
-      context.m_actualState = PROC_Lamp::StateId::off_;
-      DEBUG_PRINT("TRANSITION '4 TIMEUP_' Lamp.normal: STATE delayed -> off_  [d37d50c6-fb29-11ee-88af-c1ff99c74ce0]\n");
-      {
-        context.m_amp.f_C2_Dark();
-      }
-      return context.m_actualState;
-    }   
-
-    /** Unknown event*/
-    etl::fsm_state_id_t PROC_Lamp::delayed::on_event_unknown(const etl::imessage& msg) 
-    {
-      auto& context = get_fsm_context();
-      if (msg.get_message_id() < lampunit::cipmachine::mLampUnit_Inputs::sLampUnit_EventId::_SIZE_OFF_MESSAGE) {
-        DEBUG_PRINT("UnknownEvent ---> State: Lamp.delayed:%u ---> Event Id:%u", context.m_actualState, msg.get_message_id());
-      }
-      return context.m_actualState;
-    }
-    
-  
+    // Undef macro for accessing the input data
+    #undef IN
+    #undef SELF
+    #undef STATUS
 } // namespace lampunit::lampclustercluster
 
-/* Actifsource ID=[cfa71961-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50d8-fb29-11ee-88af-c1ff99c74ce0,FmFA1nss56ieuHdVJ1ojJiit5cw=] */
+/* Actifsource ID=[cfa71961-cf03-11ee-91c0-c5a9ed07c9d7,d37d50e5-fb29-11ee-88af-c1ff99c74ce0,d37d50a8-fb29-11ee-88af-c1ff99c74ce0,e83fa4af-fb29-11ee-88af-c1ff99c74ce0,d37d50e4-fb29-11ee-88af-c1ff99c74ce0,d37d50e3-fb29-11ee-88af-c1ff99c74ce0,d37d50e2-fb29-11ee-88af-c1ff99c74ce0,d37d50d8-fb29-11ee-88af-c1ff99c74ce0,ZCqM297Srle4xBHuyLRan9/An2Y=] */

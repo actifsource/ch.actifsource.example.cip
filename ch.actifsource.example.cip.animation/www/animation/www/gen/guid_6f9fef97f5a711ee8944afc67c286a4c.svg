@@ -52,7 +52,7 @@
                 <text x="-36" y="-12"
                     font-family="Times New Roman" font-size="13"
                     fill="rgb(0, 0, 0)">
-                    <tspan dx="0" dy="16"> <![CDATA[LampActions]]> </tspan>
+                    <tspan x="-36" dy="16"> <![CDATA[LampActions]]> </tspan>
                 </text>
               </g>
             </g>
@@ -79,7 +79,7 @@
                 <text x="-37" y="-12"
                     font-family="Times New Roman" font-size="13"
                     fill="rgb(0, 0, 0)">
-                    <tspan dx="0" dy="16"> <![CDATA[ButtonEvents]]> </tspan>
+                    <tspan x="-37" dy="16"> <![CDATA[ButtonEvents]]> </tspan>
                 </text>
               </g>
             </g>
@@ -107,7 +107,7 @@
             <text x="19" y="-4"
                 font-family="Times New Roman" font-size="13"
                 fill="rgb(0,0,0)">
-                <tspan dx="0" dy="16"> <![CDATA[LampCluster]]> </tspan>
+                <tspan x="19" dy="16"> <![CDATA[LampCluster]]> </tspan>
             </text>
         </g>
         <!-- DrawLine [guid_6f9fef78f5a711ee8944afc67c286a4c_35f7e57121f511e4b5d56587ee9ca9aa] -->
@@ -134,7 +134,7 @@
                         <text x="-5" y="-12"
                             font-family="Times New Roman" font-size="13"
                             fill="rgb(0, 0, 0)">
-                            <tspan dx="0" dy="16"> <![CDATA[]]> </tspan>
+                            <tspan x="-5" dy="16" visibility="hidden">_</tspan>
                         </text>
                       </g>
                     </g>
@@ -160,7 +160,7 @@
                         <text x="-5" y="-12"
                             font-family="Times New Roman" font-size="13"
                             fill="rgb(0, 0, 0)">
-                            <tspan dx="0" dy="16"> <![CDATA[]]> </tspan>
+                            <tspan x="-5" dy="16" visibility="hidden">_</tspan>
                         </text>
                       </g>
                     </g>
@@ -192,10 +192,10 @@
                     <text x="19" y="-4"
                         font-family="Times New Roman" font-size="13"
                         fill="rgb(0,0,0)">
-                        <tspan dx="0" dy="16"> <![CDATA[Button]]> </tspan>
+                        <tspan x="19" dy="16"> <![CDATA[Button]]> </tspan>
                     </text>
                 </g>
-                <!-- DrawCompartment comp:port [guid_6f9fc841f5a711ee8944afc67c286a4c_66098274220411e4b5d56587ee9ca9aa_port] -->
+                <!-- DrawCompartment comp:port [guid_6f9fc841f5a711ee8944afc67c286a4c_79ca0d914d2b11eca0a5051648fb09b9_port] -->
                 <g transform=" rotate(0) translate(-45,-15)">
                     <!-- Port: [guid_6f9fc831f5a711ee8944afc67c286a4c] -->
                     <g id="guid_6f9fc831f5a711ee8944afc67c286a4c">
@@ -208,7 +208,7 @@
                             stroke-width="1"/>
                         <!-- DrawPolygon [guid_6f9fc831f5a711ee8944afc67c286a4c_45c8853521f911e4b5d56587ee9ca9aa] -->
                         <g stroke="rgb(234,88,0)" stroke-width="1"
-                            fill="rgb(255, 255, 255)">
+                            fill="rgb(252,237,209)">
                             <polygon points="-6,-1 5,-6 5,5 -6,-1 "/>
                         </g>
                         <!-- DrawCompartment comp:border [guid_6f9fc831f5a711ee8944afc67c286a4c_border] -->
@@ -219,8 +219,8 @@
                                 <!-- DrawSingleSelector [guid_6f9fc831f5a711ee8944afc67c286a4c_border_b45c0fb72bf911e3b91d31693b7e682b_c6eb7f002bf911e3b91d31693b7e682b] -->
                                 <text x="-39" y="-12"
                                     font-family="Times New Roman" font-size="13"
-                                    fill="rgb(0,0,0)">
-                                    <tspan dx="0" dy="16"> <![CDATA[EVENT_PORT]]> </tspan>
+                                    fill="rgb(0, 0, 0)">
+                                    <tspan x="-39" dy="16"> <![CDATA[EVENT_PORT]]> </tspan>
                                 </text>
                               </g>
                             </g>
@@ -230,7 +230,7 @@
                     </g>
                     
                 </g>
-                <!-- DrawCompartment comp:port [guid_6f9fc841f5a711ee8944afc67c286a4c_b567245322c311e4b5d56587ee9ca9aa_port] -->
+                <!-- DrawCompartment comp:port [guid_6f9fc841f5a711ee8944afc67c286a4c_79ca34a74d2b11eca0a5051648fb09b9_port] -->
                 <g transform=" rotate(0) translate(-45,-15)">
                 </g>
               </g>
@@ -256,10 +256,10 @@
                     <text x="19" y="-4"
                         font-family="Times New Roman" font-size="13"
                         fill="rgb(0,0,0)">
-                        <tspan dx="0" dy="16"> <![CDATA[Lamp]]> </tspan>
+                        <tspan x="19" dy="16"> <![CDATA[Lamp]]> </tspan>
                     </text>
                 </g>
-                <!-- DrawCompartment comp:port [guid_6f9fef6ef5a711ee8944afc67c286a4c_66098274220411e4b5d56587ee9ca9aa_port] -->
+                <!-- DrawCompartment comp:port [guid_6f9fef6ef5a711ee8944afc67c286a4c_79ca0d914d2b11eca0a5051648fb09b9_port] -->
                 <g transform=" rotate(0) translate(-45,-15)">
                     <!-- Port: [guid_6f9fef6cf5a711ee8944afc67c286a4c] -->
                     <g id="guid_6f9fef6cf5a711ee8944afc67c286a4c">
@@ -272,7 +272,7 @@
                             stroke-width="1"/>
                         <!-- DrawPolygon [guid_6f9fef6cf5a711ee8944afc67c286a4c_2688aef621fa11e4b5d56587ee9ca9aa] -->
                         <g stroke="rgb(234,88,0)" stroke-width="1"
-                            fill="rgb(255, 255, 255)">
+                            fill="rgb(252,237,209)">
                             <polygon points="-6,-6 5,-1 -6,5 -6,-6 "/>
                         </g>
                         <!-- DrawCompartment comp:border [guid_6f9fef6cf5a711ee8944afc67c286a4c_border] -->
@@ -283,8 +283,8 @@
                                 <!-- DrawSingleSelector [guid_6f9fef6cf5a711ee8944afc67c286a4c_border_b45c0fb72bf911e3b91d31693b7e682b_c6eb7f002bf911e3b91d31693b7e682b] -->
                                 <text x="-44" y="-12"
                                     font-family="Times New Roman" font-size="13"
-                                    fill="rgb(0,0,0)">
-                                    <tspan dx="0" dy="16"> <![CDATA[ACTION_PORT]]> </tspan>
+                                    fill="rgb(0, 0, 0)">
+                                    <tspan x="-44" dy="16"> <![CDATA[ACTION_PORT]]> </tspan>
                                 </text>
                               </g>
                             </g>
@@ -294,7 +294,7 @@
                     </g>
                     
                 </g>
-                <!-- DrawCompartment comp:port [guid_6f9fef6ef5a711ee8944afc67c286a4c_b567245322c311e4b5d56587ee9ca9aa_port] -->
+                <!-- DrawCompartment comp:port [guid_6f9fef6ef5a711ee8944afc67c286a4c_79ca34a74d2b11eca0a5051648fb09b9_port] -->
                 <g transform=" rotate(0) translate(-45,-15)">
                 </g>
               </g>
@@ -321,16 +321,6 @@
       <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
         <path d="M 354 277 L 256 279   "/>
       </g>
-        <!-- Node: [guid_6f9fef71f5a711ee8944afc67c286a4c_a548c0d86a2811e192212b3ec243f838_6f9fef88f5a711ee8944afc67c286a4c_edge_source] -->
-        <g id="guid_6f9fef71f5a711ee8944afc67c286a4c_a548c0d86a2811e192212b3ec243f838_6f9fef88f5a711ee8944afc67c286a4c_edge_source">
-          <g transform="translate(354,277) rotate(358)">
-            <!-- DrawPolyline [guid_6f9fef71f5a711ee8944afc67c286a4c_a548c0d86a2811e192212b3ec243f838_6f9fef88f5a711ee8944afc67c286a4c_edge_source_13d7befe7a6411e1bd8939e13a9c88b0] -->
-            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
-                <polyline points="-2,4 0,0 -2,-4 "/>
-            </g>
-          </g>
-        </g>
-        
     </g>
     
     <!-- Edge: guid_6f9fef71f5a711ee8944afc67c286a4c -> guid_6f9fc831f5a711ee8944afc67c286a4c -->
@@ -343,7 +333,7 @@
           <g transform="translate(405,277) rotate(0)">
             <!-- DrawPolyline [guid_6f9fef71f5a711ee8944afc67c286a4c_484f68386a8a11e192212b3ec243f838_6f9fc831f5a711ee8944afc67c286a4c_edge_target_13d7befe7a6411e1bd8939e13a9c88b0] -->
             <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
-                <polyline points="-2,4 0,0 -2,-4 "/>
+                <polyline points="-4,4 0,0 -4,-4 "/>
             </g>
           </g>
         </g>
@@ -360,7 +350,7 @@
           <g transform="translate(656,371) rotate(3)">
             <!-- DrawPolyline [guid_6f9fef74f5a711ee8944afc67c286a4c_ecd36abb6a2811e192212b3ec243f838_6f9fef85f5a711ee8944afc67c286a4c_edge_target_13d7befe7a6411e1bd8939e13a9c88b0] -->
             <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
-                <polyline points="-2,4 0,0 -2,-4 "/>
+                <polyline points="-4,4 0,0 -4,-4 "/>
             </g>
           </g>
         </g>
@@ -372,29 +362,19 @@
       <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
         <path d="M 571 365 L 510 361   "/>
       </g>
-        <!-- Node: [guid_6f9fef74f5a711ee8944afc67c286a4c_4f5bc25e6a8a11e192212b3ec243f838_6f9fef6cf5a711ee8944afc67c286a4c_edge_source] -->
-        <g id="guid_6f9fef74f5a711ee8944afc67c286a4c_4f5bc25e6a8a11e192212b3ec243f838_6f9fef6cf5a711ee8944afc67c286a4c_edge_source">
-          <g transform="translate(571,365) rotate(4)">
-            <!-- DrawPolyline [guid_6f9fef74f5a711ee8944afc67c286a4c_4f5bc25e6a8a11e192212b3ec243f838_6f9fef6cf5a711ee8944afc67c286a4c_edge_source_13d7befe7a6411e1bd8939e13a9c88b0] -->
-            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
-                <polyline points="-2,4 0,0 -2,-4 "/>
-            </g>
-          </g>
-        </g>
-        
     </g>
     
     <!-- Edge: guid_6f9fef77f5a711ee8944afc67c286a4c -> guid_6f9fef6ef5a711ee8944afc67c286a4c -->
     <g id="guid_7236adda749511e0a5314537b2bc6a0b">
-      <g stroke="rgb(0, 0, 0)" stroke-width="1" stroke-dasharray="" fill="none">
+      <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
         <path d="M 456 330 L 457 350   "/>
       </g>
         <!-- Node: [guid_6f9fef77f5a711ee8944afc67c286a4c_7236adda749511e0a5314537b2bc6a0b_6f9fef6ef5a711ee8944afc67c286a4c_edge_target] -->
         <g id="guid_6f9fef77f5a711ee8944afc67c286a4c_7236adda749511e0a5314537b2bc6a0b_6f9fef6ef5a711ee8944afc67c286a4c_edge_target">
           <g transform="translate(457,350) rotate(87)">
-            <!-- DrawPolyline [guid_6f9fef77f5a711ee8944afc67c286a4c_7236adda749511e0a5314537b2bc6a0b_6f9fef6ef5a711ee8944afc67c286a4c_edge_arrow] -->
-            <g stroke="rgb(0, 0, 0)" stroke-width="1" fill="none">
-                <polyline points="-7,4 0,0 -7,-4 "/>
+            <!-- DrawPolyline [guid_6f9fef77f5a711ee8944afc67c286a4c_7236adda749511e0a5314537b2bc6a0b_6f9fef6ef5a711ee8944afc67c286a4c_edge_target_13d7befe7a6411e1bd8939e13a9c88b0] -->
+            <g stroke="rgb(234,88,0)" stroke-width="1" fill="none">
+                <polyline points="-4,4 0,0 -4,-4 "/>
             </g>
           </g>
         </g>
@@ -403,19 +383,9 @@
     
     <!-- Edge: guid_6f9fef77f5a711ee8944afc67c286a4c -> guid_6f9fc841f5a711ee8944afc67c286a4c -->
     <g id="guid_97709d991b5711e193f3e1b60c43d5eb">
-      <g stroke="rgb(0, 0, 0)" stroke-width="1" stroke-dasharray="" fill="none">
+      <g stroke="rgb(234,88,0)" stroke-width="1" stroke-dasharray="" fill="none">
         <path d="M 456 315 L 456 294   "/>
       </g>
-        <!-- Node: [guid_6f9fef77f5a711ee8944afc67c286a4c_97709d991b5711e193f3e1b60c43d5eb_6f9fc841f5a711ee8944afc67c286a4c_edge_target] -->
-        <g id="guid_6f9fef77f5a711ee8944afc67c286a4c_97709d991b5711e193f3e1b60c43d5eb_6f9fc841f5a711ee8944afc67c286a4c_edge_target">
-          <g transform="translate(456,294) rotate(270)">
-            <!-- DrawPolyline [guid_6f9fef77f5a711ee8944afc67c286a4c_97709d991b5711e193f3e1b60c43d5eb_6f9fc841f5a711ee8944afc67c286a4c_edge_arrow] -->
-            <g stroke="rgb(0, 0, 0)" stroke-width="1" fill="none">
-                <polyline points="-7,4 0,0 -7,-4 "/>
-            </g>
-          </g>
-        </g>
-        
     </g>
     
 </svg>

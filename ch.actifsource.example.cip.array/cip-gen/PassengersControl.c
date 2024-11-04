@@ -31,8 +31,8 @@ enum eSTATES_PassengersControl
 	{evacuate = 1, filling, standby};
 
 enum eINPULS_PassengersControl
-	{IP_pushHardener = 1, IP_releaseHardener = 2, IP_pushSofter = 3, 
-	 IP_releaseSofter = 4, IP_maxPressure = 5, IP_minPressure = 6};
+	{IP_maxPressure = 1, IP_minPressure, IP_pushHardener, IP_pushSofter, 
+	 IP_releaseHardener, IP_releaseSofter};
 	
 
 /* External Declarations */
@@ -276,4 +276,4 @@ void fINIT_PassengersControl (void)
 /*********************************************************************
 	End of Module for PROCESS PassengersControl
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7972d0-c77a-11ea-9e9f-c1d3048691bc,0TKhWp9Se6g9neuGWmzpcpH0DDw=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,2e7be38b-c77a-11ea-9e9f-c1d3048691bc,2e797237-c77a-11ea-9e9f-c1d3048691bc,2e7be3c2-c77a-11ea-9e9f-c1d3048691bc,2e7be389-c77a-11ea-9e9f-c1d3048691bc,2e7be388-c77a-11ea-9e9f-c1d3048691bc,2e7972d0-c77a-11ea-9e9f-c1d3048691bc,vpPxfpcVDf2AQnXPVLkRZSef+I0=] */

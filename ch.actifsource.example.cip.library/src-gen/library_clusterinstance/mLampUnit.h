@@ -145,9 +145,9 @@ typedef int Type_ProcessLib;
 	#define _eOUTPLS_LampUnit_HANS_
 
 	enum eOUTPLS_LampUnit_HANS
-		{O1_off = 1, O1_on = 2, O4_off = 1, O4_on = 2, O6_off = 3, O6_on = 4, 
-		 O8_off = 5, O8_on = 6, O10_off = 7, O10_on = 8, O13_off = 1, O13_on = 2, 
-		 O15_off = 3, O15_on = 4, O17_off = 5, O17_on = 6, O19_off = 7, O19_on = 8};
+		{/* Cluster_D */ O1_off = 1, O1_on, /* Cluster_A */ O4_off = 1, O4_on, O6_off, 
+		 O6_on, O8_off, O8_on, O10_off, O10_on, /* Cluster_B */ O13_off = 1, O13_on, 
+		 O15_off, O15_on, O17_off, O17_on, O19_off, O19_on};
 
 #endif // _eOUTPLS_LampUnit_HANS_
 
@@ -622,4 +622,4 @@ struct tPRINST_GroupB_Lamp_A_B_C2_HANS
 /*********************************************************************
 	End of Header File for CIP MACHINE mLampUnit
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413b-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,UbfOwftheYEfWyD7hUQB9S6ugoo=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,8417413c-b789-11ea-9e22-1112d6355503,841740f2-b789-11ea-9e22-1112d6355503,841741d7-b789-11ea-9e22-1112d6355503,8417413b-b789-11ea-9e22-1112d6355503,8417413a-b789-11ea-9e22-1112d6355503,0X50r7qY3CMGghbsTkmY6I7rLiQ=] */

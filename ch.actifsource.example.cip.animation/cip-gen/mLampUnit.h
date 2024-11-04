@@ -39,7 +39,7 @@
 	#define _eOUTPLS_LampUnit_HANS_
 
 	enum eOUTPLS_LampUnit_HANS
-		{O2_off = 1, O2_on = 2};
+		{/* LampCluster */ O2_off = 1, O2_on};
 
 #endif // _eOUTPLS_LampUnit_HANS_
 
@@ -132,4 +132,4 @@ struct tPRINST_Lamp_HANS
 /*********************************************************************
 	End of Header File for CIP MACHINE mLampUnit
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,6f9fef7b-f5a7-11ee-8944-afc67c286a4c,6f9fc82e-f5a7-11ee-8944-afc67c286a4c,6f9fef98-f5a7-11ee-8944-afc67c286a4c,6f9fef7a-f5a7-11ee-8944-afc67c286a4c,6f9fef79-f5a7-11ee-8944-afc67c286a4c,fb1dCoCtPjjUEjIkEArwGAYcG9U=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,6f9fef7b-f5a7-11ee-8944-afc67c286a4c,6f9fc82e-f5a7-11ee-8944-afc67c286a4c,6f9fef98-f5a7-11ee-8944-afc67c286a4c,6f9fef7a-f5a7-11ee-8944-afc67c286a4c,6f9fef79-f5a7-11ee-8944-afc67c286a4c,0aOVTtctyKdmfe3Dh034LsBnO6I=] */
