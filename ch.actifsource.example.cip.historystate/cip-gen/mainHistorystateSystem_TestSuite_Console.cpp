@@ -65,6 +65,11 @@ namespace dec
 	  eEventMessage_Event_1_doMachineStuff,
 	  eEventMessage_Event_1_nextWorkload,
 	  eEventMessage_Event_1_powerFail,
+	  eEventMessage_Event_2_powerOn,
+	  eEventMessage_Event_2_powerOff,
+	  eEventMessage_Event_2_doMachineStuff,
+	  eEventMessage_Event_2_nextWorkload,
+	  eEventMessage_Event_2_powerFail,
 	  eEventMessageCount
 	} T_EEventMessage; 
 	
@@ -83,11 +88,13 @@ namespace dec
 	/** Enum for all test case. */
 	typedef enum ETestCase
 	{
-  	  eTestCase_TestLamp
+  	  eTestCase_SimpleMachineProcessTest,
+  	  eTestCase_ComplexMachineProcessTest
 	} T_ETestCase;
 
 	/* Checked output message */
-	const int checkedOutputMessage_TestLamp[eActionMessageCount] = {1, 1, 1, 1, 1, 1};
+	const int checkedOutputMessage_SimpleMachineProcessTest[eActionMessageCount] = {1, 1, 1, 1, 1, 1};
+	const int checkedOutputMessage_ComplexMachineProcessTest[eActionMessageCount] = {1, 1, 1, 1, 1, 1};
 
 	/** Typedef of all Event data. */
 	typedef union UEventData
@@ -130,8 +137,10 @@ namespace dec
 	{
 	  switch (activeTestCase)
 	  {
-	     case eTestCase_TestLamp:
-	       return checkedOutputMessage_TestLamp[i_eActionMessage];
+	     case eTestCase_SimpleMachineProcessTest:
+	       return checkedOutputMessage_SimpleMachineProcessTest[i_eActionMessage];
+	     case eTestCase_ComplexMachineProcessTest:
+	       return checkedOutputMessage_ComplexMachineProcessTest[i_eActionMessage];
 	     default:
 	       return 0;
 	     break;
@@ -377,6 +386,26 @@ namespace dec
 	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerFail  \n");}
 	      m_cipmachine->C1_powerFail();
 	    break;
+	    case eEventMessage_Event_2_powerOn:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerOn  \n");}
+	      m_cipmachine->C2_powerOn();
+	    break;
+	    case eEventMessage_Event_2_powerOff:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerOff  \n");}
+	      m_cipmachine->C2_powerOff();
+	    break;
+	    case eEventMessage_Event_2_doMachineStuff:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: doMachineStuff  \n");}
+	      m_cipmachine->C2_doMachineStuff();
+	    break;
+	    case eEventMessage_Event_2_nextWorkload:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: nextWorkload  \n");}
+	      m_cipmachine->C2_nextWorkload();
+	    break;
+	    case eEventMessage_Event_2_powerFail:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerFail  \n");}
+	      m_cipmachine->C2_powerFail();
+	    break;
 	    default:
 	      return 0;
 	    break;
@@ -460,22 +489,25 @@ namespace dec
 	}
 
 
-	/** Forward TestCase TestLamp */
-	int testCase_TestLamp(int mainTestCase);
+	/** Forward TestCase SimpleMachineProcessTest */
+	int testCase_SimpleMachineProcessTest(int mainTestCase);
+	
+	/** Forward TestCase ComplexMachineProcessTest */
+	int testCase_ComplexMachineProcessTest(int mainTestCase);
 	
 	/** 
-	 *  TestCase TestLamp
+	 *  TestCase SimpleMachineProcessTest
 	 *  mainTestCase 1 if main test case, 0 if sub test case.
 	 *  @return 1 if test case ok. 0 if test case failed.
 	 */
-	int testCase_TestLamp(int mainTestCase)
+	int testCase_SimpleMachineProcessTest(int mainTestCase)
 	{
 	  T_UEventData data;
 	  T_RecordedActionMessage sRecorded;
 	  
 	  if (mainTestCase) 
 	  {
-	    printf(">>> TestCase TestLamp [f0198f9c-9ac0-11ef-9dfa-835f60e5a95d]\n");
+	    printf(">>> TestCase SimpleMachineProcessTest [f0198f9c-9ac0-11ef-9dfa-835f60e5a95d]\n");
 	    s_nSystemTick = 0;
 	    g_nRecordedActionMessageCount = 0;
 	    g_nExpectedActionMessageCount = 0;
@@ -486,21 +518,68 @@ namespace dec
 	    }
 	  }
 	  
-	  activeTestCase = eTestCase_TestLamp;
+	  activeTestCase = eTestCase_SimpleMachineProcessTest;
 	  sendMessageEvent(eEventMessage_Event_1_powerOn, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent Event_1.powerOn [f0198f9b-9ac0-11ef-9dfa-835f60e5a95d]", "TestLamp")) {return 0;}
+	  if (!assertMessageActionCount("TestEvent Event_1.powerOn [f0198f9b-9ac0-11ef-9dfa-835f60e5a95d]", "SimpleMachineProcessTest")) {return 0;}
 	  
 	  sendMessageEvent(eEventMessage_Event_1_doMachineStuff, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent Event_1.doMachineStuff [018a8f43-9ac4-11ef-9dfa-835f60e5a95d]", "TestLamp")) {return 0;}
+	  if (!assertMessageActionCount("TestEvent Event_1.doMachineStuff [018a8f43-9ac4-11ef-9dfa-835f60e5a95d]", "SimpleMachineProcessTest")) {return 0;}
 	  
 	  sendMessageEvent(eEventMessage_Event_1_nextWorkload, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent Event_1.nextWorkload [2051e4e5-9ac4-11ef-9dfa-835f60e5a95d]", "TestLamp")) {return 0;}
+	  if (!assertMessageActionCount("TestEvent Event_1.nextWorkload [2051e4e5-9ac4-11ef-9dfa-835f60e5a95d]", "SimpleMachineProcessTest")) {return 0;}
 	  
 	  sendMessageEvent(eEventMessage_Event_1_powerFail, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent Event_1.powerFail [3256c6b6-9ac4-11ef-9dfa-835f60e5a95d]", "TestLamp")) {return 0;}
+	  if (!assertMessageActionCount("TestEvent Event_1.powerFail [3256c6b6-9ac4-11ef-9dfa-835f60e5a95d]", "SimpleMachineProcessTest")) {return 0;}
 	  
 	  sendMessageEvent(eEventMessage_Event_1_powerOn, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent Event_1.powerOn [404c14bc-9ac4-11ef-9dfa-835f60e5a95d]", "TestLamp")) {return 0;}
+	  if (!assertMessageActionCount("TestEvent Event_1.powerOn [404c14bc-9ac4-11ef-9dfa-835f60e5a95d]", "SimpleMachineProcessTest")) {return 0;}
+	  
+	 
+	  if (mainTestCase) 
+	  {
+	  	delete m_cipmachine;
+	  }
+	  return 1;
+	}
+	
+	/** 
+	 *  TestCase ComplexMachineProcessTest
+	 *  mainTestCase 1 if main test case, 0 if sub test case.
+	 *  @return 1 if test case ok. 0 if test case failed.
+	 */
+	int testCase_ComplexMachineProcessTest(int mainTestCase)
+	{
+	  T_UEventData data;
+	  T_RecordedActionMessage sRecorded;
+	  
+	  if (mainTestCase) 
+	  {
+	    printf(">>> TestCase ComplexMachineProcessTest [7d4d44d8-9ac7-11ef-9dfa-835f60e5a95d]\n");
+	    s_nSystemTick = 0;
+	    g_nRecordedActionMessageCount = 0;
+	    g_nExpectedActionMessageCount = 0;
+	    if (!fINIT_Machine()) 
+	    {
+	      printf("\nInitialization failed\n"); 
+	      return 0;
+	    }
+	  }
+	  
+	  activeTestCase = eTestCase_ComplexMachineProcessTest;
+	  sendMessageEvent(eEventMessage_Event_2_powerOn, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent Event_2.powerOn [7d4d44da-9ac7-11ef-9dfa-835f60e5a95d]", "ComplexMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_Event_2_doMachineStuff, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent Event_2.doMachineStuff [7d4d44dc-9ac7-11ef-9dfa-835f60e5a95d]", "ComplexMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_Event_2_nextWorkload, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent Event_2.nextWorkload [7d4d44de-9ac7-11ef-9dfa-835f60e5a95d]", "ComplexMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_Event_2_powerFail, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent Event_2.powerFail [7d4d44e0-9ac7-11ef-9dfa-835f60e5a95d]", "ComplexMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_Event_2_powerOn, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent Event_2.powerOn [7d4d44e2-9ac7-11ef-9dfa-835f60e5a95d]", "ComplexMachineProcessTest")) {return 0;}
 	  
 	 
 	  if (mainTestCase) 
@@ -521,7 +600,7 @@ namespace dec
 	  int nSuceededTestCases = 0;
 	  int nFailedTestCases = 0;
 	  g_eTraceMode = eTrace_Disable;
-	  if (testCase_TestLamp(1)) {++nSuceededTestCases;} else {++nFailedTestCases;}
+	  if (testCase_ComplexMachineProcessTest(1)) {++nSuceededTestCases;} else {++nFailedTestCases;}
 	  printf("\n> SUMMARY: %i Test Case(s) Executed.\n",nSuceededTestCases+nFailedTestCases); 
 	  if (nFailedTestCases) {printf("> WARNING: %i Test Case(s) Failed.\n",nFailedTestCases);} 
 	  return nFailedTestCases;
@@ -541,15 +620,15 @@ namespace dec
 	  cout << "[----------] Global test environment set-up." << endl;
 	  cout << "[----------] 1 test from HistorystateSystemTestSuite" << endl;
        	  
-	  /* TestLamp */
+	  /* ComplexMachineProcessTest */
 	  g_eTraceMode = eTrace_Disable;
-	  cout << "[ RUN      ] HistorystateSystemTestSuite.TestLamp" << endl;
-	  if (testCase_TestLamp(1)) {
-	  	printf("[       OK ] HistorystateSystemTestSuite.TestLamp (%i ms)\n",s_nSystemTick);
+	  cout << "[ RUN      ] HistorystateSystemTestSuite.ComplexMachineProcessTest" << endl;
+	  if (testCase_ComplexMachineProcessTest(1)) {
+	  	printf("[       OK ] HistorystateSystemTestSuite.ComplexMachineProcessTest (%i ms)\n",s_nSystemTick);
 	  	++nSuceededTestCases;
 	  } else {
 	  	++nFailedTestCases;
-		printf("[  FAILED  ] HistorystateSystemTestSuite.TestLamp (%i ms)\n",s_nSystemTick);
+		printf("[  FAILED  ] HistorystateSystemTestSuite.ComplexMachineProcessTest (%i ms)\n",s_nSystemTick);
 	  }
 	
 	  cout << "[----------] 1 test from HistorystateSystemTestSuite (0 ms total)" << endl;
@@ -593,6 +672,11 @@ namespace dec
 	    printf("Enter  %i (Event_1: doMachineStuff)\n",eEventMessage_Event_1_doMachineStuff);
 	    printf("Enter  %i (Event_1: nextWorkload)\n",eEventMessage_Event_1_nextWorkload);
 	    printf("Enter  %i (Event_1: powerFail)\n",eEventMessage_Event_1_powerFail);
+	    printf("Enter  %i (Event_2: powerOn)\n",eEventMessage_Event_2_powerOn);
+	    printf("Enter  %i (Event_2: powerOff)\n",eEventMessage_Event_2_powerOff);
+	    printf("Enter  %i (Event_2: doMachineStuff)\n",eEventMessage_Event_2_doMachineStuff);
+	    printf("Enter  %i (Event_2: nextWorkload)\n",eEventMessage_Event_2_nextWorkload);
+	    printf("Enter  %i (Event_2: powerFail)\n",eEventMessage_Event_2_powerFail);
 	    printf("------------------------------------\n");
 	
 	    T_EEventMessage eEventMessage;
@@ -658,4 +742,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f0198f98-9ac0-11ef-9dfa-835f60e5a95d,qsnDaXN4ZCVsWOVuCmeup874/OY=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f0198f98-9ac0-11ef-9dfa-835f60e5a95d,D2GuMAF92aDvztf3evw/mxnqq0Y=] */

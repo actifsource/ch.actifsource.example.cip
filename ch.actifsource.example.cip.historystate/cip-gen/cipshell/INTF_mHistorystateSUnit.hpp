@@ -62,6 +62,31 @@ namespace historystatesunit
 			*/
 			virtual void C1_powerOn(void) = 0;
             
+			/**
+			* Triggers CIP Machine by input message doMachineStuff (channel Event_2).
+			*/
+			virtual void C2_doMachineStuff(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message nextWorkload (channel Event_2).
+			*/
+			virtual void C2_nextWorkload(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerFail (channel Event_2).
+			*/
+			virtual void C2_powerFail(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerOff (channel Event_2).
+			*/
+			virtual void C2_powerOff(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerOn (channel Event_2).
+			*/
+			virtual void C2_powerOn(void) = 0;
+            
 			/** 
 			* global unit time
 			*/
@@ -83,4 +108,4 @@ namespace historystatesunit
 /*********************************************************************
     End of cip machine interface header for CIP SHELL sHistorystateSUnit
 *********************************************************************/
-/* Actifsource ID=[6628a6cc-08f0-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,EWHx+UvYOwlYvHJBvFsdmIxWYTQ=] */
+/* Actifsource ID=[6628a6cc-08f0-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,El94/3ce7/xbwOc9MMQAyeBRFt4=] */

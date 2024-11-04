@@ -21,6 +21,7 @@
 #include "INTF_mHistorystateSUnit.hpp"
 #include "INTF_ReadNames.hpp"
 #include "LOCAL_QueueData.hpp"
+#include "INTF_ComplexMachineProcess.hpp"
 #include "INTF_SimpleMachineProcess.hpp"
 #include "CipTimerQueue.hpp"
 #include "CipChainQueue.hpp"
@@ -76,6 +77,31 @@ namespace historystatesunit
 			* Triggers CIP Machine by input message powerOn (channel Event_1).
 			*/
 			virtual void C1_powerOn(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message doMachineStuff (channel Event_2).
+			*/
+			virtual void C2_doMachineStuff(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message nextWorkload (channel Event_2).
+			*/
+			virtual void C2_nextWorkload(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerFail (channel Event_2).
+			*/
+			virtual void C2_powerFail(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerOff (channel Event_2).
+			*/
+			virtual void C2_powerOff(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerOn (channel Event_2).
+			*/
+			virtual void C2_powerOn(void);
 	            
 			/** extension interface */
 			
@@ -169,6 +195,9 @@ namespace historystatesunit
 	 
 			/** Status vectors of cluster MachineCluster */
 	
+			/** Process ComplexMachineProcess */
+			historystatesunit::machinecluster::INTF_ComplexMachineProcess* ComplexMachineProcess;
+	            
 			/** Process SimpleMachineProcess */
 			historystatesunit::machinecluster::INTF_SimpleMachineProcess* SimpleMachineProcess;
 	            
@@ -183,4 +212,4 @@ namespace historystatesunit
     End of cip machine header for CIP MACHINE mHistorystateSUnit
 *********************************************************************/
 
-/* Actifsource ID=[65dba398-0beb-11e3-b115-a3f7f19b76fe,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,OYqXlmRwK/R69NynYSbVSMGPDLM=] */
+/* Actifsource ID=[65dba398-0beb-11e3-b115-a3f7f19b76fe,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,+7mxJzhJaAjtsiJ6q6WxAKpdMSU=] */
