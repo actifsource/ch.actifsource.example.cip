@@ -179,26 +179,13 @@ namespace historystatesunit
 			switch(STATE)
 			{
 				case PowerOff:	
-					if (HISTORY_STATE[PowerOn_HistoryState] == Idle)    // CONDITION isNormalPowerOff
-					{
-						/* Exit functions */
-						TEMP_STATE = STATE;
-						triggerStateAction(ExitAction, _no_state_);
-						printf("       TRANSITION '22 powerOn' SimpleMachineProcess.normal: STATE PowerOff -> Idle  [e0186f6b-9ac4-11ef-9dfa-835f60e5a95d]\n");
-						STATE = Idle;
-						/* Entry functions */
-						triggerStateAction(EntryAction, _no_state_);
-					}
-					else // CONDITION ELSE_
-					{
-						/* Exit functions */
-						TEMP_STATE = STATE;
-						triggerStateAction(ExitAction, _no_state_);
-						printf("       TRANSITION '3 powerOn' SimpleMachineProcess.normal: STATE PowerOff -> PowerOn_HistoryState  [e153c093-9ac2-11ef-9dfa-835f60e5a95d]\n");
-						STATE = HISTORY_STATE[PowerOn_HistoryState];
-						/* Entry functions */
-						triggerStateAction(EntryHistoryAction, _no_state_);
-					}
+					/* Exit functions */
+					TEMP_STATE = STATE;
+					triggerStateAction(ExitAction, _no_state_);
+					printf("       TRANSITION '3 powerOn' SimpleMachineProcess.normal: STATE PowerOff -> PowerOn_HistoryState  [e153c093-9ac2-11ef-9dfa-835f60e5a95d]\n");
+					STATE = HISTORY_STATE[PowerOn_HistoryState];
+					/* Entry functions */
+					triggerStateAction(EntryHistoryAction, _no_state_);
 				break;
 			default:
 				break;
@@ -340,4 +327,4 @@ namespace historystatesunit
 /*********************************************************************
     End of cip process SimpleMachineProcess for PROCESS SimpleMachineProcess
 *********************************************************************/
-/* Actifsource ID=[1efc54ce-099f-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,3eff29c8-9ac1-11ef-9dfa-835f60e5a95d,d8702bbe-9ac1-11ef-9dfa-835f60e5a95d,6SQyHdXM/sGCBpoyrBEuW6VBi9c=] */
+/* Actifsource ID=[1efc54ce-099f-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,3eff29c8-9ac1-11ef-9dfa-835f60e5a95d,d8702bbe-9ac1-11ef-9dfa-835f60e5a95d,lETIzf0PO0/oUfzAeVA6GGDxC7E=] */
