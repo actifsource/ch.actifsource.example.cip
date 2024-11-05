@@ -538,6 +538,7 @@ namespace dec
 	  if (mainTestCase) 
 	  {
 	  	delete m_cipmachine;
+	  	m_cipmachine = NULL;
 	  }
 	  return 1;
 	}
@@ -585,6 +586,7 @@ namespace dec
 	  if (mainTestCase) 
 	  {
 	  	delete m_cipmachine;
+	  	m_cipmachine = NULL;
 	  }
 	  return 1;
 	}
@@ -599,7 +601,9 @@ namespace dec
 	  g_eAnimationMode = eAnimationMode_Regressive;
 	  int nSuceededTestCases = 0;
 	  int nFailedTestCases = 0;
-	  g_eTraceMode = eTrace_Disable;
+	  g_eTraceMode = eTrace_Enable;
+	  if (testCase_SimpleMachineProcessTest(1)) {++nSuceededTestCases;} else {++nFailedTestCases;}
+	  g_eTraceMode = eTrace_Enable;
 	  if (testCase_ComplexMachineProcessTest(1)) {++nSuceededTestCases;} else {++nFailedTestCases;}
 	  printf("\n> SUMMARY: %i Test Case(s) Executed.\n",nSuceededTestCases+nFailedTestCases); 
 	  if (nFailedTestCases) {printf("> WARNING: %i Test Case(s) Failed.\n",nFailedTestCases);} 
@@ -616,12 +620,23 @@ namespace dec
 	  int nFailedTestCases = 0;
 	  g_eAnimationMode = eAnimationMode_Runner;
 	  
-	  cout << "[==========] Running 1 test from 1 test case." << endl;
+	  cout << "[==========] Running 2 test from 1 test case." << endl;
 	  cout << "[----------] Global test environment set-up." << endl;
-	  cout << "[----------] 1 test from HistorystateSystemTestSuite" << endl;
+	  cout << "[----------] 2 test from HistorystateSystemTestSuite" << endl;
        	  
+	  /* SimpleMachineProcessTest */
+	  g_eTraceMode = eTrace_Enable;
+	  cout << "[ RUN      ] HistorystateSystemTestSuite.SimpleMachineProcessTest" << endl;
+	  if (testCase_SimpleMachineProcessTest(1)) {
+	  	printf("[       OK ] HistorystateSystemTestSuite.SimpleMachineProcessTest (%i ms)\n",s_nSystemTick);
+	  	++nSuceededTestCases;
+	  } else {
+	  	++nFailedTestCases;
+		printf("[  FAILED  ] HistorystateSystemTestSuite.SimpleMachineProcessTest (%i ms)\n",s_nSystemTick);
+	  }
+	
 	  /* ComplexMachineProcessTest */
-	  g_eTraceMode = eTrace_Disable;
+	  g_eTraceMode = eTrace_Enable;
 	  cout << "[ RUN      ] HistorystateSystemTestSuite.ComplexMachineProcessTest" << endl;
 	  if (testCase_ComplexMachineProcessTest(1)) {
 	  	printf("[       OK ] HistorystateSystemTestSuite.ComplexMachineProcessTest (%i ms)\n",s_nSystemTick);
@@ -631,13 +646,13 @@ namespace dec
 		printf("[  FAILED  ] HistorystateSystemTestSuite.ComplexMachineProcessTest (%i ms)\n",s_nSystemTick);
 	  }
 	
-	  cout << "[----------] 1 test from HistorystateSystemTestSuite (0 ms total)" << endl;
+	  cout << "[----------] 2 test from HistorystateSystemTestSuite (0 ms total)" << endl;
 	  printf("\n> SUMMARY: %i Test Case(s) Executed.\n",nSuceededTestCases+nFailedTestCases); 
 	  if (nFailedTestCases) {
 	  	printf("> WARNING: %i Test Case(s) Failed.\n",nFailedTestCases);
 	  }
 	  cout << "[----------] Global test environment tear-down" << endl;
-	  cout << "[==========] 1 test from 1 test case ran. (0 ms total)" << endl;
+	  cout << "[==========] 2 test from 1 test case ran. (0 ms total)" << endl;
 	  return nFailedTestCases;
 	}
 	
@@ -689,6 +704,7 @@ namespace dec
 	    else if (!sendMessageEvent(eEventMessage, 50, 50, &data)) {printf("\n Invalid Input: %i\n\n",eEventMessage);}
 	  }
 	  delete m_cipmachine;
+	  m_cipmachine = NULL;
 	  return 0;
 	}
 	
@@ -742,4 +758,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f0198f98-9ac0-11ef-9dfa-835f60e5a95d,D2GuMAF92aDvztf3evw/mxnqq0Y=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f0198f98-9ac0-11ef-9dfa-835f60e5a95d,MsWHdzQDqztggRfMRq2fd4nCpRI=] */

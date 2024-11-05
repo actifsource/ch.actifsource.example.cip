@@ -188,10 +188,10 @@
           <object statement-guid="f019b6d1-9ac0-11ef-9dfa-835f60e5a95d" type="literal">true</object>
         </predicate>
         <predicate guid="9a5daf21-5976-11e2-bf3d-b725e620e694">
-          <object statement-guid="f019b6d2-9ac0-11ef-9dfa-835f60e5a95d" type="literal">false</object>
+          <object statement-guid="f019b6d2-9ac0-11ef-9dfa-835f60e5a95d" type="literal">true</object>
         </predicate>
         <predicate guid="fa6527c6-5982-11e2-bf3d-b725e620e694">
-          <object statement-guid="f019b6d3-9ac0-11ef-9dfa-835f60e5a95d" type="literal">false</object>
+          <object statement-guid="f019b6d3-9ac0-11ef-9dfa-835f60e5a95d" type="literal">true</object>
         </predicate>
       </resource>
     </object>
@@ -310,7 +310,7 @@
           <object statement-guid="7d4d6c10-9ac7-11ef-9dfa-835f60e5a95d" type="literal">true</object>
         </predicate>
         <predicate guid="fa6527c6-5982-11e2-bf3d-b725e620e694">
-          <object statement-guid="7d4d6c11-9ac7-11ef-9dfa-835f60e5a95d" type="literal">false</object>
+          <object statement-guid="7d4d6c11-9ac7-11ef-9dfa-835f60e5a95d" type="literal">true</object>
         </predicate>
       </resource>
     </object>
