@@ -15,10 +15,10 @@ namespace ciplibrary
 	/** static variable */
 	char *INTF_CommonStrings::m_commonStrings[] = 
 	{
-		"               ", 		// no input
-		"AUTO           ", 
-		"CHAIN          ", 
-		"TIMEUP         ", 
+		"                  ", 		// no input
+		"AUTO              ", 
+		"CHAIN             ", 
+		"TIMEUP            ", 
 		"               ", 		// no outpulse
 		"READ ", 
 		"STEP ", 
@@ -35,4 +35,4 @@ namespace ciplibrary
 /*********************************************************************
 	End of cip common strings
 *********************************************************************/
-/* Actifsource ID=[6912066b-08ad-11e3-b902-17aaca85d2fd,a6d1b8c9-cedd-11de-80c2-87ac3b08f930,lq8XfWlKH70L8oZfUTAlKM5fVJI=] */
+/* Actifsource ID=[6912066b-08ad-11e3-b902-17aaca85d2fd,a6d1b8c9-cedd-11de-80c2-87ac3b08f930,eTfgp1kdpmwTYRnQD5G9JMEdS0k=] */

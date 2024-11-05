@@ -38,19 +38,19 @@ namespace templateunit
 			
 			/** Action Message Interface */
 			/**
-			* Sent by CIP Machine on output of message msgA (channel ActionA).
+			* Sent by CIP Machine on output of message powerFail (channel ActionA).
 			*/
-			virtual void f_C2_msgA(void) = 0;
+			virtual void f_C2_powerFail(void) = 0;
                         
 			/**
-			* Sent by CIP Machine on output of message msgB (channel ActionA).
+			* Sent by CIP Machine on output of message powerOff (channel ActionA).
 			*/
-			virtual void f_C2_msgB(void) = 0;
+			virtual void f_C2_powerOff(void) = 0;
                         
 			/**
-			* Sent by CIP Machine on output of message msgC (channel ActionA).
+			* Sent by CIP Machine on output of message powerOn (channel ActionA).
 			*/
-			virtual void f_C2_msgC(void) = 0;
+			virtual void f_C2_powerOn(void) = 0;
                         
 
 		private: 
@@ -69,4 +69,4 @@ namespace templateunit
 /*********************************************************************
     End of output interface header for CIP SHELL sTemplateUnit
 *********************************************************************/
-/* Actifsource ID=[e6d848aa-08df-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,7X5Fzj2aX6oDS1STRTT2Whr1aXE=] */
+/* Actifsource ID=[e6d848aa-08df-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,c0Q61ZmyPvor/WxpczpT6heVnxI=] */

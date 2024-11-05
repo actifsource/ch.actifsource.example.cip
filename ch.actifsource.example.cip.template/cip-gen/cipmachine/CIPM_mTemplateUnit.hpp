@@ -22,9 +22,7 @@
 #include "INTF_mTemplateUnit.hpp"
 #include "INTF_ReadNames.hpp"
 #include "LOCAL_QueueData.hpp"
-#include "INTF_ProcessBB.hpp"
-#include "INTF_ProcessE.hpp"
-#include "INTF_ProcessFinalA.hpp"
+#include "INTF_MachineProcess.hpp"
 #include "CipTimerQueue.hpp"
 #include "CipChainQueue.hpp"
 #include "CipAutoQueue.hpp"
@@ -56,14 +54,29 @@ namespace templateunit
 	
 			/** event message interface */
 			/** 
-			* Triggers CIP Machine by input message msgA (channel EventA).
+			* Triggers CIP Machine by input message doMachineStuff (channel EventA).
 			*/
-			virtual void C1_msgA(void);
+			virtual void C1_doMachineStuff(void);
 	            
 			/** 
-			* Triggers CIP Machine by input message msgB (channel EventA).
+			* Triggers CIP Machine by input message nextWorkload (channel EventA).
 			*/
-			virtual void C1_msgB(void);
+			virtual void C1_nextWorkload(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerFail (channel EventA).
+			*/
+			virtual void C1_powerFail(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerOff (channel EventA).
+			*/
+			virtual void C1_powerOff(void);
+	            
+			/** 
+			* Triggers CIP Machine by input message powerOn (channel EventA).
+			*/
+			virtual void C1_powerOn(void);
 	            
 			/** extension interface */
 			
@@ -155,16 +168,10 @@ namespace templateunit
 			/** read queue */
 			ciplibrary::CipReadQueue<ciplibrary::CipRead<cipmachine::LOCAL_QueueData, cipmachine::INTF_ReadNames::E_Reads, cipmachine::PROC_CipProcess >, ciplibrary::INTF_CipError<char > >* m_readQueue;
 	 
-			/** Status vectors of cluster ClusterA */
+			/** Status vectors of cluster MachineCluster */
 	
-			/** Process ProcessBB */
-			templateunit::clustera::INTF_ProcessBB* ProcessBB;
-	            
-			/** Process ProcessE */
-			templateunit::clustera::INTF_ProcessE* ProcessE;
-	            
-			/** Process ProcessFinalA */
-			templateunit::clustera::INTF_ProcessFinalA* ProcessFinalA;
+			/** Process MachineProcess */
+			templateunit::machinecluster::INTF_MachineProcess* MachineProcess;
 	            
 		}; // class CIPM_mTemplateUnit
 
@@ -177,4 +184,4 @@ namespace templateunit
     End of cip machine header for CIP MACHINE mTemplateUnit
 *********************************************************************/
 
-/* Actifsource ID=[65dba398-0beb-11e3-b115-a3f7f19b76fe,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,t6Mu2McroLe3lxVSHitq1w3PNzY=] */
+/* Actifsource ID=[65dba398-0beb-11e3-b115-a3f7f19b76fe,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,NiM9QAFwxRf91rhkZxER04oAb0Q=] */

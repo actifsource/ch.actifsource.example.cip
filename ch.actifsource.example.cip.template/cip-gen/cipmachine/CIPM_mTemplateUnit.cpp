@@ -15,9 +15,7 @@
 *********************************************************************/
 
 #include "CIPM_mTemplateUnit.hpp"
-#include "PROC_ProcessBB.hpp"
-#include "PROC_ProcessE.hpp"
-#include "PROC_ProcessFinalA.hpp"
+#include "PROC_MachineProcess.hpp"
 
 
 namespace templateunit
@@ -33,51 +31,60 @@ namespace templateunit
 			TIME = 0;
 			m_readQueue = new ciplibrary::CipReadQueue<ciplibrary::CipRead<cipmachine::LOCAL_QueueData, cipmachine::INTF_ReadNames::E_Reads, cipmachine::PROC_CipProcess >, ciplibrary::INTF_CipError<char > >(1);
 
-			ProcessBB =
-				new templateunit::clustera::PROC_ProcessBB(          
-					m_ActionMessagePort,
-					&m_timerQueue,
-					&m_chainQueue);
-			ProcessE =
-				new templateunit::clustera::PROC_ProcessE(          
-					m_ActionMessagePort,
-					&m_chainQueue,
-					&m_autoQueue);
-			ProcessFinalA =
-				new templateunit::clustera::PROC_ProcessFinalA(          
-					m_ActionMessagePort,
-					&m_chainQueue);
-			ProcessBB->initInteraction(ProcessBB, ProcessE, ProcessFinalA);
-			ProcessE->initInteraction(ProcessE, ProcessBB);
-			ProcessFinalA->initInteraction(ProcessFinalA, ProcessE);
-			ProcessBB->startup();
+			MachineProcess =
+				new templateunit::machinecluster::PROC_MachineProcess(          
+					m_ActionMessagePort);
+			MachineProcess->initInteraction(MachineProcess);
+			MachineProcess->startup();
 		} // constructor
 
 		CIPM_mTemplateUnit::~CIPM_mTemplateUnit(void)
 		{
         
-			delete ProcessBB;	
-			delete ProcessE;	
-			delete ProcessFinalA;	
+			delete MachineProcess;	
 			delete m_readQueue;
 		} // destructor
 
 		/** event messages */
 		/**
-		* Triggers CIP Machine by input message msgA (channel EventA).
+		* Triggers CIP Machine by input message doMachineStuff (channel EventA).
 		*/
-		void CIPM_mTemplateUnit::C1_msgA (void)
+		void CIPM_mTemplateUnit::C1_doMachineStuff (void)
 		{
-			 ProcessBB->C1_msgA();
-		} // C1_msgA()
+			 MachineProcess->C1_doMachineStuff();
+		} // C1_doMachineStuff()
 		
 		/**
-		* Triggers CIP Machine by input message msgB (channel EventA).
+		* Triggers CIP Machine by input message nextWorkload (channel EventA).
 		*/
-		void CIPM_mTemplateUnit::C1_msgB (void)
+		void CIPM_mTemplateUnit::C1_nextWorkload (void)
 		{
-			 ProcessBB->C1_msgB();
-		} // C1_msgB()
+			 MachineProcess->C1_nextWorkload();
+		} // C1_nextWorkload()
+		
+		/**
+		* Triggers CIP Machine by input message powerFail (channel EventA).
+		*/
+		void CIPM_mTemplateUnit::C1_powerFail (void)
+		{
+			 MachineProcess->C1_powerFail();
+		} // C1_powerFail()
+		
+		/**
+		* Triggers CIP Machine by input message powerOff (channel EventA).
+		*/
+		void CIPM_mTemplateUnit::C1_powerOff (void)
+		{
+			 MachineProcess->C1_powerOff();
+		} // C1_powerOff()
+		
+		/**
+		* Triggers CIP Machine by input message powerOn (channel EventA).
+		*/
+		void CIPM_mTemplateUnit::C1_powerOn (void)
+		{
+			 MachineProcess->C1_powerOn();
+		} // C1_powerOn()
 		
 		/** extension functions */
 		/** 
@@ -210,4 +217,4 @@ namespace templateunit
 /*********************************************************************
     End of cip machine for CIP MACHINE mTemplateUnit
 *********************************************************************/
-/* Actifsource ID=[77fe41ec-08ae-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,6lWxPcX4umvecevAsnJ+W0CK5TA=] */
+/* Actifsource ID=[77fe41ec-08ae-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,SpvvTysA/FuldPKIa5en2kTyPTQ=] */

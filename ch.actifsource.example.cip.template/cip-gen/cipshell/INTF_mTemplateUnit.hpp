@@ -39,14 +39,29 @@ namespace templateunit
 
 			/** event message interface */
 			/**
-			* Triggers CIP Machine by input message msgA (channel EventA).
+			* Triggers CIP Machine by input message doMachineStuff (channel EventA).
 			*/
-			virtual void C1_msgA(void) = 0;
+			virtual void C1_doMachineStuff(void) = 0;
             
 			/**
-			* Triggers CIP Machine by input message msgB (channel EventA).
+			* Triggers CIP Machine by input message nextWorkload (channel EventA).
 			*/
-			virtual void C1_msgB(void) = 0;
+			virtual void C1_nextWorkload(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerFail (channel EventA).
+			*/
+			virtual void C1_powerFail(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerOff (channel EventA).
+			*/
+			virtual void C1_powerOff(void) = 0;
+            
+			/**
+			* Triggers CIP Machine by input message powerOn (channel EventA).
+			*/
+			virtual void C1_powerOn(void) = 0;
             
 			/** 
 			* global unit time
@@ -69,4 +84,4 @@ namespace templateunit
 /*********************************************************************
     End of cip machine interface header for CIP SHELL sTemplateUnit
 *********************************************************************/
-/* Actifsource ID=[6628a6cc-08f0-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,eox7wTQqYPyqRW/df8xQo7MX8ag=] */
+/* Actifsource ID=[6628a6cc-08f0-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,+b9pYFgdJRALmy2hbLRArdUfS/g=] */

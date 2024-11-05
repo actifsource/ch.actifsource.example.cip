@@ -61,8 +61,11 @@ namespace dec
 	  eEventMessage_Chain,
 	  eEventMessage_Read,
 	  eEventMessage_Auto,
-	  eEventMessage_EventA_msgB,
-	  eEventMessage_EventA_msgA,
+	  eEventMessage_EventA_nextWorkload,
+	  eEventMessage_EventA_doMachineStuff,
+	  eEventMessage_EventA_powerOn,
+	  eEventMessage_EventA_powerFail,
+	  eEventMessage_EventA_powerOff,
 	  eEventMessageCount
 	} T_EEventMessage; 
 	
@@ -75,9 +78,9 @@ namespace dec
 	  eActionPulseSelectionError,
 	  eActionMessageSelectionError,
 	  eActionInputError,
-	  eActionMessage_ActionA_msgB,
-	  eActionMessage_ActionA_msgA,
-	  eActionMessage_ActionA_msgC,
+	  eActionMessage_ActionA_powerFail,
+	  eActionMessage_ActionA_powerOn,
+	  eActionMessage_ActionA_powerOff,
 	  eActionMessageCount
 	} T_EActionMessage; 
 	
@@ -149,14 +152,14 @@ namespace dec
 	{
 	  switch (i_eActionMessage)
 	  {
-	    case eActionMessage_ActionA_msgB:
-	      return "ActionA.msgB";
+	    case eActionMessage_ActionA_powerFail:
+	      return "ActionA.powerFail";
 	    break;
-	    case eActionMessage_ActionA_msgA:
-	      return "ActionA.msgA";
+	    case eActionMessage_ActionA_powerOn:
+	      return "ActionA.powerOn";
 	    break;
-	    case eActionMessage_ActionA_msgC:
-	      return "ActionA.msgC";
+	    case eActionMessage_ActionA_powerOff:
+	      return "ActionA.powerOff";
 	    break;
 	    case eActionMessageCount:
 	      return 0;
@@ -177,13 +180,13 @@ namespace dec
 	{
 	  switch (sRecordedActionMessage.actionMessage)
 	  {
-	    case eActionMessage_ActionA_msgB:
+	    case eActionMessage_ActionA_powerFail:
 	      return 1;
 	    break;
-	    case eActionMessage_ActionA_msgA:
+	    case eActionMessage_ActionA_powerOn:
 	      return 1;
 	    break;
-	    case eActionMessage_ActionA_msgC:
+	    case eActionMessage_ActionA_powerOff:
 	      return 1;
 	    break;
 	    case eActionMessageCount:
@@ -205,13 +208,13 @@ namespace dec
 	{
 	  switch (sRecordedActionMessage.actionMessage)
 	  {
-	    case eActionMessage_ActionA_msgB:
+	    case eActionMessage_ActionA_powerFail:
 	      return 1;
 	    break;
-	    case eActionMessage_ActionA_msgA:
+	    case eActionMessage_ActionA_powerOn:
 	      return 1;
 	    break;
-	    case eActionMessage_ActionA_msgC:
+	    case eActionMessage_ActionA_powerOff:
 	      return 1;
 	    break;
 	    case eActionMessageCount:
@@ -327,51 +330,51 @@ namespace dec
 		public templateunit::cipshell::INTF_ActionMessagePort
 	{
 	public:
-		void f_C2_msgA(void);
-		void f_C2_msgB(void);
-		void f_C2_msgC(void);
+		void f_C2_powerFail(void);
+		void f_C2_powerOff(void);
+		void f_C2_powerOn(void);
 	};
 
 
 	/** Action Message implementation */
-	void ActionInitiation::f_C2_msgA(void)
+	void ActionInitiation::f_C2_powerFail(void)
 	{
-		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.msgA \n\n");}
+		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.powerFail \n\n");}
   		if (g_eAnimationMode == eAnimationMode_Regressive || g_eAnimationMode == eAnimationMode_Runner) {
     			T_RecordedActionMessage sRecorded;
-    			sRecorded.actionMessage = eActionMessage_ActionA_msgA;
+    			sRecorded.actionMessage = eActionMessage_ActionA_powerFail;
     			if (!isCheckedOutputMessage(sRecorded.actionMessage)) return;
     			recordMessageAction(sRecorded);
   		}
   		
 	
-	} // f_C2_msgA()
+	} // f_C2_powerFail()
 	
-	void ActionInitiation::f_C2_msgB(void)
+	void ActionInitiation::f_C2_powerOff(void)
 	{
-		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.msgB \n\n");}
+		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.powerOff \n\n");}
   		if (g_eAnimationMode == eAnimationMode_Regressive || g_eAnimationMode == eAnimationMode_Runner) {
     			T_RecordedActionMessage sRecorded;
-    			sRecorded.actionMessage = eActionMessage_ActionA_msgB;
+    			sRecorded.actionMessage = eActionMessage_ActionA_powerOff;
     			if (!isCheckedOutputMessage(sRecorded.actionMessage)) return;
     			recordMessageAction(sRecorded);
   		}
   		
 	
-	} // f_C2_msgB()
+	} // f_C2_powerOff()
 	
-	void ActionInitiation::f_C2_msgC(void)
+	void ActionInitiation::f_C2_powerOn(void)
 	{
-		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.msgC \n\n");}
+		if (g_eTraceMode == eTrace_Enable) {printf("   ActionMessage: ActionA.powerOn \n\n");}
   		if (g_eAnimationMode == eAnimationMode_Regressive || g_eAnimationMode == eAnimationMode_Runner) {
     			T_RecordedActionMessage sRecorded;
-    			sRecorded.actionMessage = eActionMessage_ActionA_msgC;
+    			sRecorded.actionMessage = eActionMessage_ActionA_powerOn;
     			if (!isCheckedOutputMessage(sRecorded.actionMessage)) return;
     			recordMessageAction(sRecorded);
   		}
   		
 	
-	} // f_C2_msgC()
+	} // f_C2_powerOn()
 	
 	// The action handler
 	ActionInitiation amp;
@@ -427,13 +430,25 @@ namespace dec
 	    case eEventMessage_Auto:
 	      sendAutoEvent();
 	    break;
-	    case eEventMessage_EventA_msgB:
-	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: msgB  \n");}
-	      m_cipmachine->C1_msgB();
+	    case eEventMessage_EventA_nextWorkload:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: nextWorkload  \n");}
+	      m_cipmachine->C1_nextWorkload();
 	    break;
-	    case eEventMessage_EventA_msgA:
-	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: msgA  \n");}
-	      m_cipmachine->C1_msgA();
+	    case eEventMessage_EventA_doMachineStuff:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: doMachineStuff  \n");}
+	      m_cipmachine->C1_doMachineStuff();
+	    break;
+	    case eEventMessage_EventA_powerOn:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerOn  \n");}
+	      m_cipmachine->C1_powerOn();
+	    break;
+	    case eEventMessage_EventA_powerFail:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerFail  \n");}
+	      m_cipmachine->C1_powerFail();
+	    break;
+	    case eEventMessage_EventA_powerOff:
+	      if (g_eTraceMode == eTrace_Enable) {printf(" EventMessage: powerOff  \n");}
+	      m_cipmachine->C1_powerOff();
 	    break;
 	    default:
 	      return 0;
@@ -545,8 +560,8 @@ namespace dec
 	  }
 	  
 	  activeTestCase = eTestCase_SimpleMachineProcessTest;
-	  sendMessageEvent(eEventMessage_EventA_msgA, 50, 50, &data);
-	  if (!assertMessageActionCount("TestEvent EventA.msgA [1fc9aa75-9b55-11ef-800e-630ffd8f1eac]", "SimpleMachineProcessTest")) {return 0;}
+	  sendMessageEvent(eEventMessage_EventA_powerOn, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent EventA.powerOn [1fc9aa75-9b55-11ef-800e-630ffd8f1eac]", "SimpleMachineProcessTest")) {return 0;}
 	  
 	 
 	  if (mainTestCase) 
@@ -635,8 +650,11 @@ namespace dec
 	    printf("Enter 3 (Chain)\n");
 	    printf("Enter 4 (Read)\n");
 	    printf("Enter 5 (Auto)\n");
-	    printf("Enter  %i (EventA: msgB)\n",eEventMessage_EventA_msgB);
-	    printf("Enter  %i (EventA: msgA)\n",eEventMessage_EventA_msgA);
+	    printf("Enter  %i (EventA: nextWorkload)\n",eEventMessage_EventA_nextWorkload);
+	    printf("Enter  %i (EventA: doMachineStuff)\n",eEventMessage_EventA_doMachineStuff);
+	    printf("Enter  %i (EventA: powerOn)\n",eEventMessage_EventA_powerOn);
+	    printf("Enter  %i (EventA: powerFail)\n",eEventMessage_EventA_powerFail);
+	    printf("Enter  %i (EventA: powerOff)\n",eEventMessage_EventA_powerOff);
 	    printf("------------------------------------\n");
 	
 	    T_EEventMessage eEventMessage;
@@ -703,4 +721,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f5a05c42-9b54-11ef-800e-630ffd8f1eac,pbx5wyvsZ2TerMPQqWXadxA9XlM=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f5a05c42-9b54-11ef-800e-630ffd8f1eac,DPT+myVFN8eofdEPzExiols7ugM=] */
