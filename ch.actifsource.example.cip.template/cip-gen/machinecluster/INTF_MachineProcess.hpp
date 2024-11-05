@@ -20,6 +20,7 @@
 
 #include "PROC_CipProcess.hpp"
 #include "INTF_MachineProcessNames.hpp"
+#include "CipEnumIndexedArray.hpp"
 
 namespace templateunit
 {
@@ -40,10 +41,12 @@ namespace templateunit
 		/** constructors / destructors */
 		INTF_MachineProcess(void) :
 			cipmachine::PROC_CipProcess(),
-			STATE(INTF_MachineProcessNames::Idle),
-			TEMP_STATE(INTF_MachineProcessNames::Idle),
+			STATE(INTF_MachineProcessNames::PowerOff),
+			TEMP_STATE(INTF_MachineProcessNames::PowerOff),
 			MODE(INTF_MachineProcessNames::normalA)
-		{}
+		{
+			HISTORY_STATE[INTF_MachineProcessNames::E_HistoryState::PowerOn_HistoryState] = INTF_MachineProcessNames::Idle;
+		}
 
 		virtual ~INTF_MachineProcess(void){}
 
@@ -101,6 +104,7 @@ namespace templateunit
 
 		INTF_MachineProcessNames::E_State STATE;
 		INTF_MachineProcessNames::E_State TEMP_STATE;
+		ciplibrary::CipEnumIndexedArray<INTF_MachineProcessNames::E_State, INTF_MachineProcessNames::E_HistoryState, 1> HISTORY_STATE;
 		INTF_MachineProcessNames::E_Mode MODE;
 
 	private: 
@@ -119,4 +123,4 @@ namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess interface header for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,D/0BfYjwDmgol3r8/FDGkpF8VUk=] */
+/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,q+iEKt/G85AkVygrkMtzM1rw5as=] */

@@ -43,6 +43,11 @@ namespace templateunit
 				Workload_3 = 7
 			};
 
+			enum E_HistoryState
+			{
+				PowerOn_HistoryState = 0
+			};
+			
 			enum E_Mode
 			{
 				_no_mode_ = 0, 
@@ -72,7 +77,8 @@ namespace templateunit
 			{
 				_no_stateAction_ = 0,
 				EntryAction = 1,
-				ExitAction = 2
+				ExitAction = 2,
+				EntryHistoryAction = 3
 			};
 			
 			/** constructors / destructors */
@@ -95,4 +101,4 @@ namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess names interface header for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[fdad66a9-0975-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,J2BgymTp6rFKLYqLx7NERWbqpaM=] */
+/* Actifsource ID=[fdad66a9-0975-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,yDe9S8wM5FUzAGxJU5l91LfNJrE=] */

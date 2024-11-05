@@ -199,6 +199,9 @@
             </resource>
           </object>
         </predicate>
+        <predicate guid="c4cdf788-36ad-11e1-b517-8b5cbdb170de">
+          <object statement-guid="6d57a4a1-9b6f-11ef-8d6e-37871b0a93e7" type="resource" guid="aee7950f-9b56-11ef-800e-630ffd8f1eac" />
+        </predicate>
         <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
           <object statement-guid="7270adf6-9b54-11ef-800e-630ffd8f1eac" type="literal">5</object>
         </predicate>

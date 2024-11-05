@@ -91,7 +91,7 @@ namespace dec
 	} T_ETestCase;
 
 	/* Checked output message */
-	const int checkedOutputMessage_SimpleMachineProcessTest[eActionMessageCount] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
+	const int checkedOutputMessage_SimpleMachineProcessTest[eActionMessageCount] = {1, 1, 1, 1, 1, 1, 0, 0, 0};
 
 	/** Typedef of all Event data. */
 	typedef union UEventData
@@ -563,6 +563,18 @@ namespace dec
 	  sendMessageEvent(eEventMessage_EventA_powerOn, 50, 50, &data);
 	  if (!assertMessageActionCount("TestEvent EventA.powerOn [1fc9aa75-9b55-11ef-800e-630ffd8f1eac]", "SimpleMachineProcessTest")) {return 0;}
 	  
+	  sendMessageEvent(eEventMessage_EventA_doMachineStuff, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent EventA.doMachineStuff [82dc8645-9b6f-11ef-8d6e-37871b0a93e7]", "SimpleMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_EventA_nextWorkload, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent EventA.nextWorkload [8ba7a72e-9b6f-11ef-8d6e-37871b0a93e7]", "SimpleMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_EventA_powerFail, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent EventA.powerFail [a651846c-9b6f-11ef-8d6e-37871b0a93e7]", "SimpleMachineProcessTest")) {return 0;}
+	  
+	  sendMessageEvent(eEventMessage_EventA_powerOn, 50, 50, &data);
+	  if (!assertMessageActionCount("TestEvent EventA.powerOn [adc9e749-9b6f-11ef-8d6e-37871b0a93e7]", "SimpleMachineProcessTest")) {return 0;}
+	  
 	 
 	  if (mainTestCase) 
 	  {
@@ -721,4 +733,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f5a05c42-9b54-11ef-800e-630ffd8f1eac,DPT+myVFN8eofdEPzExiols7ugM=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,f5a05c42-9b54-11ef-800e-630ffd8f1eac,f/eZN0/+plkTJdNnKfpIweZH3dk=] */
