@@ -86,14 +86,6 @@ namespace templateunit
 		*/
 		void BHV_InpulseA(void);
             
-		/** 
-		* Trigger the process with inpulse TestInpulseB.
-		*/
-		void BHV_TestInpulseB(void);
-            
-		/** inquiry function InquiryB */
-		void InquiryB(void);
-		
 		
 
 	private: 
@@ -101,9 +93,6 @@ namespace templateunit
 		/** Trigger the process with state functions */
 		void triggerStateAction(INTF_MachineProcessNames::E_StateAction stateAction, INTF_MachineProcessNames::E_State baseState);
 		
-		/** FUNCTION FunctionB */
-		void FunctionB(void);
-
 		/** prohibitted default functions */
 		PROC_MachineProcess(const PROC_MachineProcess&);
 		PROC_MachineProcess& operator=(const PROC_MachineProcess&);
@@ -123,4 +112,4 @@ namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess header for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[45d0d2b1-099f-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,qOx+c/ABp0lLp0Bm2OrLaciWlDY=] */
+/* Actifsource ID=[45d0d2b1-099f-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,0sMAsac5C3MFkEtWqAgDIJgxI9c=] */

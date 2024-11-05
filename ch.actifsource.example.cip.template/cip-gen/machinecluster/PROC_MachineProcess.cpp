@@ -169,7 +169,7 @@ namespace templateunit
 			switch(STATE)
 			{
 				case PowerOff:	
-					if (true)    // CONDITION ConditionOperationB
+					if (1)    // CONDITION ConditionOperationB
 					{
 						/* [[e2400bfa-9b58-11ef-800e-630ffd8f1eac,Transition]] */
 						printf("       TRANSITION '101 powerOn' MachineProcess.normalA: STATE PowerOff -> PowerOn_HistoryState  [e2400bfa-9b58-11ef-800e-630ffd8f1eac]\n");
@@ -200,14 +200,6 @@ namespace templateunit
 			return;
 		} // BHV_InpulseA()
 	
-	 	/** 
-		 * Trigger the process with inpulse TestInpulseB.
-		 */
-		void PROC_MachineProcess::BHV_TestInpulseB(void)
-		{ 
-			return;
-		} // BHV_TestInpulseB()
-	
 		/**
 		 * Trigger the process with state functions.
 		 */
@@ -226,7 +218,7 @@ namespace templateunit
 							triggerStateAction(stateAction, baseState);
 							STATE = ActiveMode;
 						}
-						if (true)    // CONDITION ConditionOperationB
+						if (1)    // CONDITION ConditionOperationB
 						{
 							/* [[0a6b8e11-9b59-11ef-800e-630ffd8f1eac,EntryTransition]] */
 							printf("       TRANSITION '103 ENTRY_' MachineProcess.normalA: STATE ActiveMode   [0a6b8e11-9b59-11ef-800e-630ffd8f1eac]\n");
@@ -322,17 +314,9 @@ namespace templateunit
 			}
 		} // triggerStateAction()
 		
-		/** inquiry function InquiryB */
-		void PROC_MachineProcess::InquiryB(void)
-		{ }    
-	       	
-		/** FUNCTION FunctionB */
- 		void PROC_MachineProcess::FunctionB(void)
-		{ }
-	
 	} // namespace machinecluster
 } // namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[1efc54ce-099f-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,5sk9gmfI+veS/rLuSC7nzW6cicI=] */
+/* Actifsource ID=[1efc54ce-099f-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,43RauJyCQ0oYCTH5y4BkURsUqkU=] */

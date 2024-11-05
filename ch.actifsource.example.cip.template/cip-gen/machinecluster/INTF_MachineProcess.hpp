@@ -89,14 +89,6 @@ namespace templateunit
 		*/
 		virtual void BHV_InpulseA(void) = 0;
             
-		/** 
-		* Trigger the process with inpulse TestInpulseB.
-		*/
-		virtual void BHV_TestInpulseB(void) = 0;
-            
-		/** inquiry function InquiryB */
-		virtual void InquiryB (void) = 0;
-
 	    
 	protected: 
  
@@ -123,4 +115,4 @@ namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess interface header for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,q+iEKt/G85AkVygrkMtzM1rw5as=] */
+/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,HRnFxEWW8OauDwOYlP/Own9/TNY=] */

@@ -2,26 +2,6 @@
 <resource format="5.6.0" guid="72701230-9b54-11ef-800e-630ffd8f1eac">
   <owns predicate="a7d00d20-6500-11e0-859e-0b5a1f989279">
     <resource statement-guid="7270d65e-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="727011f8-9b54-11ef-800e-630ffd8f1eac">
-      <owns predicate="ba111edf-7498-11e0-a531-4537b2bc6a0b">
-        <resource statement-guid="7270adea-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45c-9b54-11ef-800e-630ffd8f1eac">
-          <owns predicate="c0fd914d-6559-11eb-8606-11209d14bf64">
-            <resource statement-guid="7270ade9-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45b-9b54-11ef-800e-630ffd8f1eac">
-              <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                <resource statement-guid="7270ade8-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45a-9b54-11ef-800e-630ffd8f1eac">
-                  <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                    <resource statement-guid="7270ade7-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc459-9b54-11ef-800e-630ffd8f1eac" />
-                  </owns>
-                </resource>
-              </owns>
-            </resource>
-          </owns>
-        </resource>
-        <resource statement-guid="7270aded-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45d-9b54-11ef-800e-630ffd8f1eac" />
-        <resource statement-guid="7270adf1-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45e-9b54-11ef-800e-630ffd8f1eac" />
-      </owns>
-      <owns predicate="325e8c1d-7499-11e0-a531-4537b2bc6a0b">
-        <resource statement-guid="7270adf5-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc45f-9b54-11ef-800e-630ffd8f1eac" />
-      </owns>
       <owns predicate="2eded91e-baff-11e3-a9c8-93997911cbde">
         <resource statement-guid="7270adff-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="726fc462-9b54-11ef-800e-630ffd8f1eac" />
       </owns>
@@ -118,86 +98,6 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="7270ade0-9b54-11ef-800e-630ffd8f1eac" type="literal">MachineProcess</object>
-        </predicate>
-        <predicate guid="ba111edf-7498-11e0-a531-4537b2bc6a0b">
-          <object statement-guid="7270adea-9b54-11ef-800e-630ffd8f1eac">
-            <resource guid="726fc45c-9b54-11ef-800e-630ffd8f1eac">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270ade1-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="99305c21-6559-11eb-8606-11209d14bf64" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270ade2-9b54-11ef-800e-630ffd8f1eac" type="literal">DelayOperation_CodeSnippet</object>
-              </predicate>
-              <predicate guid="c0fd914d-6559-11eb-8606-11209d14bf64">
-                <object statement-guid="7270ade9-9b54-11ef-800e-630ffd8f1eac">
-                  <resource guid="726fc45b-9b54-11ef-800e-630ffd8f1eac">
-                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="7270ade3-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="d54fadbe-9957-11e3-bbc2-5fc6bb26f4c4" />
-                    </predicate>
-                    <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                      <object statement-guid="7270ade8-9b54-11ef-800e-630ffd8f1eac">
-                        <resource guid="726fc45a-9b54-11ef-800e-630ffd8f1eac">
-                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                            <object statement-guid="7270ade4-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="ceb59d96-9957-11e3-bbc2-5fc6bb26f4c4" />
-                          </predicate>
-                          <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                            <object statement-guid="7270ade7-9b54-11ef-800e-630ffd8f1eac">
-                              <resource guid="726fc459-9b54-11ef-800e-630ffd8f1eac">
-                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                  <object statement-guid="7270ade5-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
-                                </predicate>
-                                <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="7270ade6-9b54-11ef-800e-630ffd8f1eac" type="literal">55</object>
-                                </predicate>
-                              </resource>
-                            </object>
-                          </predicate>
-                        </resource>
-                      </object>
-                    </predicate>
-                  </resource>
-                </object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="7270aded-9b54-11ef-800e-630ffd8f1eac">
-            <resource guid="726fc45d-9b54-11ef-800e-630ffd8f1eac">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adeb-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="09bc564d-2152-11e4-8790-03d3d69ea616" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adec-9b54-11ef-800e-630ffd8f1eac" type="literal">DelayOperation_Default</object>
-              </predicate>
-            </resource>
-          </object>
-          <object statement-guid="7270adf1-9b54-11ef-800e-630ffd8f1eac">
-            <resource guid="726fc45e-9b54-11ef-800e-630ffd8f1eac">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adee-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="b5419554-7498-11e0-a531-4537b2bc6a0b" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adef-9b54-11ef-800e-630ffd8f1eac" type="literal">DelayOperation_Text</object>
-              </predicate>
-              <predicate guid="c1343553-7498-11e0-a531-4537b2bc6a0b">
-                <object statement-guid="7270adf0-9b54-11ef-800e-630ffd8f1eac" type="literal">5</object>
-              </predicate>
-            </resource>
-          </object>
-        </predicate>
-        <predicate guid="325e8c1d-7499-11e0-a531-4537b2bc6a0b">
-          <object statement-guid="7270adf5-9b54-11ef-800e-630ffd8f1eac">
-            <resource guid="726fc45f-9b54-11ef-800e-630ffd8f1eac">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adf2-9b54-11ef-800e-630ffd8f1eac" type="resource" guid="2aa88472-7499-11e0-a531-4537b2bc6a0b" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="7270adf3-9b54-11ef-800e-630ffd8f1eac" type="literal">OperationC</object>
-              </predicate>
-              <predicate guid="44689dcd-7499-11e0-a531-4537b2bc6a0b">
-                <object statement-guid="7270adf4-9b54-11ef-800e-630ffd8f1eac" type="literal">{printf("OperationC"); }</object>
-              </predicate>
-            </resource>
-          </object>
         </predicate>
         <predicate guid="c4cdf788-36ad-11e1-b517-8b5cbdb170de">
           <object statement-guid="6d57a4a1-9b6f-11ef-8d6e-37871b0a93e7" type="resource" guid="aee7950f-9b56-11ef-800e-630ffd8f1eac" />

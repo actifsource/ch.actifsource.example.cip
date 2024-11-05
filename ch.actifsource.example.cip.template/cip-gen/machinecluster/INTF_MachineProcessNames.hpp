@@ -62,15 +62,13 @@ namespace templateunit
 				C1_powerFail = 3,
 				C1_powerOff = 4,
 				C1_powerOn = 5,
-				ip_InpulseA = 6,
-				ip_TestInpulseB = 7
+				ip_InpulseA = 6
 			};
 
 			enum E_Outpulse
 			{
 				_no_outpulse_ = 0,
-				op_OutpulseA = 1,
-				op_TestOutpulseB = 2
+				op_OutpulseA = 1
 			};
      
 			enum E_StateAction
@@ -101,4 +99,4 @@ namespace templateunit
 /*********************************************************************
     End of cip process MachineProcess names interface header for PROCESS MachineProcess
 *********************************************************************/
-/* Actifsource ID=[fdad66a9-0975-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,yDe9S8wM5FUzAGxJU5l91LfNJrE=] */
+/* Actifsource ID=[fdad66a9-0975-11e3-b902-17aaca85d2fd,7270396a-9b54-11ef-800e-630ffd8f1eac,726fc458-9b54-11ef-800e-630ffd8f1eac,7270398d-9b54-11ef-800e-630ffd8f1eac,72703969-9b54-11ef-800e-630ffd8f1eac,72703968-9b54-11ef-800e-630ffd8f1eac,72701230-9b54-11ef-800e-630ffd8f1eac,727011f8-9b54-11ef-800e-630ffd8f1eac,ZZN2yr6Maw1+gyefxIxF0FXTuag=] */
