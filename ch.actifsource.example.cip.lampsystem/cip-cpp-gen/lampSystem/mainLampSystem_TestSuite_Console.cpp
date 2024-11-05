@@ -525,6 +525,7 @@ namespace dec
 	    else if (!sendMessageEvent(eEventMessage, 50, 50, &data)) {printf("\n Invalid Input: %i\n\n",eEventMessage);}
 	  }
 	  delete m_cipmachine;
+	  m_cipmachine = NULL;
 	  return 0;
 	}
 	
@@ -578,4 +579,4 @@ int main(int argc, char *argv[])
 	return 1;
 }
 
-/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,b5297e61-b785-11ea-9e22-1112d6355503,0NSBtLRLOJ2MaNAKyqp0tzeHrBc=] */
+/* Actifsource ID=[167cfacc-121b-11e3-aaf3-772f794ef5e4,b5297e61-b785-11ea-9e22-1112d6355503,TXLc2AFcIwdQuCAXG8yWjkmDGyk=] */

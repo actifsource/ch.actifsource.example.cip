@@ -43,8 +43,8 @@ namespace historystatesunit
 			STATE(INTF_ComplexMachineProcessNames::PowerOff),
 			TEMP_STATE(INTF_ComplexMachineProcessNames::PowerOff)
 		{
-			HISTORY_STATE[INTF_ComplexMachineProcessNames::E_HistoryState::PowerOn_HistoryState] = INTF_ComplexMachineProcessNames::Idle;
 			HISTORY_STATE[INTF_ComplexMachineProcessNames::E_HistoryState::ActiveMode_HistoryState] = INTF_ComplexMachineProcessNames::Workload_1;
+			HISTORY_STATE[INTF_ComplexMachineProcessNames::E_HistoryState::PowerOn_HistoryState] = INTF_ComplexMachineProcessNames::Idle;
 		}
 
 		virtual ~INTF_ComplexMachineProcess(void){}
@@ -107,4 +107,4 @@ namespace historystatesunit
 /*********************************************************************
     End of cip process ComplexMachineProcess interface header for PROCESS ComplexMachineProcess
 *********************************************************************/
-/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,3eff29c8-9ac1-11ef-9dfa-835f60e5a95d,0dca5d23-9ac7-11ef-9dfa-835f60e5a95d,58k8KxDfdMLIMui7tkDAglSj54I=] */
+/* Actifsource ID=[e2fd58fb-0973-11e3-b902-17aaca85d2fd,1d05cec7-9ac1-11ef-9dfa-835f60e5a95d,73ed890e-9ac0-11ef-9dfa-835f60e5a95d,f0198f93-9ac0-11ef-9dfa-835f60e5a95d,1d05cec6-9ac1-11ef-9dfa-835f60e5a95d,1d05cec5-9ac1-11ef-9dfa-835f60e5a95d,3eff29c8-9ac1-11ef-9dfa-835f60e5a95d,0dca5d23-9ac7-11ef-9dfa-835f60e5a95d,Zog2KgrTSoHeJHEr4x+4LngUE9E=] */
