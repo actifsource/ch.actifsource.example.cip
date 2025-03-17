@@ -35,7 +35,7 @@ enum eSTATES_LiftCar
 	 scendingAtTop, scendingStopped};
 
 enum eINPULS_LiftCar
-	{IP_push = 1, IP_blocking = 2, IP_release = 3};
+	{IP_blocking = 1, IP_push, IP_release};
 	
 
 /* External Declarations */
@@ -287,4 +287,4 @@ void fINIT_LiftCar (void)
 /*********************************************************************
 	End of Module for PROCESS LiftCar
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,474f129b-2ffa-11e2-8ce2-c76b5b13ae26,741c1ae4-2ff8-11e2-8ce2-c76b5b13ae26,278e1b7e-2ffa-11e2-8ce2-c76b5b13ae26,47515c8f-2ffa-11e2-8ce2-c76b5b13ae26,741e64d7-2ff8-11e2-8ce2-c76b5b13ae26,742a4c1c-2ff8-11e2-8ce2-c76b5b13ae26,91gMwakuleZFxtx4miWiOMsJoCI=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,474f129b-2ffa-11e2-8ce2-c76b5b13ae26,741c1ae4-2ff8-11e2-8ce2-c76b5b13ae26,278e1b7e-2ffa-11e2-8ce2-c76b5b13ae26,47515c8f-2ffa-11e2-8ce2-c76b5b13ae26,741e64d7-2ff8-11e2-8ce2-c76b5b13ae26,742a4c1c-2ff8-11e2-8ce2-c76b5b13ae26,LzPgDkMUWmlDz5ZNuhn7zo3cdLw=] */

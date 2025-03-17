@@ -39,7 +39,7 @@
 	#define _eOUTPLS_LiftWithAlarmMode_
 
 	enum eOUTPLS_LiftWithAlarmMode
-		{O3_blocking = 2, O3_release = 3, O4_push = 1};
+		{/* LiftCluster */ O3_blocking = 1, O3_release, O4_push};
 
 #endif // _eOUTPLS_LiftWithAlarmMode_
 
@@ -123,4 +123,4 @@ union tSTATUS_LiftCar
 /*********************************************************************
 	End of Header File for CIP MACHINE mLiftWithAlarmMode
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,474f129b-2ffa-11e2-8ce2-c76b5b13ae26,741c1ae4-2ff8-11e2-8ce2-c76b5b13ae26,278e1b7e-2ffa-11e2-8ce2-c76b5b13ae26,47515c94-2ffa-11e2-8ce2-c76b5b13ae26,47515c8f-2ffa-11e2-8ce2-c76b5b13ae26,yDqaz3iFtOIKr0qOfoLFGl2Ys2w=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,474f129b-2ffa-11e2-8ce2-c76b5b13ae26,741c1ae4-2ff8-11e2-8ce2-c76b5b13ae26,278e1b7e-2ffa-11e2-8ce2-c76b5b13ae26,47515c94-2ffa-11e2-8ce2-c76b5b13ae26,47515c8f-2ffa-11e2-8ce2-c76b5b13ae26,UeGnYJlYnTxLoyWi5N7ZswGk9aQ=] */

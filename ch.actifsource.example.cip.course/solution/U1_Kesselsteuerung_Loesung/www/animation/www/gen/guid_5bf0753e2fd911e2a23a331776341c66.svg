@@ -166,8 +166,9 @@
 			        fill="rgb(0, 0, 0)">
 			    	<tspan x="-41" dy="0">KesselSteuerung</tspan>
 			</text>
-			<use x="-57" y="-64"
-			 xlink:href="#guid_4c2d37f264fd11e0859e0b5a1f989279_icon"/>
+			<g transform="translate(-57,-64) rotate(0)">
+			        <use xlink:href="#guid_4c2d37f264fd11e0859e0b5a1f989279_icon"/>
+			</g>
 			
 		</g>
 	</g>
@@ -187,8 +188,9 @@
 			        fill="rgb(0, 0, 0)">
 			    	<tspan x="-12" dy="0">Kessel</tspan>
 			</text>
-			<use x="-28" y="-8"
-			 xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			<g transform="translate(-28,-8) rotate(0)">
+			        <use xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			</g>
 			
 		</g>
 	</g>
@@ -264,8 +266,9 @@
 			        fill="rgb(0, 0, 0)">
 			    	<tspan x="-15" dy="0">Schalter</tspan>
 			</text>
-			<use x="-31" y="-8"
-			 xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			<g transform="translate(-31,-8) rotate(0)">
+			        <use xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			</g>
 			
 		</g>
 	</g>
@@ -313,8 +316,9 @@
 			        fill="rgb(0, 0, 0)">
 			    	<tspan x="-28" dy="0">TempRegler</tspan>
 			</text>
-			<use x="-44" y="-8"
-			 xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			<g transform="translate(-44,-8) rotate(0)">
+			        <use xlink:href="#guid_b8b26f7664fd11e0859e0b5a1f989279_icon"/>
+			</g>
 			
 		</g>
 	</g>
@@ -485,7 +489,7 @@
 	</g>
 	<!-- Relations target figure -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="524,360 527,365 530,360 "/>
+		<polyline points="522,360 527,365 532,360 "/>
 	</g>
 	<!-- Relations TempRegler.ACTION_PORT -&gt; Act_TempRegler -> Act_TempRegler -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
@@ -493,31 +497,19 @@
 	</g>
 	<!-- Relations target figure -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="710,359 713,364 716,359 "/>
+		<polyline points="708,359 713,364 718,359 "/>
 	</g>
 	<!-- Relations Evt_HauptSchalter -&gt; Schalter.EVENT_PORT -> Evt_HauptSchalter -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
 	      <path d="M 371 153 L 371 153L 371 73 L 371 73"/>
 	</g>
-	<!-- Relations source figure -->
-	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="368,148 371,153 374,148 "/>
-	</g>
 	<!-- Relations Evt_Kessel -&gt; Kessel.EVENT_PORT -> Evt_Kessel -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
 	      <path d="M 531 153 L 531 153L 533 74 L 533 75"/>
 	</g>
-	<!-- Relations source figure -->
-	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="528,148 531,153 534,148 "/>
-	</g>
 	<!-- Relations Evt_TempRegler -&gt; TempRegler.EVENT_PORT -> Evt_TempRegler -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
 	      <path d="M 717 153 L 717 153L 713 68 L 713 69"/>
-	</g>
-	<!-- Relations source figure -->
-	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="714,148 717,153 720,148 "/>
 	</g>
 	<!-- Relations Evt_Kessel -&gt; Kessel.EVENT_PORT -> EVENT_PORT -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
@@ -525,15 +517,11 @@
 	</g>
 	<!-- Relations target figure -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="525,206 528,211 531,206 "/>
+		<polyline points="523,206 528,211 533,206 "/>
 	</g>
 	<!-- Relations Kessel.ACTION_PORT -&gt; Act_Kessel -> ACTION_PORT -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
 	      <path d="M 528 285 L 528 285L 525 256 L 525 256"/>
-	</g>
-	<!-- Relations source figure -->
-	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="525,280 528,285 530,280 "/>
 	</g>
 	<!-- Relations Evt_HauptSchalter -&gt; Schalter.EVENT_PORT -> EVENT_PORT -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
@@ -541,7 +529,7 @@
 	</g>
 	<!-- Relations target figure -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="368,204 371,209 374,204 "/>
+		<polyline points="366,204 371,209 376,204 "/>
 	</g>
 	<!-- Relations Evt_TempRegler -&gt; TempRegler.EVENT_PORT -> EVENT_PORT -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
@@ -549,15 +537,11 @@
 	</g>
 	<!-- Relations target figure -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="718,196 721,201 724,196 "/>
+		<polyline points="716,196 721,201 726,196 "/>
 	</g>
 	<!-- Relations TempRegler.ACTION_PORT -&gt; Act_TempRegler -> ACTION_PORT -->
 	<g stroke="rgb(234, 88, 0)" fill="none">
 	      <path d="M 712 285 L 712 285L 712 246 L 712 246"/>
-	</g>
-	<!-- Relations source figure -->
-	<g stroke="rgb(234, 88, 0)" fill="none">
-		<polyline points="709,280 712,285 715,280 "/>
 	</g>
 </svg>
 

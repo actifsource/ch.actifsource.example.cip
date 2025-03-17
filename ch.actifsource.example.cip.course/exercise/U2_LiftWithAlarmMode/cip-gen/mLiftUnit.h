@@ -38,7 +38,7 @@
 	#define _eOUTPLS_LiftUnit_
 
 	enum eOUTPLS_LiftUnit
-		{O6_push = 1};
+		{O6_push};
 
 #endif // _eOUTPLS_LiftUnit_
 
@@ -113,4 +113,4 @@ union tSTATUS_LiftCar
 /*********************************************************************
 	End of Header File for CIP MACHINE mLiftUnit
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,f47d8c9c-37d0-11e2-9d61-05c638030bc3,75706e22-2ffd-11e2-8ce2-c76b5b13ae26,f8d9e1eb-37d0-11e2-9d61-05c638030bc3,f47fd695-37d0-11e2-9d61-05c638030bc3,f47fd690-37d0-11e2-9d61-05c638030bc3,Fi+IZH7kcs4Xr6QZx1FqdoFkj58=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,f47d8c9c-37d0-11e2-9d61-05c638030bc3,75706e22-2ffd-11e2-8ce2-c76b5b13ae26,f8d9e1eb-37d0-11e2-9d61-05c638030bc3,f47fd695-37d0-11e2-9d61-05c638030bc3,f47fd690-37d0-11e2-9d61-05c638030bc3,mI2VJtm6d08ZP0oY2XJse1OjiMQ=] */

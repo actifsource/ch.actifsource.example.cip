@@ -37,7 +37,7 @@ enum eSTATES_Kessel
 	{leer = 1, leerFuellend, tlwVollFuellend, tlwVollLeerend, vollLeerend};
 
 enum eINPULS_Kessel
-	{IP_start = 2};
+	{IP_start = 1};
 	
 
 /* External Declarations */
@@ -232,4 +232,4 @@ void fINIT_Kessel (void)
 /*********************************************************************
 	End of Module for PROCESS Kessel
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,5b6fd36a-2fd9-11e2-a23a-331776341c66,5b6fd36e-2fd9-11e2-a23a-331776341c66,yIHmTYOyRrVFel5411hpFIxmpuM=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,5b6fd36a-2fd9-11e2-a23a-331776341c66,5b6fd36e-2fd9-11e2-a23a-331776341c66,JoitPXB6dmDfgqdABxtD5x9wOk8=] */

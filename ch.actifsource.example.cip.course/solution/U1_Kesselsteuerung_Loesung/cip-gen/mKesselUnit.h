@@ -39,7 +39,7 @@
 	#define _eOUTPLS_KesselUnit_
 
 	enum eOUTPLS_KesselUnit
-		{O4_startTR = 7, O4_stopTR = 6, O3_start = 5};
+		{/* KesselSteuerung */ O4_startTR = 1, O4_stopTR, O3_start};
 
 #endif // _eOUTPLS_KesselUnit_
 
@@ -131,4 +131,4 @@ union tSTATUS_TempRegler
 /*********************************************************************
 	End of Header File for CIP MACHINE mKesselUnit
 *********************************************************************/
-/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244be-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,h+jbVIHZV0dD8iwSxXeR44SCLLw=] */
+/* Actifsource ID=[79d4b5d7-259a-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244be-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,IReJsLqFcmoiLnphFSX1oNlP8cc=] */

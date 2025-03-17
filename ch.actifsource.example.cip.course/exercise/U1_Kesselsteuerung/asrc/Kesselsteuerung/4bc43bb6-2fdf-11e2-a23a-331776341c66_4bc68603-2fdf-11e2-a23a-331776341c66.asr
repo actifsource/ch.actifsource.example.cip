@@ -229,9 +229,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc6860e-2fdf-11e2-a23a-331776341c66" type="literal">leer</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc68610-2fdf-11e2-a23a-331776341c66" type="literal">2</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bc68614-2fdf-11e2-a23a-331776341c66">
@@ -241,9 +238,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc68613-2fdf-11e2-a23a-331776341c66" type="literal">leerFuellend</object>
-              </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc68615-2fdf-11e2-a23a-331776341c66" type="literal">6</object>
               </predicate>
             </resource>
           </object>
@@ -255,9 +249,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc68618-2fdf-11e2-a23a-331776341c66" type="literal">tlwVollFuellend</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc6861a-2fdf-11e2-a23a-331776341c66" type="literal">1</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bc8f61e-2fdf-11e2-a23a-331776341c66">
@@ -268,9 +259,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc6861d-2fdf-11e2-a23a-331776341c66" type="literal">tlwVollLeerend</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc8f61f-2fdf-11e2-a23a-331776341c66" type="literal">4</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bc8f623-2fdf-11e2-a23a-331776341c66">
@@ -280,9 +268,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc8f622-2fdf-11e2-a23a-331776341c66" type="literal">vollLeerend</object>
-              </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc8f624-2fdf-11e2-a23a-331776341c66" type="literal">3</object>
               </predicate>
             </resource>
           </object>
@@ -400,6 +385,9 @@
         <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
           <object statement-guid="4bc6860b-2fdf-11e2-a23a-331776341c66" type="literal">4</object>
         </predicate>
+        <predicate guid="ae4f9b52-4070-11ec-95c5-87da4f2a8825">
+          <object statement-guid="5d1a077b-0302-11f0-a00d-6de84b09c0a8" type="resource" guid="789d7569-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
       </resource>
     </object>
     <object statement-guid="4bc8f666-2fdf-11e2-a23a-331776341c66">
@@ -453,9 +441,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc8f66a-2fdf-11e2-a23a-331776341c66" type="literal">Aus</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc8f66c-2fdf-11e2-a23a-331776341c66" type="literal">2</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bc8f670-2fdf-11e2-a23a-331776341c66">
@@ -465,9 +450,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bc8f66f-2fdf-11e2-a23a-331776341c66" type="literal">Ein</object>
-              </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bc8f671-2fdf-11e2-a23a-331776341c66" type="literal">1</object>
               </predicate>
             </resource>
           </object>
@@ -557,8 +539,8 @@
         <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
           <object statement-guid="4bc8f667-2fdf-11e2-a23a-331776341c66" type="literal">3</object>
         </predicate>
-        <predicate guid="c95e4425-a0f7-11e1-8ec4-71599ca4570b">
-          <object statement-guid="4bcb4075-2fdf-11e2-a23a-331776341c66" type="literal">2</object>
+        <predicate guid="ae4f9b52-4070-11ec-95c5-87da4f2a8825">
+          <object statement-guid="5d19e06a-0302-11f0-a00d-6de84b09c0a8" type="resource" guid="789d7569-7c6f-11da-8e26-0dc50b1b5a91" />
         </predicate>
       </resource>
     </object>
@@ -613,9 +595,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bcb408e-2fdf-11e2-a23a-331776341c66" type="literal">kaltAus</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bcb4090-2fdf-11e2-a23a-331776341c66" type="literal">1</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bcb4094-2fdf-11e2-a23a-331776341c66">
@@ -626,9 +605,6 @@
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bcb4093-2fdf-11e2-a23a-331776341c66" type="literal">kaltEin</object>
               </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bcb4095-2fdf-11e2-a23a-331776341c66" type="literal">3</object>
-              </predicate>
             </resource>
           </object>
           <object statement-guid="4bcb4099-2fdf-11e2-a23a-331776341c66">
@@ -638,9 +614,6 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="4bcb4098-2fdf-11e2-a23a-331776341c66" type="literal">warmAus</object>
-              </predicate>
-              <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
-                <object statement-guid="4bcb409a-2fdf-11e2-a23a-331776341c66" type="literal">2</object>
               </predicate>
             </resource>
           </object>
@@ -845,6 +818,9 @@
         </predicate>
         <predicate guid="e952fd7d-45db-11e1-b5e1-17a47d1bd195">
           <object statement-guid="4bcb408b-2fdf-11e2-a23a-331776341c66" type="literal">5</object>
+        </predicate>
+        <predicate guid="ae4f9b52-4070-11ec-95c5-87da4f2a8825">
+          <object statement-guid="5d19e069-0302-11f0-a00d-6de84b09c0a8" type="resource" guid="789d7569-7c6f-11da-8e26-0dc50b1b5a91" />
         </predicate>
       </resource>
     </object>

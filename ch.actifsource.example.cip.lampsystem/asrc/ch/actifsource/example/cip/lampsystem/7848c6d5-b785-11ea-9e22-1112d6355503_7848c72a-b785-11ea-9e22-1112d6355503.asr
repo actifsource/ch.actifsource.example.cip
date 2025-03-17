@@ -119,10 +119,10 @@
                       <object statement-guid="7848c8a4-b785-11ea-9e22-1112d6355503" type="resource" guid="7dc46626-8818-11df-a93b-2f9564bbc955" />
                     </predicate>
                     <predicate guid="840f931b-8818-11df-a93b-2f9564bbc955">
-                      <object statement-guid="7848c8a5-b785-11ea-9e22-1112d6355503" type="literal">51</object>
+                      <object statement-guid="7848c8a5-b785-11ea-9e22-1112d6355503" type="literal">94</object>
                     </predicate>
                     <predicate guid="8ecaeb72-8818-11df-a93b-2f9564bbc955">
-                      <object statement-guid="7848c8a6-b785-11ea-9e22-1112d6355503" type="literal">55</object>
+                      <object statement-guid="7848c8a6-b785-11ea-9e22-1112d6355503" type="literal">32</object>
                     </predicate>
                     <predicate guid="9f335bf9-8818-11df-a93b-2f9564bbc955">
                       <object statement-guid="7848c8a7-b785-11ea-9e22-1112d6355503" type="literal">90</object>

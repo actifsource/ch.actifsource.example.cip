@@ -74,10 +74,14 @@ void fIMSG_C5_UnterT(void)
 	switch(status_TempRegler.read_access_.STATE)
 	{
 	case warmAus:
-	 	status_TempRegler.write_access_.STATE = kaltAus;
-	 	status_TempRegler.write_access_.STATE = kaltEin;
-	 	CHNOUT_mKesselUnit.message_.CHAN_Act_TempRegler.name_ = C6_HeizEin;
-	 	OUT_KesselUnit.C6_HeizEin ();
+		else
+		{
+			status_TempRegler.write_access_.STATE = kaltAus;
+		}
+		else
+		{
+			contexterr_ = 1;
+		}
 		break;
 	default:
 		return;
@@ -95,4 +99,4 @@ void fINIT_TempRegler (void)
 /*********************************************************************
 	End of Module for PROCESS TempRegler
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,c511814e-37d0-11e2-9d61-05c638030bc3,4bc43bb6-2fdf-11e2-a23a-331776341c66,cb79ac2d-37d0-11e2-9d61-05c638030bc3,c5166352-37d0-11e2-9d61-05c638030bc3,4bc68603-2fdf-11e2-a23a-331776341c66,4bcb4087-2fdf-11e2-a23a-331776341c66,GnPyXstcr+FGj5sZYYpVu2IAhy0=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,c511814e-37d0-11e2-9d61-05c638030bc3,4bc43bb6-2fdf-11e2-a23a-331776341c66,cb79ac2d-37d0-11e2-9d61-05c638030bc3,c5166352-37d0-11e2-9d61-05c638030bc3,4bc68603-2fdf-11e2-a23a-331776341c66,4bcb4087-2fdf-11e2-a23a-331776341c66,2LWHWA/DIXyyr9u77jOEIESIVL0=] */

@@ -399,7 +399,7 @@
                 <object statement-guid="8ca39c85-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">106</object>
               </predicate>
               <predicate guid="8ecaeb72-8818-11df-a93b-2f9564bbc955">
-                <object statement-guid="8ca39c86-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">327</object>
+                <object statement-guid="8ca39c86-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">341</object>
               </predicate>
               <predicate guid="9f335bf9-8818-11df-a93b-2f9564bbc955">
                 <object statement-guid="8ca39c87-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">30</object>
@@ -424,10 +424,10 @@
                 <object statement-guid="8ca39c8d-2ffd-11e2-8ce2-c76b5b13ae26" type="resource" guid="7dc46626-8818-11df-a93b-2f9564bbc955" />
               </predicate>
               <predicate guid="840f931b-8818-11df-a93b-2f9564bbc955">
-                <object statement-guid="8ca39c8f-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">111</object>
+                <object statement-guid="8ca39c8f-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">109</object>
               </predicate>
               <predicate guid="8ecaeb72-8818-11df-a93b-2f9564bbc955">
-                <object statement-guid="8ca39c90-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">149</object>
+                <object statement-guid="8ca39c90-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">177</object>
               </predicate>
               <predicate guid="9f335bf9-8818-11df-a93b-2f9564bbc955">
                 <object statement-guid="8ca39c91-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">30</object>
@@ -480,10 +480,10 @@
                 <object statement-guid="8ca5e691-2ffd-11e2-8ce2-c76b5b13ae26" type="resource" guid="7dc46626-8818-11df-a93b-2f9564bbc955" />
               </predicate>
               <predicate guid="840f931b-8818-11df-a93b-2f9564bbc955">
-                <object statement-guid="8ca5e693-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">109</object>
+                <object statement-guid="8ca5e693-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">107</object>
               </predicate>
               <predicate guid="8ecaeb72-8818-11df-a93b-2f9564bbc955">
-                <object statement-guid="8ca5e694-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">236</object>
+                <object statement-guid="8ca5e694-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">250</object>
               </predicate>
               <predicate guid="9f335bf9-8818-11df-a93b-2f9564bbc955">
                 <object statement-guid="8ca5e695-2ffd-11e2-8ce2-c76b5b13ae26" type="literal">30</object>

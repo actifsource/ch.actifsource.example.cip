@@ -37,7 +37,7 @@ enum eSTATES_TempRegler
 	{kaltAus = 1, kaltEin, warmAus};
 
 enum eINPULS_TempRegler
-	{IP_stopTR = 2, IP_startTR = 3};
+	{IP_startTR = 1, IP_stopTR};
 	
 
 /* External Declarations */
@@ -206,4 +206,4 @@ void fINIT_TempRegler (void)
 /*********************************************************************
 	End of Module for PROCESS TempRegler
 *********************************************************************/
-/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,5b6fd36a-2fd9-11e2-a23a-331776341c66,5b8c82f4-2fd9-11e2-a23a-331776341c66,iO7Ap+vnLB30YZ+HiE2YIuvlFw8=] */
+/* Actifsource ID=[e9267837-2596-11e1-ae2f-a14f3e396de6,304ffac5-2fda-11e2-a23a-331776341c66,5b61a23d-2fd9-11e2-a23a-331776341c66,21741d8a-2fda-11e2-a23a-331776341c66,305244b9-2fda-11e2-a23a-331776341c66,5b6fd36a-2fd9-11e2-a23a-331776341c66,5b8c82f4-2fd9-11e2-a23a-331776341c66,sSzmEnKpHmL8RTVICsAN9pCq6gI=] */
